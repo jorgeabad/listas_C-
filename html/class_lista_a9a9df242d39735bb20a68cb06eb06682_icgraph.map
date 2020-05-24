@@ -1,0 +1,5 @@
+<map id="Lista::llenarLista" name="Lista::llenarLista">
+<area shape="rect" id="node2" href="$classlista_montones.html#ac17850afd023400ecc9c377cc834978e" title="Añade por la izquierda, iterativamente, un determinado número de montones de un tamaño determinado..." alt="" coords="171,5,311,47"/>
+<area shape="rect" id="node3" href="$class_principal.html#ac612ba94084cc1b87859b98decb69499" title="Método para llenar la lista de montones, listaM, con los diferentes montones del juego. " alt="" coords="359,13,553,39"/>
+<area shape="rect" id="node4" href="$main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="Funcion que representa el punto de inicio de ejecución del programa. " alt="" coords="601,13,652,39"/>
+</map>

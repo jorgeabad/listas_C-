@@ -1,0 +1,6 @@
+<map id="Lista::~Lista" name="Lista::~Lista">
+<area shape="rect" id="node2" href="$class_lista.html#aa68b68753969da67766632304c954150" title="Comprueba si la lista, está vacía. Si hay objetos nodo_Lista, en la lista. " alt="" coords="300,22,439,48"/>
+<area shape="rect" id="node3" href="$class_lista.html#ac36788be03ce7f95e08cbfcc9b37549a" title="Imprime en orden todos los elementos de la lista. " alt="" coords="148,72,252,99"/>
+<area shape="rect" id="node5" href="$class_lista.html#a2e5fda0cc0fd10ea2b7ce32570671b1f" title="Elimina el primer nodo de la lista, primera celda, dejando el resto de la lista. " alt="" coords="157,22,243,48"/>
+<area shape="rect" id="node4" href="$class_lista.html#a50ed254922841d4f1a81fc46d08ae2f4" title="Función para acceder a la longitud de la lista, cantidad de nodos que hay en la lista. " alt="" coords="316,72,423,99"/>
+</map>

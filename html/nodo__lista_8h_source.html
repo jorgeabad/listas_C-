@@ -1,0 +1,79 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>PRÁCTICA 2 LISTAS: Página principal</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="estilos.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top">
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">PRÁCTICA 2 LISTAS
+   &#160;<span id="projectnumber">NUMBERIS 2</span>
+   </div>
+   <div id="projectbrief">LABORATORIO DE ESTRUCTURA DE DATOS</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- Jorge -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;principal</span></a></li>
+      <li><a href="annotated.html"><span>Clases</span></a></li>
+      <li class="current"><a href="files.html"><span>Archivos</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;de&#160;archivos</span></a></li>
+      <li><a href="globals.html"><span>Miembros&#160;de&#160;los&#160;ficheros</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">nodo_lista.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="nodo__lista_8h.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#ifndef NODO_LISTA_H_</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#define NODO_LISTA_H_</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">using namespace </span><a class="code" href="namespacestd.html">std</a>;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="classnodo___lista.html">   20</a></span>&#160;<span class="keyword">class </span><a class="code" href="classnodo___lista.html">nodo_Lista</a></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;{</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="classnodo___lista.html#ae4fecdd4873df780beac2cef64580e88">   30</a></span>&#160;   <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="class_lista.html">Lista</a>;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  <span class="comment">//para que pueda acceder a sus atributos, la clase lista.</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;      <span class="comment">//atributos</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;             <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="classnodo___lista.html#acc8ee49e440c757c13d8df8187509c74">   34</a></span>&#160;                <span class="keywordtype">short</span> <a class="code" href="classnodo___lista.html#acc8ee49e440c757c13d8df8187509c74">valor</a>; <span class="comment">//Contiene valor.</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="classnodo___lista.html#a5abacbf7751aa5ad9705cec33eb64305">   35</a></span>&#160;                <a class="code" href="classnodo___lista.html">nodo_Lista</a>* <a class="code" href="classnodo___lista.html#a5abacbf7751aa5ad9705cec33eb64305">pSiguiente</a>; <span class="comment">//puntero al siguiente de la clase nodo_lista.</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="classnodo___lista.html#a2842661dbd2732440e4396ff2a78f4e9">   36</a></span>&#160;                <a class="code" href="classnodo___lista.html">nodo_Lista</a>* <a class="code" href="classnodo___lista.html#a2842661dbd2732440e4396ff2a78f4e9">pAnterior</a>; <span class="comment">//puntero al anterior de la clase nodo_lista.</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;             <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;                <a class="code" href="classnodo___lista.html">nodo_Lista</a>();<span class="comment">//Constructor un lista vacía</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;                ~<a class="code" href="classnodo___lista.html">nodo_Lista</a>();<span class="comment">//destructor de la clase</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;};</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="classnodo___lista_html_a2842661dbd2732440e4396ff2a78f4e9"><div class="ttname"><a href="classnodo___lista.html#a2842661dbd2732440e4396ff2a78f4e9">nodo_Lista::pAnterior</a></div><div class="ttdeci">nodo_Lista * pAnterior</div><div class="ttdoc">Puntero de la clase nodo_lista que apunta a la anterior celda de la lista, otro objeto nodo_lista...</div><div class="ttdef"><b>Definition:</b> <a href="nodo__lista_8h_source.html#l00036">nodo_lista.h:36</a></div></div>
+<div class="ttc" id="classnodo___lista_html_acc8ee49e440c757c13d8df8187509c74"><div class="ttname"><a href="classnodo___lista.html#acc8ee49e440c757c13d8df8187509c74">nodo_Lista::valor</a></div><div class="ttdeci">short valor</div><div class="ttdoc">Un número natural, de los que componen los montones con los que jugaremos. </div><div class="ttdef"><b>Definition:</b> <a href="nodo__lista_8h_source.html#l00034">nodo_lista.h:34</a></div></div>
+<div class="ttc" id="classnodo___lista_html"><div class="ttname"><a href="classnodo___lista.html">nodo_Lista</a></div><div class="ttdoc">Representa la celda de una lista, del tipo Lista[naturales], una lista en la que cada celda contiene ...</div><div class="ttdef"><b>Definition:</b> <a href="nodo__lista_8h_source.html#l00020">nodo_lista.h:20</a></div></div>
+<div class="ttc" id="namespacestd_html"><div class="ttname"><a href="namespacestd.html">std</a></div></div>
+<div class="ttc" id="classnodo___lista_html_a5abacbf7751aa5ad9705cec33eb64305"><div class="ttname"><a href="classnodo___lista.html#a5abacbf7751aa5ad9705cec33eb64305">nodo_Lista::pSiguiente</a></div><div class="ttdeci">nodo_Lista * pSiguiente</div><div class="ttdoc">Puntero de la clase nodo_lista que apunta a la siguiente celda de la lista, otro objeto nodo_lista...</div><div class="ttdef"><b>Definition:</b> <a href="nodo__lista_8h_source.html#l00035">nodo_lista.h:35</a></div></div>
+<div class="ttc" id="class_lista_html"><div class="ttname"><a href="class_lista.html">Lista</a></div><div class="ttdoc">Sirve para la representación de montones y de la cinta numérica. Lista[naturales] mediante celdas dob...</div><div class="ttdef"><b>Definition:</b> <a href="lista_8h_source.html#l00031">lista.h:31</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<hr class="footer"/><address class="footer"><small>
+PRÁCTICA 2 LISTAS Jorge Abad Méndez de Sotomayor, Miguel Gómez Olmedo;
+</small></address>

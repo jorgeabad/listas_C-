@@ -1,0 +1,10 @@
+<map id="Lista::Longitud" name="Lista::Longitud">
+<area shape="rect" id="node2" href="$class_principal.html#a20e4d3177a663df683a803731a0976a4" title="Método que muestra y permite la selección de un número que representa la posción de un montón en la l..." alt="" coords="389,5,497,32"/>
+<area shape="rect" id="node5" href="$class_lista.html#ac36788be03ce7f95e08cbfcc9b37549a" title="Imprime en orden todos los elementos de la lista. " alt="" coords="186,61,290,88"/>
+<area shape="rect" id="node8" href="$class_lista.html#ab20f6df52c782561a429cf07532f0e53" title="Imprime en orden todos los elementos de la lista menos el primero. Usado para imprimir el resto de la..." alt="" coords="169,117,307,144"/>
+<area shape="rect" id="node9" href="$classlista_montones.html#af466711a7227e57c2a5c5a5eae3f0753" title="Función que busca un montón en la lista de montones y devuelve la longitud de su lista, número de elementos en el montón. " alt="" coords="160,179,316,221"/>
+<area shape="rect" id="node3" href="$class_principal.html#a9e0bdc4b4b0622ddc540cf7cea92a065" title="Método para interactuar con el usuario durante el juego, controla y almacana las E/S por teclado..." alt="" coords="569,107,732,133"/>
+<area shape="rect" id="node4" href="$main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="Funcion que representa el punto de inicio de ejecución del programa. " alt="" coords="780,107,831,133"/>
+<area shape="rect" id="node6" href="$classlista_montones.html#a57c203fb9dd95e19808a68b15dbf4b60" title="Muestra por pantalla la información contenida en la lista de montones. " alt="" coords="364,56,521,83"/>
+<area shape="rect" id="node7" href="$class_lista.html#a4d7394b2728a00ad8404965b2e15d096" title="Destructor de la clase lista. " alt="" coords="395,107,490,133"/>
+</map>

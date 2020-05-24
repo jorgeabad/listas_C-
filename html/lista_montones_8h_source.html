@@ -1,0 +1,104 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>PRÁCTICA 2 LISTAS: Página principal</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="estilos.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top">
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">PRÁCTICA 2 LISTAS
+   &#160;<span id="projectnumber">NUMBERIS 2</span>
+   </div>
+   <div id="projectbrief">LABORATORIO DE ESTRUCTURA DE DATOS</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- Jorge -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;principal</span></a></li>
+      <li><a href="annotated.html"><span>Clases</span></a></li>
+      <li class="current"><a href="files.html"><span>Archivos</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;de&#160;archivos</span></a></li>
+      <li><a href="globals.html"><span>Miembros&#160;de&#160;los&#160;ficheros</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">listaMontones.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="lista_montones_8h.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#ifndef LISTAMONTONES_H_</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#define LISTAMONTONES_H_</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;conio.h&gt;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;stdlib.h&gt;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;stdio.h&gt;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="nodo__lista_montones_8h.html">nodo_listaMontones.h</a>&quot;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="lista_8h.html">lista.h</a>&quot;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">using namespace </span><a class="code" href="namespacestd.html">std</a>;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="classlista_montones.html">   30</a></span>&#160;<span class="keyword">class </span><a class="code" href="classlista_montones.html">listaMontones</a></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;{</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;     <span class="comment">//Atributos privados</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;     <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="classlista_montones.html#a11376281d6553cb7f186ee5a9b8ad2e6">   39</a></span>&#160;           <span class="keywordtype">int</span> <a class="code" href="classlista_montones.html#a11376281d6553cb7f186ee5a9b8ad2e6">longitud</a>; <span class="comment">//Almacena el número de celdas que contiene la lista, cantidad de montones.</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="classlista_montones.html#a33d6892a2fe1e21cd11f382c644c7993">   40</a></span>&#160;           <a class="code" href="classnodo__lista_montones.html">nodo_listaMontones</a>* <a class="code" href="classlista_montones.html#a33d6892a2fe1e21cd11f382c644c7993">primero</a>; <span class="comment">//puntero al primer nodo de la lista de montones.</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;          </div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;           </div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;     <span class="comment">//Métodos publicos</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;     <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;            <span class="comment">//CONSTRUCTORAS</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;            <a class="code" href="classlista_montones.html">listaMontones</a>(); <span class="comment">//Constructor de la lista crear una lista vacia.</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            ~<a class="code" href="classlista_montones.html">listaMontones</a>();<span class="comment">//Destructor elimina, cada nodo de la lista y su puntero.</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            <span class="keywordtype">void</span> crear_lista(<span class="keywordtype">short</span> numero_de_montones, <span class="keywordtype">short</span> elementos_monton);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;            <span class="comment">//Crea una lista con con un número determinado de montones y con un número determinado de elementos por montón</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;            </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;            <span class="comment">//OBSERVADORAS</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;            <span class="keywordtype">short</span> Longitud();<span class="comment">//Devuelve la longitud de la lista</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;            <span class="keywordtype">bool</span> es_lista_vacia();<span class="comment">//Comprueba si la lista tiene montones.</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;            <span class="keywordtype">bool</span> comprobar_posicion (<span class="keywordtype">short</span> posicionMonton);<span class="comment">//Comprueba si una posición se encuentra en la lista</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;            <span class="keywordtype">void</span> imprimir();<span class="comment">//Muestra por pantalla la lista, con los montones.</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;            <span class="keywordtype">bool</span> comprueba_Monton_vacio(<span class="keywordtype">short</span> posicionMonton);<span class="comment">//Comprueba si la lista/montón de una determinada posición está vacia.</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;            <span class="keywordtype">bool</span> comprueba_todos_vacios();<span class="comment">//Comprueba si todas los montoenes están vacíos.</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;            <span class="keywordtype">short</span> buscar_cima_monton(<span class="keywordtype">short</span> posicionMonton);<span class="comment">//Devuelve el último elemento del montón que se encuentra en la posción dada.</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;            <span class="keywordtype">short</span> longitud_del_monton(<span class="keywordtype">short</span> posicionMonton);<span class="comment">//Devuelve la longitud de un montón que se encuentra en una posción dada.</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;           </div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;            <span class="comment">//MODIFICADORAS</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;            <span class="keywordtype">void</span> menter_en_monton(<span class="keywordtype">short</span> posicionMonton,<span class="keywordtype">short</span> numero);<span class="comment">//Añade por la derecha un número natural, &#39;numero&#39;, en el montón de la posición &#39;posicionMonton&#39;</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;            <span class="keywordtype">void</span> sacar_de_monton(<span class="keywordtype">short</span> posicionMonton);<span class="comment">//Elimina el último número del monton que se encuentra en la posición &#39;posicionMonton&#39;</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;            <span class="keywordtype">void</span> resto();<span class="comment">//Elimina el primer nodo de la listaMontones.</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;};</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="classlista_montones_html_a33d6892a2fe1e21cd11f382c644c7993"><div class="ttname"><a href="classlista_montones.html#a33d6892a2fe1e21cd11f382c644c7993">listaMontones::primero</a></div><div class="ttdeci">nodo_listaMontones * primero</div><div class="ttdoc">Puntero al primer nodo de la lista de la clase nodo_listaMontones. </div><div class="ttdef"><b>Definition:</b> <a href="lista_montones_8h_source.html#l00040">listaMontones.h:40</a></div></div>
+<div class="ttc" id="namespacestd_html"><div class="ttname"><a href="namespacestd.html">std</a></div></div>
+<div class="ttc" id="classlista_montones_html"><div class="ttname"><a href="classlista_montones.html">listaMontones</a></div><div class="ttdoc">Estructura para almacenar los montones del juego. Almacena objetos de la clase Lista: listaMontones[L...</div><div class="ttdef"><b>Definition:</b> <a href="lista_montones_8h_source.html#l00030">listaMontones.h:30</a></div></div>
+<div class="ttc" id="nodo__lista_montones_8h_html"><div class="ttname"><a href="nodo__lista_montones_8h.html">nodo_listaMontones.h</a></div><div class="ttdoc">Cabecera, nodo_listaMontones (Clase que representa una celda de una listaMontones, cada celda contiene un montón que es una lista de números) </div></div>
+<div class="ttc" id="classlista_montones_html_a11376281d6553cb7f186ee5a9b8ad2e6"><div class="ttname"><a href="classlista_montones.html#a11376281d6553cb7f186ee5a9b8ad2e6">listaMontones::longitud</a></div><div class="ttdeci">int longitud</div><div class="ttdoc">Almacena un número natural con el número de nodos de la lista, cantidad de números en un montón...</div><div class="ttdef"><b>Definition:</b> <a href="lista_montones_8h_source.html#l00039">listaMontones.h:39</a></div></div>
+<div class="ttc" id="classnodo__lista_montones_html"><div class="ttname"><a href="classnodo__lista_montones.html">nodo_listaMontones</a></div><div class="ttdoc">Representa la celda de una lista, listaMontones[Lista], una lista en la que cada celda contiene una l...</div><div class="ttdef"><b>Definition:</b> <a href="nodo__lista_montones_8h_source.html#l00020">nodo_listaMontones.h:20</a></div></div>
+<div class="ttc" id="lista_8h_html"><div class="ttname"><a href="lista_8h.html">lista.h</a></div><div class="ttdoc">Cabecera. Clase Lista (Clase que representa la estructura lineal para almacenar los números de los mo...</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<hr class="footer"/><address class="footer"><small>
+PRÁCTICA 2 LISTAS Jorge Abad Méndez de Sotomayor, Miguel Gómez Olmedo;
+</small></address>

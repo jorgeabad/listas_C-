@@ -1,0 +1,11 @@
+<map id="Principal::dado" name="Principal::dado">
+<area shape="rect" id="node2" href="$class_lista.html#a79fc4d1cc0ede4aa458923cb8079dec2" title="Añade por la derecha un objeto de la clase nodo_Lista. " alt="" coords="195,122,314,149"/>
+<area shape="rect" id="node4" href="$class_lista.html#a7d4ae401380f60df080adcd2ab19c288" title="Muestra un elemento que esta en una posición concreta de la lista. " alt="" coords="182,71,327,98"/>
+<area shape="rect" id="node5" href="$classlista_montones.html#a3a11b4c7e0df702bede87d1e8d50c1aa" title="Comprueba si un montón de una determinada posición está vacío. " alt="" coords="167,5,342,47"/>
+<area shape="rect" id="node7" href="$class_lista.html#ac36788be03ce7f95e08cbfcc9b37549a" title="Imprime en orden todos los elementos de la lista. " alt="" coords="203,173,307,199"/>
+<area shape="rect" id="node8" href="$class_lista.html#a50ed254922841d4f1a81fc46d08ae2f4" title="Función para acceder a la longitud de la lista, cantidad de nodos que hay en la lista. " alt="" coords="429,198,535,225"/>
+<area shape="rect" id="node9" href="$classlista_montones.html#ac68a465266a1b5a0e1b2af1f19287934" title="Función para acceder a la longitud de la lista, cantidad de nodos que hay en la lista. " alt="" coords="175,274,335,301"/>
+<area shape="rect" id="node10" href="$class_juego.html#ada32c7b045649021ba074b65b56830bc" title="Método para obtener un número entero aleatorio entre 1 y un número máximo dado. " alt="" coords="161,325,348,351"/>
+<area shape="rect" id="node3" href="$class_lista.html#aa68b68753969da67766632304c954150" title="Comprueba si la lista, está vacía. Si hay objetos nodo_Lista, en la lista. " alt="" coords="413,122,551,149"/>
+<area shape="rect" id="node6" href="$classlista_montones.html#a7f25358eb73939738c04d8e74e7def70" title="Función que comprueba que una posición pasada es válida, si está entre 1 y la longitud de la lista..." alt="" coords="396,5,568,47"/>
+</map>

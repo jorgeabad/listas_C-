@@ -1,0 +1,515 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>PRÁCTICA 2 LISTAS: Página principal</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="estilos.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top">
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">PRÁCTICA 2 LISTAS
+   &#160;<span id="projectnumber">NUMBERIS 2</span>
+   </div>
+   <div id="projectbrief">LABORATORIO DE ESTRUCTURA DE DATOS</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- Jorge -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li class="current"><a href="index.html"><span>Página&#160;principal</span></a></li>
+      <li><a href="annotated.html"><span>Clases</span></a></li>
+      <li><a href="files.html"><span>Archivos</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Memoria de la práctica 2 </div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><dl class="section author"><dt>Autores</dt><dd>Jorge Abad Méndez de Sotomayor</dd></dl>
+<h1><a class="anchor" id="índice"></a>
+Índice memoria</h1>
+<ol type="1">
+<li><a class="el" href="index.html#punto1">Estructuras de datos usadas para el juego</a></li>
+<li><a class="el" href="index.html#punto2">Justificación de las estructuras usadas.</a></li>
+<li><a class="el" href="index.html#punto3">Otras clases del programa.</a></li>
+<li><a class="el" href="index.html#punto4">Problemas encontrados y conclusiones.</a></li>
+<li><a class="el" href="index.html#punto5">Resumen/listado de la funciones principales.</a><ul>
+<li><a class="el" href="index.html#estructuras">Funciones para crear las estructuras del juego.</a></li>
+<li><a class="el" href="index.html#dinámica">Funciones usadas para la dinámica del juego</a></li>
+</ul>
+</li>
+<li><a class="el" href="index.html#notas">Notas y funcionamiento del programa.</a><ul>
+<li><a class="el" href="index.html#destructores">Visualización de datos al ser invocado automáticamente un destructor</a></li>
+<li><a class="el" href="index.html#funcionamiento">Funcionamiento del programa</a></li>
+</ul>
+</li>
+</ol>
+<hr/>
+ <h1><a class="anchor" id="punto1"></a>
+Estructuras de datos usadas para el juego</h1>
+<p>Para representar la <b>cinta numérica</b> y cada uno de los <b>montones</b>, usamos la clase <a class="el" href="class_lista.html" title="Sirve para la representación de montones y de la cinta numérica. Lista[naturales] mediante celdas dob...">Lista</a>, que representa una estructura lineal que almacena números naturales, <a class="el" href="class_lista.html" title="Sirve para la representación de montones y de la cinta numérica. Lista[naturales] mediante celdas dob...">Lista</a>[naturales], mediante una implementación de <b>celdas doblemente enlazadas</b>, para representar las celdas de esta lista usamos la clase <a class="el" href="classnodo___lista.html" title="Representa la celda de una lista, del tipo Lista[naturales], una lista en la que cada celda contiene ...">nodo_Lista</a>, los objetos de esta clase contienen un atributo <b><em>valor</em></b> que toma el valor del número natural que se quiere almacenar y dos punteros, <b><em>pSiguiente</em></b>, <b><em>pAnterior</em></b>, de la clase <a class="el" href="classnodo___lista.html" title="Representa la celda de una lista, del tipo Lista[naturales], una lista en la que cada celda contiene ...">nodo_Lista</a> que apunta respectivamente a la siguiente y a la anterior celda de la lista. La <a class="el" href="class_lista.html" title="Sirve para la representación de montones y de la cinta numérica. Lista[naturales] mediante celdas dob...">Lista</a> contiene tres atributos un natural, <b><em>longitud</em></b>, que almacena la longitud, número de celdas que tiene la lista y dos punteros de la clase <a class="el" href="classnodo___lista.html" title="Representa la celda de una lista, del tipo Lista[naturales], una lista en la que cada celda contiene ...">nodo_Lista</a>, <b><em>primero</em></b> y <b><em>ultimio</em></b> que apuntan respectivamente a la primera y última celda de la lista.</p>
+<p>Para <b>almacenar todos los montones</b>, usamos una <b>clase</b> de nombre <a class="el" href="classlista_montones.html" title="Estructura para almacenar los montones del juego. Almacena objetos de la clase Lista: listaMontones[L...">listaMontones</a>, que representa una <b>estructura lineal que almacena objetos de la clase <a class="el" href="class_lista.html" title="Sirve para la representación de montones y de la cinta numérica. Lista[naturales] mediante celdas dob...">Lista</a></b>, es decir tipo <a class="el" href="classlista_montones.html" title="Estructura para almacenar los montones del juego. Almacena objetos de la clase Lista: listaMontones[L...">listaMontones</a>[<a class="el" href="class_lista.html" title="Sirve para la representación de montones y de la cinta numérica. Lista[naturales] mediante celdas dob...">Lista</a>], mediante la implementación de celdas enlazadas, cada celda la representamos mediante la clase <a class="el" href="classnodo__lista_montones.html" title="Representa la celda de una lista, listaMontones[Lista], una lista en la que cada celda contiene una l...">nodo_listaMontones</a>, los objetos de esta clase contienen un atributo <b><em>monton</em></b> de la clase <a class="el" href="class_lista.html" title="Sirve para la representación de montones y de la cinta numérica. Lista[naturales] mediante celdas dob...">Lista</a>, que contiene los números de cada montón, y un puntero, <b><em>pSiguiente</em></b>, de la clase <a class="el" href="classnodo__lista_montones.html" title="Representa la celda de una lista, listaMontones[Lista], una lista en la que cada celda contiene una l...">nodo_listaMontones</a> que apunta a la siguiente celda. El tipo <a class="el" href="classlista_montones.html" title="Estructura para almacenar los montones del juego. Almacena objetos de la clase Lista: listaMontones[L...">listaMontones</a> contiene un atributo <b><em>longitud</em></b>, que almacena el número de celdas que tiene la lista y un puntero, <b><em>primero</em></b> de la clase <a class="el" href="classnodo__lista_montones.html" title="Representa la celda de una lista, listaMontones[Lista], una lista en la que cada celda contiene una l...">nodo_listaMontones</a> que apunta a la primera celda de la lista.</p>
+<p>En resumen, la estructura final para el juego, <b>es una lista, en la que en cada una de sus celdas se almacena una lista numérica y un puntero a la siguiente celda</b>, está lista se caracteriza por un <b>puntero a la primera celda</b> y un <b>natural</b> que representa su <b>longitud</b>.</p>
+<p>Cada <b>lista numérica</b>, almacenada, se compone de <b>celdas</b>, las cuales almacenan un número <b>natural y dos punteros a la anterior y a la siguiente celda</b>, la lista numérica se <b>caracteriza por dos punteros, a la primera y a la última celda</b> y un número <b>natural</b> que representa la <b>longitud</b> de la lista.</p>
+<h1><a class="anchor" id="punto2"></a>
+Justificación de las estructuras usadas.</h1>
+<p>Para la lista numérica, <b>(cinta y montones)</b> hemos usado una lista doblemente enlazada, para facilitar la inserción y sobretodo la eliminación del último número de la lista, que es el elemento al que continuamente vamos a acceder en el juego, hay que tener en cuenta que hemos considerado un *orden natural de izquierda a derecha a la hora de crear y de representar la lista por pantalla, primer elemento más a la izquierda y último elemento más a la derecha, al realizar una implementación de lista doblemente enlazada tenemos un puntero, al primero y al último elemento de la lista, esto nos permite no tener que recorrer toda la lista, de izquierda a derecha, cada vez que queramos añadir, eliminar o acceder al valor del último elemento de la lista.</p>
+<p>Es decir a la hora de eliminar, el último elemento, interesa llegar a la penúltima celda y hacer que su puntero a la siguiente celda, <b><em>pSiguiente</em></b>, tome valor NULL, sin recorrer la lista podemos llegar a la penúltima celda mediante el puntero a la anterior, <b><em>pAnterior</em></b>, del último nodo, al cual llegamos mediante el puntero <b><em>ultimo</em></b> de la lista y actualizamos este puntero apuntándolo a la celda anterior, que pasará a ser la última celda de la lista. A la hora de ver el valor y añadir un nuevo elemento podemos acceder directamente al último elemento mediante el puntero <b><em>ultimo</em></b> de la <a class="el" href="class_lista.html" title="Sirve para la representación de montones y de la cinta numérica. Lista[naturales] mediante celdas dob...">Lista</a>.</p>
+<hr/>
+<p> <em>*Podíamos haber buscado la manera de que a la hora de aparecer por pantalla la lista, su primer elemento apareciese más a la derecha y así solo actuar añadiendo por la izquierda y eliminando el primero, sin necesidad de tener que tener la lista doblemente enlazada ni un puntero al último de la lista.</em> </p><hr/>
+<p> Para la lista de montones, (lista de listas numéricas) hemos usado la implementación de lista de celdas enlazadas simple, pues lo que interesa principalmente es buscar una <b>posición</b> dentro de la lista de montones y actuar sobre la lista numérica que está guardada en esa posición, <b>no accedemos siempre al mismo elemento/posición</b> por lo que recorreremos la lista hasta llegar a la posición donde se encuentra dicho montón.</p>
+<p>También hay que tener en cuenta que en la lista de montones durante el juego nunca eliminamos sus nodos, (solo al salir del programa mediante el destructor y función <a class="el" href="classlista_montones.html#a82ec0604f88d62ae951bac9bd9e1f9e9" title="Elimina el primer montón de la lista de Montones, primera celda dejando el resto. ...">listaMontones.resto()</a> de la clase), de tal manera que podemos tener una lista de montones en la que todas sus celdas contengan una lista numérica vacía, situación en la que se gana el juego.</p>
+<p>En las listas numéricas, doblemente enlazadas, si que eliminamos nodos, siempre el último, hasta poder llegar a una lista vacía y añadimos por la derecha hasta que su longitud sea el máximo de elementos fijados para los montones.</p>
+<hr/>
+<h1><a class="anchor" id="punto3"></a>
+Otras clases del programa.</h1>
+<h2><a class="anchor" id="juego"></a>
+Clase Juego</h2>
+<p>La Clase <a class="el" href="class_juego.html" title="Clase que proporciona métodos estáticos, para el funcionamiento del juego. ">Juego</a>: Permite generar, números aleatorios de 1 a n, operadores aleatorios aunque para esta versión 2 no usamos operadores aleatorios, y realización de operaciones.</p>
+<h2><a class="anchor" id="principal"></a>
+Clase Principal</h2>
+<p>La clase <a class="el" href="class_principal.html" title="Clase empleada para interactuar con el usuario y para crear objetos de las clases lista y listaMonton...">Principal</a>: provee los atributos y métodos necesarios para interactuar con el usuario, interfaz gráfica del juego y E/S de datos, principalmente: almacena la cantidad de montones del juego, elementos por montón, permite al usuario seleccionar el número de montón sobre el cual se quiere actuar, elegir el operador para realizar la operación.</p>
+<p>Permite a su vez imprimir la información tanto de la cinta numérica, como del listado de montones, y actuar sobre estos elementos, para ello está clase tiene dos atributos:</p><ul>
+<li>Un atributo llamado <b>listaM</b>, de la clase <a class="el" href="classlista_montones.html" title="Estructura para almacenar los montones del juego. Almacena objetos de la clase Lista: listaMontones[L...">listaMontones</a> que representa todos los montones del juego, cada montón es un objeto de la clase <a class="el" href="class_lista.html" title="Sirve para la representación de montones y de la cinta numérica. Lista[naturales] mediante celdas dob...">Lista</a>.</li>
+<li>Un atributo llamado <b>cinta</b> de la clase <a class="el" href="class_lista.html" title="Sirve para la representación de montones y de la cinta numérica. Lista[naturales] mediante celdas dob...">Lista</a> que representa la cinta numérica.</li>
+<li>Tiene un método llamado <a class="el" href="class_principal.html#a20e4d3177a663df683a803731a0976a4" title="Método que muestra y permite la selección de un número que representa la posción de un montón en la l...">Principal.dado()</a> que muestra, en forma de contador, al usuario las posiciones de la lista de montones, que se corresponden con listas que no están vacías, es decir los montones que aún están disponibles, el usuario al presionar una tecla detiene el contador seleccionando una posición.</li>
+</ul>
+<p>Un objeto de esta clase es instanciado por el método main, del archivo <a class="el" href="main_8cpp.html" title="cpp. Contiene la funcion que ejecuta el programa. ">main.cpp</a></p>
+<hr/>
+<h1><a class="anchor" id="punto4"></a>
+Problemas encontrados y conclusiones.</h1>
+<p>Uno de los principales problemas encontrados durante la realización de la práctica ha sido, la combinación del operador asignación y el destructor para la clase <a class="el" href="class_lista.html" title="Sirve para la representación de montones y de la cinta numérica. Lista[naturales] mediante celdas dob...">Lista</a>. Nos explicamos:</p>
+<p>Si tenemos una variable global de tipo short llamada <b><em>global</em></b> y otra variable local del mismo tipo, llamado <b><em>local</em></b> dentro de un método, podemos pasar el valor de la variable local a la global sin problemas mediante el operador asignación que hay por defecto en el compilador, (=), al salir del método, el destructor por defecto del compilador para la variable local, actúa sin afectar al valor de la variable global.</p>
+<p>En el caso de la clase <a class="el" href="class_lista.html" title="Sirve para la representación de montones y de la cinta numérica. Lista[naturales] mediante celdas dob...">Lista</a>, al contener punteros, si tenemos una situación similar a la anterior por ejemplo una <b>listaGlobal</b> y una <b>listaLocal</b>, si realizamos la asignación por defecto <b>listaGlobal=listaLocal</b>, lo que copiamos son los punteros, obteniendo varios punteros apuntando a la misma dirección de memoria, al finalizar el método donde se encuentra listaLocal, si lo hubiese creado, entraría el juego el destructor de la clase <a class="el" href="class_lista.html" title="Sirve para la representación de montones y de la cinta numérica. Lista[naturales] mediante celdas dob...">Lista</a>, que libera memoria de sus punteros <b><em>primero y ultimo</em></b> de la clase <a class="el" href="classnodo___lista.html" title="Representa la celda de una lista, del tipo Lista[naturales], una lista en la que cada celda contiene ...">nodo_Lista</a>, al ser la misma dirección de memoria perdemos también la listaGlobal.</p>
+<p>En nuestro caso teníamos un método dentro de la clase <a class="el" href="classlista_montones.html" title="Estructura para almacenar los montones del juego. Almacena objetos de la clase Lista: listaMontones[L...">listaMontones</a>, que contaba con una variable local de la clase <a class="el" href="class_lista.html" title="Sirve para la representación de montones y de la cinta numérica. Lista[naturales] mediante celdas dob...">Lista</a>, <b><em>listaAuxiliar</em></b>, esa lista era llenada de números y luego asignábamos el valor de esta variable, a una celda de la lista de montones, es decir al atributo de la clase <a class="el" href="class_lista.html" title="Sirve para la representación de montones y de la cinta numérica. Lista[naturales] mediante celdas dob...">Lista</a> <b><em>monton</em></b>, de un objeto de la clase <a class="el" href="classnodo__lista_montones.html" title="Representa la celda de una lista, listaMontones[Lista], una lista en la que cada celda contiene una l...">nodo_listaMontones</a>, de la siguiente manera; <b>monton=listaAuxiliar</b>, al salir del método o por ejemplo si usábamos <b><em>listaAuxiliar</em></b> dentro de un bucle, al salir del bucle el destructor era llamado automáticamente destruyendo <b><em>listaAuxiliar</em></b> y consecuentemente la lista <b><em>monton</em></b> del nodo.</p>
+<p>Si no creábamos el destructor de la clase <a class="el" href="class_lista.html" title="Sirve para la representación de montones y de la cinta numérica. Lista[naturales] mediante celdas dob...">Lista</a> el programa funcionaba correctamente o por lo menos si hacía lo que se pedía, al crear el destructor fallaba por todos los lados, pues teníamos otras funciones parecidas a la comentada con asignaciones.</p>
+<p>Para solucionarlo probamos a sobrecargar el operador asignación por defecto para la clase <a class="el" href="class_lista.html" title="Sirve para la representación de montones y de la cinta numérica. Lista[naturales] mediante celdas dob...">Lista</a>, de la siguiente manera. </p><div class="fragment"><div class="line"><a class="code" href="class_lista.html">Lista</a>.h</div>
+<div class="line"></div>
+<div class="line"><a class="code" href="class_lista.html">Lista</a>&amp; operator= (<a class="code" href="class_lista.html">Lista</a> l);</div>
+</div><!-- fragment --><div class="fragment"><div class="line"><a class="code" href="class_lista.html">Lista</a>.cpp</div>
+<div class="line"></div>
+<div class="line"><a class="code" href="class_lista.html">Lista</a>&amp; Lista::operator=( <a class="code" href="class_lista.html">Lista</a> l)</div>
+<div class="line">{</div>
+<div class="line">*<a class="code" href="class_lista.html#a5f68c0094acfe5035d65447202138017">ultimo</a> = *l.<a class="code" href="class_lista.html#a5f68c0094acfe5035d65447202138017">ultimo</a>;</div>
+<div class="line">*<a class="code" href="class_lista.html#a4e006bd905c6f731c5833dcbdc25a945">primero</a> = *l.<a class="code" href="class_lista.html#a4e006bd905c6f731c5833dcbdc25a945">primero</a>;</div>
+<div class="line"><a class="code" href="class_lista.html#a4a0740d60025a3da35dab76d6c6d19a1">longitud</a>=l.<a class="code" href="class_lista.html#a4a0740d60025a3da35dab76d6c6d19a1">longitud</a>;</div>
+<div class="line"><span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line">};</div>
+</div><!-- fragment --><p>Pero tampoco conseguíamos hacer funcionar correctamente todo el juego el destructor aparecía y seguía eliminando la estructura base del juego, después de probar y leer sobre constructor copia etc.. decidimos crear los métodos de otro manera para salvar esta dificultad.</p>
+<p>Al final, por ejemplo, creamos un método para la clase <a class="el" href="classlista_montones.html" title="Estructura para almacenar los montones del juego. Almacena objetos de la clase Lista: listaMontones[L...">listaMontones</a>, <a class="el" href="classlista_montones.html#ac17850afd023400ecc9c377cc834978e" title="Añade por la izquierda, iterativamente, un determinado número de montones de un tamaño determinado...">listaMontones.crear_lista()</a> , que lo que hace es directamente crear un nuevo nodo y llenar su lista, montón, directamente con los números sin pasar por una variable auxiliar, luego ese nodo es añadido por la izquierda a la lista de montones.</p>
+<p>Cuando se cierra el programa se puede comprobar como el compilador llama automáticamente a los destructores de la clase <a class="el" href="class_lista.html" title="Sirve para la representación de montones y de la cinta numérica. Lista[naturales] mediante celdas dob...">Lista</a> y <a class="el" href="classlista_montones.html" title="Estructura para almacenar los montones del juego. Almacena objetos de la clase Lista: listaMontones[L...">listaMontones</a>, <a class="el" href="class_lista.html#a4d7394b2728a00ad8404965b2e15d096" title="Destructor de la clase lista. ">Lista::~Lista()</a>, <a class="el" href="classlista_montones.html#ad7c197d688f2f51db3862a00797c6cb0" title="Destructor de la clase listaMontones. ">listaMontones::~listaMontones()</a>, que hemos implementado, también podemos observar cómo actúa el destructor de la clase <a class="el" href="class_lista.html" title="Sirve para la representación de montones y de la cinta numérica. Lista[naturales] mediante celdas dob...">Lista</a>, en la función de la clase <a class="el" href="class_principal.html" title="Clase empleada para interactuar con el usuario y para crear objetos de las clases lista y listaMonton...">Principal</a> <a class="el" href="class_principal.html#a20e4d3177a663df683a803731a0976a4" title="Método que muestra y permite la selección de un número que representa la posción de un montón en la l...">Principal.dado()</a>, donde generamos una variable de tipo <a class="el" href="class_lista.html" title="Sirve para la representación de montones y de la cinta numérica. Lista[naturales] mediante celdas dob...">Lista</a>, <b><em>listavalidos</em></b> donde almacenamos números naturales con las posiciones de la lista de montones que son válidas para seguir jugando, listas no vacías, para luego mostrarlas al usuario, observamos que cuando finaliza la función dado() el compilador llama al destructor de la clase para liberar memoria ocupada por esa variable local.</p>
+<h1><a class="anchor" id="punto5"></a>
+Resumen/listado de la funciones principales.</h1>
+<h3>Se presentan a continuación un resumen con las funciones más importantes en lo referente a las clases que representan las estructuras de datos usadas para el juego y que son la base del funcionamiento del mismo, las demás funciones de estas y otras clases se detallan igualmente en la documentación:</h3>
+<h2><a class="anchor" id="estructuras"></a>
+Funciones para crear las estructuras del juego.</h2>
+<h3><a class="anchor" id="lista"></a>
+Clase lista.</h3>
+<ul>
+<li><a class="el" href="class_lista.html#a1f668b36909182ef1360b48503529a31">Lista::Lista()</a><ul>
+<li>Constructor para crear una lista vacía.No hay ningún <a class="el" href="classnodo___lista.html" title="Representa la celda de una lista, del tipo Lista[naturales], una lista en la que cada celda contiene ...">nodo_Lista</a> creado, no hay celdas en la lista, el puntero primero y ultimo toman valor Null, y la longitud es cero. No hay ningún elemento en la lista.</li>
+</ul>
+</li>
+</ul>
+<p><br />
+</p>
+<ul>
+<li><p class="startli"><a class="el" href="class_lista.html#a13a49683e3d62145bd4cc89bb261946e">Lista::anadir_izq(short elemento)</a></p><ul>
+<li>Uso: Para la creación de los montones y cinta, con otras funciones, iterativamente hasta una cantidad determinada, añadiremos un nuevo número al montón, usando esta función.</li>
+<li>Añade por la izquierda un objeto de la clase <a class="el" href="classnodo___lista.html" title="Representa la celda de una lista, del tipo Lista[naturales], una lista en la que cada celda contiene ...">nodo_Lista</a>.</li>
+<li>Añade por la izquierda un nuevo objeto de la clase <a class="el" href="classnodo___lista.html" title="Representa la celda de una lista, del tipo Lista[naturales], una lista en la que cada celda contiene ...">nodo_Lista</a> en la lista, asignando al atributo 'valor', el número dado por 'elemento' que recoge la función, se incrementa en 1 el atributo 'longitud' y se asignana los punteros dependiendo de si la lista esta vacía o no.</li>
+</ul>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">elemento</td><td>Número natural a añadir a la lista.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p><br />
+</p>
+</li>
+<li><p class="startli"><a class="el" href="class_lista.html#a9a9df242d39735bb20a68cb06eb06682">Lista::llenarLista(short maxElementos)</a></p><ul>
+<li>Uso: Llenar inicialmente un montón con una cantidad de elementos que puede ir desde 1 hasta (maxElementos-2), cada elemento es un número del 1 al 9</li>
+<li>Añade por la izquierda, de forma iterativa, objetos de la clase <a class="el" href="classnodo___lista.html" title="Representa la celda de una lista, del tipo Lista[naturales], una lista en la que cada celda contiene ...">nodo_Lista</a>, hasta llegar a un número de elementos determinado.</li>
+<li>Para hallar la cantidad de elementos que ha de tener la lista, 'elementosMonton', usamos la función <a class="el" href="class_juego.html#ada32c7b045649021ba074b65b56830bc" title="Método para obtener un número entero aleatorio entre 1 y un número máximo dado. ">Juego::obtenerNumeroHasta(short n)</a> de la clase <a class="el" href="class_juego.html" title="Clase que proporciona métodos estáticos, para el funcionamiento del juego. ">Juego</a>, que nos devuelve un número entero aleatorio entre 1 y n, donde 'n' toma el valor del resultado de la operación: (maxElementos-2), es decir, la cantidad máxima de elementos que pueden tener los montones menos dos.</li>
+<li>Por último se llama a la función anadir_izq(short n), iterativamente, tantas veces como indique el valor 'elementosMonton', para cada iteración, 'n' toma el valor pasado por la función <a class="el" href="class_juego.html#a5214c907b756f2d8894d2368e1419de9" title="Método para obtener un número entero aleatorio entre 1 y 9. ">Juego::obtenerNumero()</a> que devuelve un número entre 1 y 9, para que dicho número se añada por la izquierda a la lista.</li>
+</ul>
+<dl class="section see"><dt>Ver también</dt><dd><a class="el" href="class_lista.html#a13a49683e3d62145bd4cc89bb261946e" title="Añade por la izquierda un objeto de la clase nodo_Lista. ">Lista.anadir_izq(short n)</a></dd></dl>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">maxElementos</td><td>Número máximo de elementos que pueden alcanzar los montones, determinará el número de elementos inicial de cada montón al restarle dos y pasar ese valor a la función <a class="el" href="class_juego.html#ada32c7b045649021ba074b65b56830bc" title="Método para obtener un número entero aleatorio entre 1 y un número máximo dado. ">Juego::obtenerNumeroHasta(short n)</a>.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p><br />
+</p>
+</li>
+</ul>
+<h3><a class="anchor" id="listaMontones"></a>
+Clase listaMontones</h3>
+<ul>
+<li><a class="el" href="classlista_montones.html#a2a6eef45383864f0d9b27dccb26ca73c">listaMontones::listaMontones()</a><ul>
+<li>Constructor para crear una <a class="el" href="classlista_montones.html" title="Estructura para almacenar los montones del juego. Almacena objetos de la clase Lista: listaMontones[L...">listaMontones</a> vacía.</li>
+<li>No hay ningún <a class="el" href="classnodo__lista_montones.html" title="Representa la celda de una lista, listaMontones[Lista], una lista en la que cada celda contiene una l...">nodo_listaMontones</a> creado, no hay celdas en la lista, el puntero primero toma valor Null, y la longitud es cero. No hay ningún montón.</li>
+</ul>
+</li>
+</ul>
+<p><br />
+</p>
+<ul>
+<li><p class="startli"><a class="el" href="classlista_montones.html#ac17850afd023400ecc9c377cc834978e">listaMontones::crear_lista(short numero_de_montones, short elementos_monton)</a></p><ul>
+<li>Uso: Crear una lista de montones para usar en el juego, de 1 a 10 montones, cada montón con una determinada cantidad de números.</li>
+<li>Añade por la izquierda, iterativamente, un determinado número de montones de un tamaño determinado.</li>
+<li>Añade por la izquierda, de forma iterativa, un nuevo objeto de la clase <a class="el" href="classnodo__lista_montones.html" title="Representa la celda de una lista, listaMontones[Lista], una lista en la que cada celda contiene una l...">nodo_listaMontones</a>, hasta llegar al número de montones determinado por el valor de la variable numero_de_montones. Al atributo "monton" de la clase <a class="el" href="class_lista.html" title="Sirve para la representación de montones y de la cinta numérica. Lista[naturales] mediante celdas dob...">Lista</a>, Lista.monton, que pertenece al nuevo objeto, <a class="el" href="classnodo__lista_montones.html" title="Representa la celda de una lista, listaMontones[Lista], una lista en la que cada celda contiene una l...">nodo_listaMontones</a> , se le añade una serie de números naturales mediante la función llenarLista(short n) de la clase <a class="el" href="class_lista.html" title="Sirve para la representación de montones y de la cinta numérica. Lista[naturales] mediante celdas dob...">Lista</a>, la cantidad de números que tiene el montón parte del valor pasado en la variable elementos_monton y que es pasada a la función <a class="el" href="class_lista.html#a9a9df242d39735bb20a68cb06eb06682" title="Llena la lista, con un número aleatorio de objetos nodo_Lista, dentro de un rango determinado...">Lista.llenarLista(short n)</a>.</li>
+</ul>
+<dl class="section see"><dt>Ver también</dt><dd><a class="el" href="class_lista.html#a9a9df242d39735bb20a68cb06eb06682" title="Llena la lista, con un número aleatorio de objetos nodo_Lista, dentro de un rango determinado...">Lista.llenarLista(short n)</a></dd></dl>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">numero_de_montones</td><td>Número de montones, cantidad de listas a añadir a la lista de Montones. </td></tr>
+    <tr><td class="paramname">elementos_monton</td><td>Número máximo de elementos que pueden tener los montones, determinará el número de elementos inicial de cada montón.</td></tr>
+  </table>
+  </dd>
+</dl>
+<hr/>
+</li>
+</ul>
+<h2><a class="anchor" id="dinámica"></a>
+Funciones usadas para la dinámica del juego</h2>
+<h3><a class="anchor" id="lista2"></a>
+Clase lista.</h3>
+<ul>
+<li><a class="el" href="class_lista.html#a79fc4d1cc0ede4aa458923cb8079dec2">Lista::anadir_der(short elemento)</a><ul>
+<li>Uso: Para añadir un nuevo elemento a la cima del montón o la cinta numérica.</li>
+<li>Añade por la derecha un nuevo objeto de la clase <a class="el" href="classnodo___lista.html" title="Representa la celda de una lista, del tipo Lista[naturales], una lista en la que cada celda contiene ...">nodo_Lista</a> en la lista, asignando al atributo 'valor' el número dado por 'elemento' que recoge la función, se incrementa en 1 atributo longitud y se asignan a los punteros dependiendo de si la lista esta vacía o no. <dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">elemento</td><td>Número natural a añadir a la lista.</td></tr>
+  </table>
+  </dd>
+</dl>
+</li>
+</ul>
+</li>
+<li>short <a class="el" href="class_lista.html#ab35c033b4b066f396176e4a19311c2fc" title="Muestra el último elemento de la lista. ">Lista::final()</a><ul>
+<li>Uso: Para obtener el valor de la cima del montón y posteriormente operar con ese valor.</li>
+<li>Muestra el valor de atributo 'valor' del nodo al que apunta el puntero 'ultimo' de la lista. <dl class="retval"><dt>Valores devueltos</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">e</td><td>Número natural con el valor del último elemento de la lista</td></tr>
+  </table>
+  </dd>
+</dl>
+</li>
+</ul>
+</li>
+<li>short <a class="el" href="class_lista.html#a13956d96fa086a2aba1579217c7cf945" title="Muestra el primer elemento de la lista. ">Lista::inicial()</a><ul>
+<li>Uso: Para obtener el valor del primer elemento de la cinta numérica y posteriormente operar con ese valor.</li>
+<li>Muestra el valor del atributo 'valor' del <a class="el" href="classnodo___lista.html" title="Representa la celda de una lista, del tipo Lista[naturales], una lista en la que cada celda contiene ...">nodo_Lista</a> al que apunta el puntero 'primero' de la lista. <dl class="retval"><dt>Valores devueltos</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">e</td><td>Número natural que se encuentra en el primer nodo de la lista.</td></tr>
+  </table>
+  </dd>
+</dl>
+</li>
+</ul>
+</li>
+<li>short <a class="el" href="class_lista.html#a50ed254922841d4f1a81fc46d08ae2f4" title="Función para acceder a la longitud de la lista, cantidad de nodos que hay en la lista. ">Lista::Longitud()</a><ul>
+<li>Uso: Para comprobar el número de elementos del montón, y saber si se llego al máximo configurado en el juego.</li>
+<li>Función para acceder a la longitud de la lista, cantidad de nodos que hay en la lista. <dl class="retval"><dt>Valores devueltos</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">n</td><td>Un número natural que representa la cantidad de elementos que hay en la lista.</td></tr>
+  </table>
+  </dd>
+</dl>
+</li>
+</ul>
+</li>
+<li>void <a class="el" href="class_lista.html#a280a914f006a27a57fdaf955d7f48bf8" title="Elimina el último nodo de la lista, última celda de la lista. ">Lista::eult()</a><ul>
+<li>Uso: Para eliminar la cima del montón.</li>
+<li>Elimina el último nodo de la lista, última celda de la lista.</li>
+<li>Un puntero auxiliar de la clase <a class="el" href="classnodo___lista.html" title="Representa la celda de una lista, del tipo Lista[naturales], una lista en la que cada celda contiene ...">nodo_Lista</a> toma el valor de 'ultimo' luego la función actualiza el puntero 'ultimo' pasando a apuntar al anterior elemento de la lista, penúltimo, este elemento pasa a ser el último de la lista y como tal su puntero a la siguiente celda, 'pSiguiente' apuntara a 'NULL', después liberamos el puntero auxiliar borrando así el que antes era el último nodo.</li>
+</ul>
+</li>
+</ul>
+<p><br />
+</p>
+<ul>
+<li>void <a class="el" href="class_lista.html#a2e5fda0cc0fd10ea2b7ce32570671b1f" title="Elimina el primer nodo de la lista, primera celda, dejando el resto de la lista. ">Lista::resto()</a><ul>
+<li>Uso: Para eliminar el primer elemento de la cinta numérica.</li>
+<li>Elimina el primer nodo de la lista, primera celda, dejando el resto de la lista.</li>
+<li>Un puntero auxiliar de la clase <a class="el" href="classnodo___lista.html" title="Representa la celda de una lista, del tipo Lista[naturales], una lista en la que cada celda contiene ...">nodo_Lista</a> toma el valor de 'primero', luego la función actualiza el puntero 'primero' pasando a apuntar al siguiente elemento de la lista, segundo, este elemento pasa a ser el primero de la lista y como tal su puntero a la anterior celda, 'pAnterior' apuntara a 'NULL', después liberamos el puntero auxiliar borrando así el que antes era el primer nodo.</li>
+</ul>
+</li>
+</ul>
+<p><br />
+</p>
+<ul>
+<li>bool <a class="el" href="class_lista.html#aa68b68753969da67766632304c954150" title="Comprueba si la lista, está vacía. Si hay objetos nodo_Lista, en la lista. ">Lista::es_lista_vacia()</a><ul>
+<li>Uso:Para comprobar si ya no hay elementos en el montón.</li>
+<li>Comprueba si la lista, está vacía. Si hay objetos nodos_Lista, en la lista.</li>
+<li>Comprueba si el atributo longitud es igual a 0, si es igual a 0 devuelve true en caso contrario devuelve false. <dl class="retval"><dt>Valores devueltos</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">true</td><td>la lista está vacía. </td></tr>
+    <tr><td class="paramname">false</td><td>la lista tiene celdas, no está vacía.</td></tr>
+  </table>
+  </dd>
+</dl>
+</li>
+</ul>
+</li>
+<li><p class="startli">short <a class="el" href="class_lista.html#a7d4ae401380f60df080adcd2ab19c288" title="Muestra un elemento que esta en una posición concreta de la lista. ">Lista::cogerElemento(short posicion)</a></p><ul>
+<li>Uso: Lo usamos para devolver el elemento que ocupa una determinada posición en una lista, esa lista es una lista numérica dónde solo almacenaremos las posiciones de los montones que no están vacíos. Cada vez que el usuario pida un montón llamará a la función <a class="el" href="class_principal.html#a20e4d3177a663df683a803731a0976a4" title="Método que muestra y permite la selección de un número que representa la posción de un montón en la l...">Principal.dado()</a> que comprueba que posiciones de la lista de montones NO tienen montones vacíos, esas posiciones se almacenan en una lista, posteriormente e iterativamente hasta que el usuario apriete una tecla generamos un número aleatorio entre 1 y la longitud de la lista, mediante la función <a class="el" href="class_juego.html#ada32c7b045649021ba074b65b56830bc" title="Método para obtener un número entero aleatorio entre 1 y un número máximo dado. ">Juego::obtenerNumeroHasta(short n)</a>, ese número lo pasamos a esta función que nos devuelve el elemento (número de montón) que está en esa posición y lo mostramos por pantalla.</li>
+<li>Muestra un elemento que está en una posicion concreta de la lista.</li>
+<li>La función recorre la lista hasta que alcanza la posicion deseada, devolviendo el valor del número almacenado en ese nodo, atributo 'valor'.</li>
+</ul>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">posicion</td><td>Número natural, que indica la posición de la celda, nodo del cual queremos obtener el valor. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Valores devueltos</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">natural</td><td>El número que se encuentra alamacenado en el nodo que ocupa la posición pedida 'posicion'.</td></tr>
+  </table>
+  </dd>
+</dl>
+</li>
+<li>void <a class="el" href="class_lista.html#ac36788be03ce7f95e08cbfcc9b37549a" title="Imprime en orden todos los elementos de la lista. ">Lista::imprimir()</a><ul>
+<li>Uso: Mostrar por pantalla el contenido de los montones del juego.</li>
+<li>Imprime en orden todos los elementos de la lista.</li>
+<li>La función imprime todos los elementos de la lista y si está vacia muestra un mensaje. Mediante un puntero auxiliar de la clase <a class="el" href="classnodo___lista.html" title="Representa la celda de una lista, del tipo Lista[naturales], una lista en la que cada celda contiene ...">nodo_Lista</a> recorremos la lista desde el primero al último elemento, mostrando por pantalla para cada nodo el valor contenido en el atributo 'valor', al final se muestra por pantalla también el número de elementos que tiene la lista.</li>
+</ul>
+</li>
+</ul>
+<p><br />
+</p>
+<ul>
+<li>void <a class="el" href="class_lista.html#ab20f6df52c782561a429cf07532f0e53" title="Imprime en orden todos los elementos de la lista menos el primero. Usado para imprimir el resto de la...">Lista::imprimirResto()</a><ul>
+<li>Uso: imprimir el resto de la cinta numérica, todos los elementos de la cinta menos el primero.</li>
+<li>Imprime en orden todos los elementos de la lista menos el primero.</li>
+<li>La función imprime todos los elementos de la lista menos el primero. Mediante un puntero de la clase <a class="el" href="classnodo___lista.html" title="Representa la celda de una lista, del tipo Lista[naturales], una lista en la que cada celda contiene ...">nodo_Lista</a> recorremos la lista desde el primero al último elemento, mostrando por pantalla para cada nodo, menos para el primero, el valor contenido en el atributo 'valor', al final se muestra por pantalla también el número de elementos que tiene la lista.</li>
+</ul>
+</li>
+</ul>
+<p><br />
+</p>
+<h3><a class="anchor" id="listaMontones2"></a>
+Clase listaMontones</h3>
+<ul>
+<li>short <a class="el" href="classlista_montones.html#ac68a465266a1b5a0e1b2af1f19287934" title="Función para acceder a la longitud de la lista, cantidad de nodos que hay en la lista. ">listaMontones::Longitud()</a><ul>
+<li>Uso: Determinara la cantidad de montones que hay en la lista, nos sirve para asignar posiciones a los montones dentro de la lista, que siempre irán desde 1 a la longitud, sacamos las posiciones mediante una variable contador.</li>
+<li>Función para acceder a la longitud de la lista, cantidad de nodos que hay en la lista. <dl class="retval"><dt>Valores devueltos</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">longitud</td><td>Un número natural que representa la cantidad de montones que hay en la lista.</td></tr>
+  </table>
+  </dd>
+</dl>
+</li>
+</ul>
+</li>
+<li>short <a class="el" href="classlista_montones.html#ad9a66ce9248edae2ab45903deaee0651" title="Función que busca un montón en la lista de montones y devuelve el último elemento de su lista...">listaMontones::buscar_cima_monton(short numeroMonton)</a><ul>
+<li>Uso: Para acceder al último elemento de un montón determinado. El número del montón sería una posición dentro de la lista de montones.</li>
+<li>La función busca la posición que ocupa un <a class="el" href="classnodo__lista_montones.html" title="Representa la celda de una lista, listaMontones[Lista], una lista en la que cada celda contiene una l...">nodo_listaMontones</a>, según el valor de la variable numeroMonton y una vez encontrado, devuelve el valor almacenado en la última celda de su lista correspondiente, atributo monton, usando el método final() de la clase <a class="el" href="class_lista.html" title="Sirve para la representación de montones y de la cinta numérica. Lista[naturales] mediante celdas dob...">Lista</a>. <dl class="section see"><dt>Ver también</dt><dd><a class="el" href="class_lista.html#ab35c033b4b066f396176e4a19311c2fc" title="Muestra el último elemento de la lista. ">Lista.final()</a></dd></dl>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">numeroMonton</td><td>Posición que ocupa el montón en la <a class="el" href="classlista_montones.html" title="Estructura para almacenar los montones del juego. Almacena objetos de la clase Lista: listaMontones[L...">listaMontones</a>, Posición del <a class="el" href="classnodo__lista_montones.html" title="Representa la celda de una lista, listaMontones[Lista], una lista en la que cada celda contiene una l...">nodo_listaMontones</a>. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Valores devueltos</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">natural</td><td>Número natural almacenado en el último elemento de la lista, que pertenece al montón buscado.</td></tr>
+  </table>
+  </dd>
+</dl>
+</li>
+</ul>
+</li>
+<li>short <a class="el" href="classlista_montones.html#af466711a7227e57c2a5c5a5eae3f0753" title="Función que busca un montón en la lista de montones y devuelve la longitud de su lista, número de elementos en el montón. ">listaMontones::longitud_del_monton(short numeroMonton)</a><ul>
+<li>Uso: Para comprobar la cantidad de elementos que hay en un montón determinado, (montón que se encuentra en una posición).</li>
+<li>Usamos esta función para ver si algún montón ha llegado al límite máximo de elementos que puede tener, juego perdido.</li>
+<li>Función que busca un montón en la lista de montones y devuelve la longitud de su lista, número de elementos en el montón.</li>
+<li>La función, avanzando iterativamente, busca la posición que ocupa un <a class="el" href="classnodo__lista_montones.html" title="Representa la celda de una lista, listaMontones[Lista], una lista en la que cada celda contiene una l...">nodo_listaMontones</a>, según el valor de la variable 'numeroMonton' y una vez encontrado, devuelve la longitud correspondiente a su atributo 'monton', usando el método <a class="el" href="class_lista.html#a50ed254922841d4f1a81fc46d08ae2f4" title="Función para acceder a la longitud de la lista, cantidad de nodos que hay en la lista. ">Lista.Longitud()</a> de la clase <a class="el" href="class_lista.html" title="Sirve para la representación de montones y de la cinta numérica. Lista[naturales] mediante celdas dob...">Lista</a>. <dl class="section see"><dt>Ver también</dt><dd><a class="el" href="class_lista.html#a50ed254922841d4f1a81fc46d08ae2f4" title="Función para acceder a la longitud de la lista, cantidad de nodos que hay en la lista. ">Lista.Longitud()</a></dd></dl>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">numeroMonton</td><td>Posición que ocupa el montón en la <a class="el" href="classlista_montones.html" title="Estructura para almacenar los montones del juego. Almacena objetos de la clase Lista: listaMontones[L...">listaMontones</a>, Posición del <a class="el" href="classnodo__lista_montones.html" title="Representa la celda de una lista, listaMontones[Lista], una lista en la que cada celda contiene una l...">nodo_listaMontones</a>. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Valores devueltos</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">Número</td><td>natural que representa la cantidad de elementos que hay en la lista de ese montón.</td></tr>
+  </table>
+  </dd>
+</dl>
+</li>
+</ul>
+</li>
+<li>bool <a class="el" href="classlista_montones.html#a737020d482ed24c5432d5b160e5686b2" title="Comprueba si todos los montones almacenados en la lista están vacios, listas vacias. ">listaMontones::comprueba_todos_vacios()</a><ul>
+<li>Uso: Para comprobar si todos los montones están vacíos, juego ganado.</li>
+<li>Comprueba si todos los montones almacenados en la lista están vacíos, listas vacías.</li>
+<li>Comprobamos iterativamente que cada <a class="el" href="classnodo__lista_montones.html" title="Representa la celda de una lista, listaMontones[Lista], una lista en la que cada celda contiene una l...">nodo_listaMontones</a> tenga su atributo 'monton' como una lista vacía, para ello usamos iterativamente la función <a class="el" href="classlista_montones.html#a3a11b4c7e0df702bede87d1e8d50c1aa" title="Comprueba si un montón de una determinada posición está vacío. ">listaMontones.comprueba_Monton_vacio(short numeroMonton)</a> pasándole la posición del montón hasta llegar al final de la lista o hasta encontrar un montón que no este vacío. <dl class="retval"><dt>Valores devueltos</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">true</td><td>Todos los nodos de la <a class="el" href="classlista_montones.html" title="Estructura para almacenar los montones del juego. Almacena objetos de la clase Lista: listaMontones[L...">listaMontones</a> tienen su lista vacía. </td></tr>
+    <tr><td class="paramname">false</td><td>Algún montón de la <a class="el" href="classlista_montones.html" title="Estructura para almacenar los montones del juego. Almacena objetos de la clase Lista: listaMontones[L...">listaMontones</a>, tiene una lista que contiene algún elemento.</td></tr>
+  </table>
+  </dd>
+</dl>
+</li>
+</ul>
+</li>
+<li>bool <a class="el" href="classlista_montones.html#a3a11b4c7e0df702bede87d1e8d50c1aa" title="Comprueba si un montón de una determinada posición está vacío. ">listaMontones::comprueba_Monton_vacio(short numeroMonton)</a><ul>
+<li>Uso: Para comprobar si un determinado montón, que se encuentra en una determinada posición, está vacío.</li>
+<li>Usamos esta función para solo mostrar las posiciones que están llenas cuando se ejecuta la elección del montón mediante el dado, función <a class="el" href="class_principal.html#a20e4d3177a663df683a803731a0976a4" title="Método que muestra y permite la selección de un número que representa la posción de un montón en la l...">Principal::dado()</a>, y junto a la función <a class="el" href="classlista_montones.html#a737020d482ed24c5432d5b160e5686b2" title="Comprueba si todos los montones almacenados en la lista están vacios, listas vacias. ">listaMontones.comprueba_todos_vacios()</a> para ver si todos los montones están vacíos y se ha ganado el juego.</li>
+<li>La función, avanzando iterativamente, busca la posición que ocupa un <a class="el" href="classnodo__lista_montones.html" title="Representa la celda de una lista, listaMontones[Lista], una lista en la que cada celda contiene una l...">nodo_listaMontones</a>, según el valor de la variable numeroMonton y una vez encontrado, devuelve un valor lógico correspondiente al método es_lista_vacia() de su atributo 'monton', de la clase <a class="el" href="class_lista.html" title="Sirve para la representación de montones y de la cinta numérica. Lista[naturales] mediante celdas dob...">Lista</a>. <dl class="section see"><dt>Ver también</dt><dd><a class="el" href="class_lista.html#aa68b68753969da67766632304c954150" title="Comprueba si la lista, está vacía. Si hay objetos nodo_Lista, en la lista. ">Lista.es_lista_vacia()</a></dd></dl>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">numeroMonton</td><td>posición que ocupa el montón que queremos buscar. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Valores devueltos</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">true</td><td>El nodo que ocupa la posición= 'numeroMonton' de <a class="el" href="classlista_montones.html" title="Estructura para almacenar los montones del juego. Almacena objetos de la clase Lista: listaMontones[L...">listaMontones</a> tienen su lista vacía. </td></tr>
+    <tr><td class="paramname">false</td><td>El nodo que ocupa la posición= 'numeroMonton' de <a class="el" href="classlista_montones.html" title="Estructura para almacenar los montones del juego. Almacena objetos de la clase Lista: listaMontones[L...">listaMontones</a> NO tienen su lista vacía.</td></tr>
+  </table>
+  </dd>
+</dl>
+</li>
+</ul>
+</li>
+<li><a class="el" href="classlista_montones.html#abcb2d2e1b2f088c74a2927af1b6d4c80">listaMontones::menter_en_monton(short numeroMonton,short numero )</a><ul>
+<li>Uso: Para añadir un elemento al final de un montón que ocupa una posición determinada.</li>
+<li>Usamos esta función cuando por las reglas del juego sea necesario añadir un número como último elemento de un montón determinado.</li>
+<li>Función que busca un montón y añade por la derecha un número natural a la lista de ese montón.</li>
+<li>La función busca la posición que ocupa un <a class="el" href="classnodo__lista_montones.html" title="Representa la celda de una lista, listaMontones[Lista], una lista en la que cada celda contiene una l...">nodo_listaMontones</a>, según el valor de la variable 'numeroMonton' y una vez encontrado, a su lista, atributo 'monton', le añade por la derecha un número natural que ha sido pasado en la variable 'numero', usando el método anadir_der(short elemento) de la clase <a class="el" href="class_lista.html" title="Sirve para la representación de montones y de la cinta numérica. Lista[naturales] mediante celdas dob...">Lista</a>. <dl class="section see"><dt>Ver también</dt><dd><a class="el" href="class_lista.html" title="Sirve para la representación de montones y de la cinta numérica. Lista[naturales] mediante celdas dob...">Lista</a> </dd>
+<dd>
+<a class="el" href="class_lista.html#a79fc4d1cc0ede4aa458923cb8079dec2" title="Añade por la derecha un objeto de la clase nodo_Lista. ">Lista.anadir_der(short elemento)</a> </dd></dl>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">numeroMonton</td><td>Posición del montón en la <a class="el" href="classlista_montones.html" title="Estructura para almacenar los montones del juego. Almacena objetos de la clase Lista: listaMontones[L...">listaMontones</a>. Posición del <a class="el" href="classnodo__lista_montones.html" title="Representa la celda de una lista, listaMontones[Lista], una lista en la que cada celda contiene una l...">nodo_listaMontones</a> donde queremos añadir el número. </td></tr>
+    <tr><td class="paramname">numero</td><td>Número natural que se quiere añadir a la lista del <a class="el" href="classnodo__lista_montones.html" title="Representa la celda de una lista, listaMontones[Lista], una lista en la que cada celda contiene una l...">nodo_listaMontones</a> buscado.</td></tr>
+  </table>
+  </dd>
+</dl>
+</li>
+</ul>
+</li>
+<li>void <a class="el" href="classlista_montones.html#aa054c664099d48410a115e1862cf6e65" title="Elimina el último elemento de la lista que corresponde a un número de mónton determinado. ">listaMontones::sacar_de_monton(short numeroMonton)</a><ul>
+<li>Uso: Para eliminar la cima del montón que ocupa una posición determinada.</li>
+<li>Usamos esta función cuando por las reglas del juego sea necesario eliminar la cima, último elemento, de un montón determinado.</li>
+<li>Elimina el último elemento de la lista que corresponde a un número de montón determinado.</li>
+<li>La función, avanzando iterativamente, busca la posición que ocupa un <a class="el" href="classnodo__lista_montones.html" title="Representa la celda de una lista, listaMontones[Lista], una lista en la que cada celda contiene una l...">nodo_listaMontones</a>, según el valor de la variable 'numeroMonton' y una vez encontrado, mediante el método <a class="el" href="class_lista.html#a280a914f006a27a57fdaf955d7f48bf8" title="Elimina el último nodo de la lista, última celda de la lista. ">Lista.eult()</a> de su atributo 'monton', clase <a class="el" href="class_lista.html" title="Sirve para la representación de montones y de la cinta numérica. Lista[naturales] mediante celdas dob...">Lista</a>, elimina el último elemento de la lista. <dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">numeroMonton</td><td>posición que ocupa el montón del cuál que queremos sacar un elemento. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>Ver también</dt><dd><a class="el" href="class_lista.html#a280a914f006a27a57fdaf955d7f48bf8" title="Elimina el último nodo de la lista, última celda de la lista. ">Lista.eult()</a></dd></dl>
+</li>
+</ul>
+</li>
+<li><p class="startli"><a class="el" href="classlista_montones.html#a57c203fb9dd95e19808a68b15dbf4b60">listaMontones::imprimir()</a></p><ul>
+<li>Usamos esta función para mostrar la lista de montones con su contenido.</li>
+<li>Muestra por pantalla la información contenida en la lista de montones.</li>
+<li>Muestra por pantalla la posición del <a class="el" href="classnodo__lista_montones.html" title="Representa la celda de una lista, listaMontones[Lista], una lista en la que cada celda contiene una l...">nodo_listaMontones</a> en la <a class="el" href="classlista_montones.html" title="Estructura para almacenar los montones del juego. Almacena objetos de la clase Lista: listaMontones[L...">listaMontones</a> y a su vez imprime la lista de números mediante el método <a class="el" href="class_lista.html#ac36788be03ce7f95e08cbfcc9b37549a" title="Imprime en orden todos los elementos de la lista. ">Lista.imprimir()</a> de la clase <a class="el" href="class_lista.html" title="Sirve para la representación de montones y de la cinta numérica. Lista[naturales] mediante celdas dob...">Lista</a> de su atributo 'monton'.</li>
+</ul>
+<dl class="section see"><dt>Ver también</dt><dd><a class="el" href="class_lista.html#ac36788be03ce7f95e08cbfcc9b37549a" title="Imprime en orden todos los elementos de la lista. ">Lista.imprimir()</a></dd></dl>
+<hr/>
+</li>
+</ul>
+<h1><a class="anchor" id="notas"></a>
+Notas y funcionamiento del programa.</h1>
+<h2><a class="anchor" id="destructores"></a>
+Visualización de datos al ser invocado automáticamente un destructor</h2>
+<p>En la implementación de los destructores de las clases, se ha permitido imprimir por pantalla información para ver cuando son llamados, además para los destructores de los objetos de las clases <a class="el" href="class_lista.html" title="Sirve para la representación de montones y de la cinta numérica. Lista[naturales] mediante celdas dob...">Lista</a> y <a class="el" href="classlista_montones.html" title="Estructura para almacenar los montones del juego. Almacena objetos de la clase Lista: listaMontones[L...">listaMontones</a> se imprime la situación de cómo van quedando las listas, según se van eliminando.</p>
+<p>Cuando salimos del programa se observa como entran en juego los destructores de la clases creadas: <a class="el" href="class_lista.html" title="Sirve para la representación de montones y de la cinta numérica. Lista[naturales] mediante celdas dob...">Lista</a>, <a class="el" href="classlista_montones.html" title="Estructura para almacenar los montones del juego. Almacena objetos de la clase Lista: listaMontones[L...">listaMontones</a>, <a class="el" href="classnodo___lista.html" title="Representa la celda de una lista, del tipo Lista[naturales], una lista en la que cada celda contiene ...">nodo_Lista</a>, <a class="el" href="classnodo__lista_montones.html" title="Representa la celda de una lista, listaMontones[Lista], una lista en la que cada celda contiene una l...">nodo_listaMontones</a>, observamos como primero llama al destructor de la clase <a class="el" href="class_lista.html" title="Sirve para la representación de montones y de la cinta numérica. Lista[naturales] mediante celdas dob...">Lista</a> para destruir la cinta numérica, la función <a class="el" href="class_lista.html#a2e5fda0cc0fd10ea2b7ce32570671b1f" title="Elimina el primer nodo de la lista, primera celda, dejando el resto de la lista. ">Lista::resto()</a>, elimina nodo a nodo la lista, para cada iteración, observamos cómo se usa el destructor de la clase <a class="el" href="classnodo___lista.html" title="Representa la celda de una lista, del tipo Lista[naturales], una lista en la que cada celda contiene ...">nodo_Lista</a>.</p>
+<p>A continuación es llamado el destructor de la clase <a class="el" href="classlista_montones.html" title="Estructura para almacenar los montones del juego. Almacena objetos de la clase Lista: listaMontones[L...">listaMontones</a>, para eliminar el listado de montones (lista de listas numéricas), la función <a class="el" href="classlista_montones.html#a82ec0604f88d62ae951bac9bd9e1f9e9" title="Elimina el primer montón de la lista de Montones, primera celda dejando el resto. ...">listaMontones.resto()</a> elimina iterativamente nodo a nodo la lista, para cada iteración vemos como es llamado primero el destructor de la clase <a class="el" href="classnodo__lista_montones.html" title="Representa la celda de una lista, listaMontones[Lista], una lista en la que cada celda contiene una l...">nodo_listaMontones</a>, como cada <a class="el" href="classnodo__lista_montones.html" title="Representa la celda de una lista, listaMontones[Lista], una lista en la que cada celda contiene una l...">nodo_listaMontones</a> tiene una lista, se llama al destructor de la clase <a class="el" href="class_lista.html" title="Sirve para la representación de montones y de la cinta numérica. Lista[naturales] mediante celdas dob...">Lista</a> que a su vez llama al destructor de la clase <a class="el" href="classnodo___lista.html" title="Representa la celda de una lista, del tipo Lista[naturales], una lista en la que cada celda contiene ...">nodo_Lista</a> cada vez que elimina uno de sus nodos.</p>
+<p>Lo podemos observar en las imágenes 1 y 2 donde observamos la situación inicial, actual del juego (img1) y lo que se muestra al salir del juego en ese momento (img2). </p><div class="image">
+<img src="destructor1.png" alt="destructor1.png"/>
+<div class="caption">
+img1 Situación inicial</div></div>
+  <div class="image">
+<img src="destructor2.png" alt="destructor2.png"/>
+<div class="caption">
+img2 Situación al salir del juego</div></div>
+  También podemos ver por pantalla de forma fugaz el uso de destructores cuando se finaliza la función <a class="el" href="class_principal.html#a20e4d3177a663df683a803731a0976a4" title="Método que muestra y permite la selección de un número que representa la posción de un montón en la l...">Principal.dado()</a>, dónde se destruye un objeto de la clase <a class="el" href="class_lista.html" title="Sirve para la representación de montones y de la cinta numérica. Lista[naturales] mediante celdas dob...">Lista</a>, también cuando eliminamos alguna cima de un montón o en cada turno de juego, cuando sale el primero de la cinta numérica, en ambos casos se usa el destructor de la clase <a class="el" href="classnodo___lista.html" title="Representa la celda de una lista, del tipo Lista[naturales], una lista en la que cada celda contiene ...">nodo_Lista</a>.</p>
+<h2><a class="anchor" id="funcionamiento"></a>
+Funcionamiento del programa</h2>
+<ul>
+<li>Al entrar el usuario elige el número de montones, se controlarán las posibles errores fuera de rango y no numérico (img3). <div class="image">
+<img src="imagen2.png" alt="imagen2.png"/>
+<div class="caption">
+img3 Número de montones</div></div>
+ </li>
+<li>El usuario elige el número de elementos por montón entre 4 y 15 se controlarán las posibles errores fuera de rango y no numérico (img4). <div class="image">
+<img src="imagen3.png" alt="imagen3.png"/>
+<div class="caption">
+img4 Número de elementos por montón</div></div>
+ </li>
+<li>Se genera el juego para cada montón se informa de el número de elementos que tiene (E), igual en la cinta numérica presentamos su longitud, y el primero de la cinta en este caso 2 (img5) <div class="image">
+<img src="imagen4.png" alt="imagen4.png"/>
+<div class="caption">
+img5 Elementos del juego</div></div>
+ </li>
+<li>El usuario pulsa 0 para provocar selección del montón, en la pantalla de selección se muestra un contador en bucle que muestra los montones disponibles, los no vacíos, y una lista con las posiciones disponibles (img6) Una vez pulsada una tecla se detendrá el contador y ese será el montón seleccionado informando al usuario de cuál ha sido elegido, en este caso el montón 5 (img7). No se podrá elegir otro montón <div class="image">
+<img src="imagen5.png" alt="imagen5.png"/>
+<div class="caption">
+img6 pantalla de selección del montón</div></div>
+ <div class="image">
+<img src="imagen6.png" alt="imagen6.png"/>
+<div class="caption">
+img7 montón seleccionado</div></div>
+  </li>
+<li>El usuario pulsa 1 y podrá elegir la operación solo se permitirán los símbolos mostrados (img8) una vez elegida la operación, en este caso resta, se mostrara por pantalla (img9), no se podrá elegir una nueva operación <div class="image">
+<img src="imagen7.png" alt="imagen7.png"/>
+<div class="caption">
+img8 selección operación</div></div>
+ <div class="image">
+<img src="imagen8.png" alt="imagen8.png"/>
+<div class="caption">
+img9 operación seleccionada</div></div>
+  </li>
+<li>El usuario pulsando una tecla diferente a s,1,0 realizará una operación con los parámetros que intervienen último número del montón elegido en este caso el 3, primero de la cinta, 2 y operación -. img10</li>
+<li>Una vez realizada la operación, 3-2=1, es menor a 10, se muestra la situación actual de la lista de montones, y un mensaje informativo de lo que ha ocurrido, en este caso se ha eliminado la cima del montón 5 (img10) <div class="image">
+<img src="imagen9.png" alt="imagen9.png"/>
+<div class="caption">
+img10 Realizada la operación Cima del montón 5 eliminada</div></div>
+ </li>
+<li>El usuario podrá elegir otro montón el 2 (cima=8), otra operación * (img11) posteriormente se realizara la operación con el primero de la cinta=7 8*7=56&gt;10 por lo que el 7 se coloca en el montón 2 pasa a tener E=13 (elementos) img12 <div class="image">
+<img src="imagen11.png" alt="imagen11.png"/>
+<div class="caption">
+img11 nuevo montón y operación</div></div>
+ <div class="image">
+<img src="imagen12.png" alt="imagen12.png"/>
+<div class="caption">
+img12 Elemento 7 añadido al montón 2 pasa a tener 13 elementos</div></div>
+  </li>
+<li>Cuando un montón queda vacío se informa por pantalla img13 y a la hora de seleccionar montones ese montón ya no cuenta, el dado no lo mostrará y no aparecerá en la lista de los disponibles img14 <div class="image">
+<img src="imagen13.png" alt="imagen13.png"/>
+<div class="caption">
+img13 Montón 3 vacío</div></div>
+ <div class="image">
+<img src="imagen14.png" alt="imagen14.png"/>
+<div class="caption">
+img14 Solo se muestran los montones con elementos en la lista y contador</div></div>
+  </li>
+</ul>
+<hr/>
+ </div></div><!-- contents -->
+<hr class="footer"/><address class="footer"><small>
+PRÁCTICA 2 LISTAS Jorge Abad Méndez de Sotomayor, Miguel Gómez Olmedo;
+</small></address>

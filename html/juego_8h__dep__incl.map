@@ -1,0 +1,7 @@
+<map id="juego.h" name="juego.h">
+<area shape="rect" id="node2" href="$juego_8cpp.html" title="Implementa, juego (métodos estáticos, para el funcionamiento del juego) " alt="" coords="5,80,84,107"/>
+<area shape="rect" id="node3" href="$lista_8cpp.html" title="Implementa la Clase Lista . (Clase que representa la estructura lineal para almacenar los números de ..." alt="" coords="108,80,179,107"/>
+<area shape="rect" id="node4" href="$main_8cpp.html" title="cpp. Contiene la funcion que ejecuta el programa. " alt="" coords="179,155,254,181"/>
+<area shape="rect" id="node5" href="$principal_8h.html" title="Cabecera para la clase Principal. " alt="" coords="255,80,336,107"/>
+<area shape="rect" id="node6" href="$principal_8cpp.html" title="Implementa la clase Principal. " alt="" coords="279,155,373,181"/>
+</map>

@@ -1,0 +1,6 @@
+<map id="listaMontones::comprueba_Monton_vacio" name="listaMontones::comprueba_Monton_vacio">
+<area shape="rect" id="node2" href="$classlista_montones.html#a737020d482ed24c5432d5b160e5686b2" title="Comprueba si todos los montones almacenados en la lista están vacios, listas vacias. " alt="" coords="228,5,403,47"/>
+<area shape="rect" id="node5" href="$class_principal.html#a20e4d3177a663df683a803731a0976a4" title="Método que muestra y permite la selección de un número que representa la posción de un montón en la l..." alt="" coords="261,71,369,98"/>
+<area shape="rect" id="node3" href="$class_principal.html#a9e0bdc4b4b0622ddc540cf7cea92a065" title="Método para interactuar con el usuario durante el juego, controla y almacana las E/S por teclado..." alt="" coords="451,42,613,69"/>
+<area shape="rect" id="node4" href="$main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="Funcion que representa el punto de inicio de ejecución del programa. " alt="" coords="661,42,712,69"/>
+</map>

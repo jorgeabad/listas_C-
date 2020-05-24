@@ -1,0 +1,118 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>PRÁCTICA 2 LISTAS: Página principal</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="estilos.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top">
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">PRÁCTICA 2 LISTAS
+   &#160;<span id="projectnumber">NUMBERIS 2</span>
+   </div>
+   <div id="projectbrief">LABORATORIO DE ESTRUCTURA DE DATOS</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- Jorge -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;principal</span></a></li>
+      <li><a href="annotated.html"><span>Clases</span></a></li>
+      <li class="current"><a href="files.html"><span>Archivos</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;de&#160;archivos</span></a></li>
+      <li><a href="globals.html"><span>Miembros&#160;de&#160;los&#160;ficheros</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">main.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="main_8cpp.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;cstdlib&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;sstream&gt;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="juego_8h.html">juego.h</a>&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="lista_8h.html">lista.h</a>&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="lista_montones_8h.html">listaMontones.h</a>&quot;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="principal_8h.html">principal.h</a>&quot;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;locale.h&gt;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;conio.h&gt;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">using namespace </span><a class="code" href="namespacestd.html">std</a>;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97">   32</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97">main</a>(<span class="keywordtype">int</span> argc, <span class="keywordtype">char</span> *argv[])</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;{</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    </div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    setlocale(LC_ALL, <span class="stringliteral">&quot;spanish&quot;</span>);  <span class="comment">/*poder representar acentos*/</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <a class="code" href="class_juego.html#aad9763872707f4255564120de4a916b8">Juego::iniciarSemilla</a>(); <span class="comment">/*iniciamos la semilla para generar los números aleatorios*/</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <a class="code" href="class_principal.html">Principal</a> miJuego;<span class="comment">//Creamos un objeto clase principal para eniciar el juego.</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    </div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="comment">//Creamos los elementos necesarios para empezar la partida.</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    miJuego.<a class="code" href="class_principal.html#a0852c08277bbe28348a386198c8c99b3">crearCintaNumerica</a>();<span class="comment">//La cinta nmérica.</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    miJuego.<a class="code" href="class_principal.html#ac1e261fd66254ea7c01524549b21e224">seleccionarNumeroDeMontones</a>();<span class="comment">//El número de montones que queremos para el juego.</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    miJuego.<a class="code" href="class_principal.html#acc0b84555371c6e1cb801c80b7c8c34c">seleccionarElementosPorMonton</a>();<span class="comment">//El numero máximo de elementos para los montones.</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    miJuego.<a class="code" href="class_principal.html#ac612ba94084cc1b87859b98decb69499">crearListaMontones</a>();<span class="comment">//En función de lo anterior creamos una lista de montones. </span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="comment">//Lanzamos el menu para empezar a jugar</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    miJuego.<a class="code" href="class_principal.html#a9e0bdc4b4b0622ddc540cf7cea92a065">menuPrincipal</a>();</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;   </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="comment">//Cuando el juego termina limpiamos y mostramos avisos.</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    system(<span class="stringliteral">&quot;cls&quot;</span>);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    </div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    </div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    </div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="comment">//Final del programa</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    cout&lt;&lt;<span class="stringliteral">&quot;###################################################&quot;</span>&lt;&lt;endl&lt;&lt;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;            miJuego.<a class="code" href="class_principal.html#aef44df3629b080213ef7a4d222da26b6">getFinJuego</a>()&lt;&lt;<span class="stringliteral">&quot;*&quot;</span>&lt;&lt;endl&lt;&lt;<span class="comment">//Mostramos el mensaje de fin del juego motivo por el que termino.</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;          <span class="stringliteral">&quot;###################################################&quot;</span>&lt;&lt;endl;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    _getche();</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    </div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;}</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
+<div class="ttc" id="lista_montones_8h_html"><div class="ttname"><a href="lista_montones_8h.html">listaMontones.h</a></div><div class="ttdoc">Cabecera. listaMontones (Clase que representa la estructura lineal para almacenar las listas de númer...</div></div>
+<div class="ttc" id="juego_8h_html"><div class="ttname"><a href="juego_8h.html">juego.h</a></div><div class="ttdoc">Cabecera, juego (métodos estáticos, para el funcionamiento del juego) </div></div>
+<div class="ttc" id="namespacestd_html"><div class="ttname"><a href="namespacestd.html">std</a></div></div>
+<div class="ttc" id="principal_8h_html"><div class="ttname"><a href="principal_8h.html">principal.h</a></div><div class="ttdoc">Cabecera para la clase Principal. </div></div>
+<div class="ttc" id="class_principal_html_a0852c08277bbe28348a386198c8c99b3"><div class="ttname"><a href="class_principal.html#a0852c08277bbe28348a386198c8c99b3">Principal::crearCintaNumerica</a></div><div class="ttdeci">void crearCintaNumerica()</div><div class="ttdoc">Método para llenar la cinta numérica con cinco numeros naturales al azar. </div><div class="ttdef"><b>Definition:</b> <a href="principal_8cpp_source.html#l00125">principal.cpp:125</a></div></div>
+<div class="ttc" id="class_principal_html_aef44df3629b080213ef7a4d222da26b6"><div class="ttname"><a href="class_principal.html#aef44df3629b080213ef7a4d222da26b6">Principal::getFinJuego</a></div><div class="ttdeci">string getFinJuego()</div><div class="ttdoc">Método para acceder al valor del atributo privado &#39;finJuego&#39;. </div><div class="ttdef"><b>Definition:</b> <a href="principal_8cpp_source.html#l00159">principal.cpp:159</a></div></div>
+<div class="ttc" id="class_juego_html_aad9763872707f4255564120de4a916b8"><div class="ttname"><a href="class_juego.html#aad9763872707f4255564120de4a916b8">Juego::iniciarSemilla</a></div><div class="ttdeci">static void iniciarSemilla()</div><div class="ttdoc">Método para iniciar, la generación del número aleatorio, mediante la hora del sistema. </div><div class="ttdef"><b>Definition:</b> <a href="juego_8cpp_source.html#l00020">juego.cpp:20</a></div></div>
+<div class="ttc" id="class_principal_html_ac1e261fd66254ea7c01524549b21e224"><div class="ttname"><a href="class_principal.html#ac1e261fd66254ea7c01524549b21e224">Principal::seleccionarNumeroDeMontones</a></div><div class="ttdeci">void seleccionarNumeroDeMontones()</div><div class="ttdoc">Método que permite al usuario elegir el número de montones que quiere para el juego. </div><div class="ttdef"><b>Definition:</b> <a href="principal_8cpp_source.html#l00041">principal.cpp:41</a></div></div>
+<div class="ttc" id="class_principal_html"><div class="ttname"><a href="class_principal.html">Principal</a></div><div class="ttdoc">Clase empleada para interactuar con el usuario y para crear objetos de las clases lista y listaMonton...</div><div class="ttdef"><b>Definition:</b> <a href="principal_8h_source.html#l00035">principal.h:35</a></div></div>
+<div class="ttc" id="class_principal_html_a9e0bdc4b4b0622ddc540cf7cea92a065"><div class="ttname"><a href="class_principal.html#a9e0bdc4b4b0622ddc540cf7cea92a065">Principal::menuPrincipal</a></div><div class="ttdeci">void menuPrincipal()</div><div class="ttdoc">Método para interactuar con el usuario durante el juego, controla y almacana las E/S por teclado...</div><div class="ttdef"><b>Definition:</b> <a href="principal_8cpp_source.html#l00230">principal.cpp:230</a></div></div>
+<div class="ttc" id="lista_8h_html"><div class="ttname"><a href="lista_8h.html">lista.h</a></div><div class="ttdoc">Cabecera. Clase Lista (Clase que representa la estructura lineal para almacenar los números de los mo...</div></div>
+<div class="ttc" id="class_principal_html_ac612ba94084cc1b87859b98decb69499"><div class="ttname"><a href="class_principal.html#ac612ba94084cc1b87859b98decb69499">Principal::crearListaMontones</a></div><div class="ttdeci">void crearListaMontones()</div><div class="ttdoc">Método para llenar la lista de montones, listaM, con los diferentes montones del juego. </div><div class="ttdef"><b>Definition:</b> <a href="principal_8cpp_source.html#l00145">principal.cpp:145</a></div></div>
+<div class="ttc" id="main_8cpp_html_a0ddf1224851353fc92bfbff6f499fa97"><div class="ttname"><a href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97">main</a></div><div class="ttdeci">int main(int argc, char *argv[])</div><div class="ttdoc">Funcion que representa el punto de inicio de ejecución del programa. </div><div class="ttdef"><b>Definition:</b> <a href="main_8cpp_source.html#l00032">main.cpp:32</a></div></div>
+<div class="ttc" id="class_principal_html_acc0b84555371c6e1cb801c80b7c8c34c"><div class="ttname"><a href="class_principal.html#acc0b84555371c6e1cb801c80b7c8c34c">Principal::seleccionarElementosPorMonton</a></div><div class="ttdeci">void seleccionarElementosPorMonton()</div><div class="ttdoc">Método que permite al usuario elegir el número máximo de elementos que pueden alcanzar los montones d...</div><div class="ttdef"><b>Definition:</b> <a href="principal_8cpp_source.html#l00080">principal.cpp:80</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<hr class="footer"/><address class="footer"><small>
+PRÁCTICA 2 LISTAS Jorge Abad Méndez de Sotomayor, Miguel Gómez Olmedo;
+</small></address>

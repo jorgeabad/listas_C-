@@ -1,0 +1,6 @@
+<map id="Lista::anadir_der" name="Lista::anadir_der">
+<area shape="rect" id="node2" href="$class_principal.html#a20e4d3177a663df683a803731a0976a4" title="Método que muestra y permite la selección de un número que representa la posción de un montón en la l..." alt="" coords="193,5,301,32"/>
+<area shape="rect" id="node3" href="$class_principal.html#a9e0bdc4b4b0622ddc540cf7cea92a065" title="Método para interactuar con el usuario durante el juego, controla y almacana las E/S por teclado..." alt="" coords="371,56,533,83"/>
+<area shape="rect" id="node5" href="$classlista_montones.html#abcb2d2e1b2f088c74a2927af1b6d4c80" title="Función que busca un montón y añade por la derecha un número natural a la lista de ese montón ..." alt="" coords="172,107,323,149"/>
+<area shape="rect" id="node4" href="$main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="Funcion que representa el punto de inicio de ejecución del programa. " alt="" coords="581,56,632,83"/>
+</map>

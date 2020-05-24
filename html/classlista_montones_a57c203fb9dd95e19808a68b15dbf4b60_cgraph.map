@@ -1,0 +1,6 @@
+<map id="listaMontones::imprimir" name="listaMontones::imprimir">
+<area shape="rect" id="node2" href="$classlista_montones.html#ae705de328a6cf6c432e7498f76058045" title="Comprueba si la listaMontones, está vacía. " alt="" coords="211,5,367,47"/>
+<area shape="rect" id="node3" href="$class_lista.html#ac36788be03ce7f95e08cbfcc9b37549a" title="Imprime en orden todos los elementos de la lista. " alt="" coords="237,71,341,98"/>
+<area shape="rect" id="node4" href="$class_lista.html#aa68b68753969da67766632304c954150" title="Comprueba si la lista, está vacía. Si hay objetos nodo_Lista, en la lista. " alt="" coords="415,46,553,73"/>
+<area shape="rect" id="node5" href="$class_lista.html#a50ed254922841d4f1a81fc46d08ae2f4" title="Función para acceder a la longitud de la lista, cantidad de nodos que hay en la lista. " alt="" coords="431,97,537,123"/>
+</map>

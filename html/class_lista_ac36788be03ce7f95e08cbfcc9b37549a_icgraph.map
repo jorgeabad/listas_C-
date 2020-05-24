@@ -1,0 +1,7 @@
+<map id="Lista::imprimir" name="Lista::imprimir">
+<area shape="rect" id="node2" href="$class_principal.html#a20e4d3177a663df683a803731a0976a4" title="Método que muestra y permite la selección de un número que representa la posción de un montón en la l..." alt="" coords="182,5,290,32"/>
+<area shape="rect" id="node5" href="$classlista_montones.html#a57c203fb9dd95e19808a68b15dbf4b60" title="Muestra por pantalla la información contenida en la lista de montones. " alt="" coords="157,56,315,83"/>
+<area shape="rect" id="node6" href="$class_lista.html#a4d7394b2728a00ad8404965b2e15d096" title="Destructor de la clase lista. " alt="" coords="189,107,283,133"/>
+<area shape="rect" id="node3" href="$class_principal.html#a9e0bdc4b4b0622ddc540cf7cea92a065" title="Método para interactuar con el usuario durante el juego, controla y almacana las E/S por teclado..." alt="" coords="363,31,525,57"/>
+<area shape="rect" id="node4" href="$main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="Funcion que representa el punto de inicio de ejecución del programa. " alt="" coords="573,31,624,57"/>
+</map>

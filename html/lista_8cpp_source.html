@@ -1,0 +1,333 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>PRÁCTICA 2 LISTAS: Página principal</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="estilos.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top">
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">PRÁCTICA 2 LISTAS
+   &#160;<span id="projectnumber">NUMBERIS 2</span>
+   </div>
+   <div id="projectbrief">LABORATORIO DE ESTRUCTURA DE DATOS</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- Jorge -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;principal</span></a></li>
+      <li><a href="annotated.html"><span>Clases</span></a></li>
+      <li class="current"><a href="files.html"><span>Archivos</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;de&#160;archivos</span></a></li>
+      <li><a href="globals.html"><span>Miembros&#160;de&#160;los&#160;ficheros</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">lista.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="lista_8cpp.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;conio.h&gt;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;stdlib.h&gt;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;string.h&gt;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;stdio.h&gt;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="lista_8h.html">lista.h</a>&quot;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="nodo__lista_8h.html">nodo_lista.h</a>&quot;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="juego_8h.html">juego.h</a>&quot;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">/****************************************** CONSTRUCTORAS ****************************************************************/</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="class_lista.html#a1f668b36909182ef1360b48503529a31">   25</a></span>&#160;<a class="code" href="class_lista.html#a1f668b36909182ef1360b48503529a31">Lista::Lista</a>(){</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;            <a class="code" href="class_lista.html#a4a0740d60025a3da35dab76d6c6d19a1">longitud</a>=0;<span class="comment">//no tiene nodos</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;            <a class="code" href="class_lista.html#a4e006bd905c6f731c5833dcbdc25a945">primero</a>=NULL;<span class="comment">//no apunta a ningún nodo</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;            <a class="code" href="class_lista.html#a5f68c0094acfe5035d65447202138017">ultimo</a>=NULL;<span class="comment">//no apunta a ningún nodo</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;            </div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;}</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="class_lista.html#a4d7394b2728a00ad8404965b2e15d096">   39</a></span>&#160;<a class="code" href="class_lista.html#a4d7394b2728a00ad8404965b2e15d096">Lista::~Lista</a>(){</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        cout&lt;&lt;<span class="stringliteral">&quot;\n     Destructor clase lista:&quot;</span>;<span class="comment">//Mostramos una aviso para comprobar que el destructor es llamado.</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <span class="keywordflow">while</span>(!<a class="code" href="class_lista.html#aa68b68753969da67766632304c954150">es_lista_vacia</a>()){<span class="comment">//mientras la lista no esté vacía</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;            cout&lt;&lt;<span class="stringliteral">&quot;\n     &quot;</span>;<a class="code" href="class_lista.html#ac36788be03ce7f95e08cbfcc9b37549a">imprimir</a>();<span class="comment">//mostramos como va quedando el contenido de la lista</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;            <a class="code" href="class_lista.html#a2e5fda0cc0fd10ea2b7ce32570671b1f">resto</a>();<span class="comment">//eliminamos el primer nodo</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;            </div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;            }</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <span class="keyword">delete</span>(<a class="code" href="class_lista.html#a4e006bd905c6f731c5833dcbdc25a945">primero</a>);<span class="comment">//eliminamos el puntero.</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <span class="keyword">delete</span>(<a class="code" href="class_lista.html#a5f68c0094acfe5035d65447202138017">ultimo</a>);<span class="comment">//eliminamos el puntero, ya no hay lista.</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;       </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        }</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
+<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="class_lista.html#a9a9df242d39735bb20a68cb06eb06682">   67</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_lista.html#a9a9df242d39735bb20a68cb06eb06682">Lista::llenarLista</a>(<span class="keywordtype">short</span> maxElementos){</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordtype">short</span> numElementos=maxElementos-2;<span class="comment">//almacenamos el número máximo de elementos que puede tener la lista al principio</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordtype">short</span> elementosMonton=<a class="code" href="class_juego.html#ada32c7b045649021ba074b65b56830bc">Juego::obtenerNumeroHasta</a>(numElementos);<span class="comment">//obtenemos el número de elementos que tendrá la lista (entre 1 y numElementos)</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordflow">while</span>(!elementosMonton==0){<span class="comment">//repetimos tantas veces</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        elementosMonton=elementosMonton-1;<span class="comment">//vamos descontando uno de la cantidad total de elementos</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        <a class="code" href="class_lista.html#a13a49683e3d62145bd4cc89bb261946e">anadir_izq</a>(<a class="code" href="class_juego.html#a5214c907b756f2d8894d2368e1419de9">Juego::obtenerNumero</a>());<span class="comment">//para cada iteración añadimos un nuevo número a la lista</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    }</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;}</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
+<div class="line"><a name="l00083"></a><span class="lineno"><a class="line" href="class_lista.html#a13a49683e3d62145bd4cc89bb261946e">   83</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_lista.html#a13a49683e3d62145bd4cc89bb261946e">Lista::anadir_izq</a>(<span class="keywordtype">short</span> elemento) </div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;{</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;     </div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;     <a class="code" href="classnodo___lista.html">nodo_Lista</a>*p=<span class="keyword">new</span> <a class="code" href="classnodo___lista.html">nodo_Lista</a>();<span class="comment">//Nuevo nodo_lista</span></div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;     p-&gt;<a class="code" href="classnodo___lista.html#acc8ee49e440c757c13d8df8187509c74">valor</a>=elemento;<span class="comment">//Se asigna el atributo valor que es igual que el valor elemento que se pasa a la funcion.</span></div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;     p-&gt;<a class="code" href="classnodo___lista.html#a5abacbf7751aa5ad9705cec33eb64305">pSiguiente</a>=<a class="code" href="class_lista.html#a4e006bd905c6f731c5833dcbdc25a945">primero</a>;<span class="comment">//El puntero siguiente, del nuevo nodo, apunta al primer elemento de la lista.</span></div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;     p-&gt;<a class="code" href="classnodo___lista.html#a2842661dbd2732440e4396ff2a78f4e9">pAnterior</a>=NULL;<span class="comment">//El puntero anterior, del nuevo nodo, apunta a nulo</span></div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;     </div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;     <span class="keywordflow">if</span>(<a class="code" href="class_lista.html#aa68b68753969da67766632304c954150">es_lista_vacia</a>()){<span class="comment">//Si la lista está vacía</span></div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        <a class="code" href="class_lista.html#a4e006bd905c6f731c5833dcbdc25a945">primero</a>=p;<span class="comment">//el primero será p</span></div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        <a class="code" href="class_lista.html#a5f68c0094acfe5035d65447202138017">ultimo</a>=p;<span class="comment">//En este caso NULL</span></div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;     }<span class="keywordflow">else</span>{<span class="comment">//Si la lista no está vacía</span></div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        <a class="code" href="class_lista.html#a4e006bd905c6f731c5833dcbdc25a945">primero</a>-&gt;<a class="code" href="classnodo___lista.html#a2842661dbd2732440e4396ff2a78f4e9">pAnterior</a>=p;<span class="comment">//Se asigna el puntero anterior del primer nodo de la lista al nuevo nodo</span></div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        <a class="code" href="class_lista.html#a4e006bd905c6f731c5833dcbdc25a945">primero</a>=p;<span class="comment">//A continuacion el puntero primero de la lista apunta al nodo nuevo</span></div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;     }</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    </div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;     <a class="code" href="class_lista.html#a4a0740d60025a3da35dab76d6c6d19a1">longitud</a>=<a class="code" href="class_lista.html#a4a0740d60025a3da35dab76d6c6d19a1">longitud</a>+1;<span class="comment">//aumentamos la longitud de la lista en uno, un nuevo nodo ha sido añadido.          </span></div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;     </div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;                          </div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;}</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div>
+<div class="line"><a name="l00111"></a><span class="lineno"><a class="line" href="class_lista.html#a79fc4d1cc0ede4aa458923cb8079dec2">  111</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_lista.html#a79fc4d1cc0ede4aa458923cb8079dec2">Lista::anadir_der</a>(<span class="keywordtype">short</span> elemento) </div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;{</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;     </div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;     <a class="code" href="classnodo___lista.html">nodo_Lista</a>*p=<span class="keyword">new</span> <a class="code" href="classnodo___lista.html">nodo_Lista</a>();<span class="comment">//Nuevo nodo_Lista</span></div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;     </div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;     p-&gt;<a class="code" href="classnodo___lista.html#acc8ee49e440c757c13d8df8187509c74">valor</a>=elemento;<span class="comment">//Se asigna el atributo valor que es igual que el valor elemento que se pasa a la funcion.</span></div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;     p-&gt;<a class="code" href="classnodo___lista.html#a5abacbf7751aa5ad9705cec33eb64305">pSiguiente</a>=NULL;<span class="comment">//El puntero siguiente, del nuevo nodo, apunta a nulo</span></div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;     p-&gt;<a class="code" href="classnodo___lista.html#a2842661dbd2732440e4396ff2a78f4e9">pAnterior</a>=<a class="code" href="class_lista.html#a5f68c0094acfe5035d65447202138017">ultimo</a>;<span class="comment">//El puntero anterior, del nuevo nodo, es igual a ultimo</span></div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;     <span class="keywordflow">if</span> (<a class="code" href="class_lista.html#aa68b68753969da67766632304c954150">es_lista_vacia</a>()){<span class="comment">//Si la lista está vacía</span></div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;     <a class="code" href="class_lista.html#a4e006bd905c6f731c5833dcbdc25a945">primero</a>=p;<span class="comment">//el primero será p</span></div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;     <a class="code" href="class_lista.html#a5f68c0094acfe5035d65447202138017">ultimo</a>=p; <span class="comment">//En este caso NULL</span></div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;     }<span class="keywordflow">else</span>{<span class="comment">//Si la lista no está vacía</span></div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;           <a class="code" href="class_lista.html#a5f68c0094acfe5035d65447202138017">ultimo</a>-&gt;<a class="code" href="classnodo___lista.html#a5abacbf7751aa5ad9705cec33eb64305">pSiguiente</a>=p;<span class="comment">//Se asigna el puntero siguiente del ultimo nodo de la lista al nuevo nodo</span></div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;           <a class="code" href="class_lista.html#a5f68c0094acfe5035d65447202138017">ultimo</a>=p;<span class="comment">//A continuacion el puntero ultimo de la lista apunta al nodo nuevo</span></div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;           }</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;     <a class="code" href="class_lista.html#a4a0740d60025a3da35dab76d6c6d19a1">longitud</a>=<a class="code" href="class_lista.html#a4a0740d60025a3da35dab76d6c6d19a1">longitud</a>+1;<span class="comment">//aumentamos la longitud de la lista en uno, un nuevo nodo ha sido añadido.</span></div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;     </div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;     }</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;<span class="comment">//******************OBSERVADORAS*************************************************</span></div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;</div>
+<div class="line"><a name="l00143"></a><span class="lineno"><a class="line" href="class_lista.html#aa68b68753969da67766632304c954150">  143</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="class_lista.html#aa68b68753969da67766632304c954150">Lista::es_lista_vacia</a>() <span class="comment">//Devuelve true si está vacía, false en caso else</span></div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;{</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;     </div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;      <span class="keywordflow">return</span> (<a class="code" href="class_lista.html#a4a0740d60025a3da35dab76d6c6d19a1">longitud</a>==0);</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;         </div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;}</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;</div>
+<div class="line"><a name="l00156"></a><span class="lineno"><a class="line" href="class_lista.html#a13956d96fa086a2aba1579217c7cf945">  156</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="class_lista.html#a13956d96fa086a2aba1579217c7cf945">Lista::inicial</a>() <span class="comment">//Muestra el primer elemento de la lista.prim</span></div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;{</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    <span class="keywordtype">short</span> e=0;</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    <span class="keywordflow">try</span>{</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;        </div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="class_lista.html#aa68b68753969da67766632304c954150">es_lista_vacia</a>()){ <span class="comment">//Si está vacía devuelve el mensaje de lista vacía.</span></div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;            <span class="keywordflow">throw</span> invalid_argument(<span class="stringliteral">&quot;lista vacía&quot;</span>);</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;        }</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;        <span class="keywordflow">else</span><span class="comment">/*Si está llena devuelve el atributo valor del nodo al que apunta</span></div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;<span class="comment">            el puntero primero de la lista*/</span></div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;        {</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;            e=<a class="code" href="class_lista.html#a4e006bd905c6f731c5833dcbdc25a945">primero</a>-&gt;<a class="code" href="classnodo___lista.html#acc8ee49e440c757c13d8df8187509c74">valor</a>;   </div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;        }<span class="comment">//felse</span></div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;        <span class="keywordflow">return</span> e;</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;        }<span class="comment">//fif</span></div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;    <span class="keywordflow">catch</span>(invalid_argument){</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;        cout &lt;&lt; <span class="stringliteral">&quot;La lista está vacía&quot;</span>;</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;        <span class="keywordflow">return</span> e;</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;    }</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;           </div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;}<span class="comment">//fvoid</span></div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;</div>
+<div class="line"><a name="l00191"></a><span class="lineno"><a class="line" href="class_lista.html#ab35c033b4b066f396176e4a19311c2fc">  191</a></span>&#160;<span class="keywordtype">short</span> <a class="code" href="class_lista.html#ab35c033b4b066f396176e4a19311c2fc">Lista::final</a>()</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;{</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;    <span class="keywordtype">short</span> e=0;</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;    <span class="keywordflow">try</span>{</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="class_lista.html#aa68b68753969da67766632304c954150">es_lista_vacia</a>()){ <span class="comment">//Si está vacía devuelve el mensaje de lista vacía.</span></div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;            <span class="keywordflow">throw</span>(<a class="code" href="class_lista.html#aa68b68753969da67766632304c954150">es_lista_vacia</a>());</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;        }</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;        <span class="keywordflow">else</span><span class="comment">/*Si está llena devuelve el atributo valor del nodo al que apunta</span></div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;<span class="comment">            el puntero ultimo de la lista*/</span></div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;        {</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;            e = <a class="code" href="class_lista.html#a5f68c0094acfe5035d65447202138017">ultimo</a>-&gt;<a class="code" href="classnodo___lista.html#acc8ee49e440c757c13d8df8187509c74">valor</a>;</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;        }<span class="comment">//felse</span></div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;    }<span class="comment">//fif</span></div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;    <span class="keywordflow">catch</span> (<span class="keywordtype">bool</span>){</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;        cout &lt;&lt; <span class="stringliteral">&quot;La lista está vacía&quot;</span>;</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;    }</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;    <span class="keywordflow">return</span> e;         </div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;                      </div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;}<span class="comment">//ffun</span></div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;</div>
+<div class="line"><a name="l00224"></a><span class="lineno"><a class="line" href="class_lista.html#a50ed254922841d4f1a81fc46d08ae2f4">  224</a></span>&#160;<span class="keywordtype">short</span> <a class="code" href="class_lista.html#a50ed254922841d4f1a81fc46d08ae2f4">Lista::Longitud</a>(){</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;    <span class="keywordtype">short</span> n=<a class="code" href="class_lista.html#a4a0740d60025a3da35dab76d6c6d19a1">longitud</a>;</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;    <span class="keywordflow">return</span> n;</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;}</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;<span class="comment">//********************* MODIFICADORAS ****************************</span></div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;</div>
+<div class="line"><a name="l00240"></a><span class="lineno"><a class="line" href="class_lista.html#a2e5fda0cc0fd10ea2b7ce32570671b1f">  240</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_lista.html#a2e5fda0cc0fd10ea2b7ce32570671b1f">Lista::resto</a>(){</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;<a class="code" href="classnodo___lista.html">nodo_Lista</a>*aux=<span class="keyword">new</span> <a class="code" href="classnodo___lista.html">nodo_Lista</a>();<span class="comment">//var p: puntero a nodo_Lista</span></div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;<span class="keywordflow">if</span> (<a class="code" href="class_lista.html#aa68b68753969da67766632304c954150">es_lista_vacia</a>()){<span class="comment">//si es_lista_vacia(l) entonces</span></div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;cout&lt;&lt;<span class="stringliteral">&quot;error lista vacía&quot;</span>;<span class="comment">//error(Lista vacia)</span></div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;}<span class="keywordflow">else</span>{<span class="comment">//si no</span></div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;aux=<a class="code" href="class_lista.html#a4e006bd905c6f731c5833dcbdc25a945">primero</a>;<span class="comment">//aux pasa a ser el primero</span></div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;<a class="code" href="class_lista.html#a4e006bd905c6f731c5833dcbdc25a945">primero</a>=aux-&gt;<a class="code" href="classnodo___lista.html#a5abacbf7751aa5ad9705cec33eb64305">pSiguiente</a>;<span class="comment">//el puntero &#39;primero&#39; de la lista pasa a apuntar al siguiente, segundo.</span></div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;<span class="keywordflow">if</span>(<a class="code" href="class_lista.html#a4e006bd905c6f731c5833dcbdc25a945">primero</a>==NULL){<span class="comment">//si el &#39;primero&#39; es NULL la lista ya está vacía y &#39;ultimo&#39; también será NULL</span></div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;    <a class="code" href="class_lista.html#a5f68c0094acfe5035d65447202138017">ultimo</a>=NULL;</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;}<span class="keywordflow">else</span>{</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;    <a class="code" href="class_lista.html#a4e006bd905c6f731c5833dcbdc25a945">primero</a>-&gt;<a class="code" href="classnodo___lista.html#a2842661dbd2732440e4396ff2a78f4e9">pAnterior</a>=NULL;<span class="comment">//Antes del primero no hay elementos</span></div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;}</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;aux-&gt;<a class="code" href="classnodo___lista.html#a5abacbf7751aa5ad9705cec33eb64305">pSiguiente</a>=NULL;<span class="comment">//por seguridad rompemos enlace</span></div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;<span class="keyword">delete</span>(aux);<span class="comment">//liberar(p)</span></div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;<a class="code" href="class_lista.html#a4a0740d60025a3da35dab76d6c6d19a1">longitud</a>=<a class="code" href="class_lista.html#a4a0740d60025a3da35dab76d6c6d19a1">longitud</a>-1;<span class="comment">//incrementamos en uno la longitud.</span></div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;}<span class="comment">//fsi</span></div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;}<span class="comment">//fproc</span></div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;</div>
+<div class="line"><a name="l00267"></a><span class="lineno"><a class="line" href="class_lista.html#a280a914f006a27a57fdaf955d7f48bf8">  267</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_lista.html#a280a914f006a27a57fdaf955d7f48bf8">Lista::eult</a>(){</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;<a class="code" href="classnodo___lista.html">nodo_Lista</a>*aux=<span class="keyword">new</span> <a class="code" href="classnodo___lista.html">nodo_Lista</a>();<span class="comment">//var p, aux: puntero a nodo-lista</span></div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;<span class="keywordflow">if</span> (<a class="code" href="class_lista.html#aa68b68753969da67766632304c954150">es_lista_vacia</a>()){<span class="comment">//si es_lista_vacia(l) entonces</span></div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;cout&lt;&lt;<span class="stringliteral">&quot;error lista vacía&quot;</span>;<span class="comment">//error(Lista vacia)</span></div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;}<span class="keywordflow">else</span>{<span class="comment">//si hay elementos</span></div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;aux=<a class="code" href="class_lista.html#a5f68c0094acfe5035d65447202138017">ultimo</a>;<span class="comment">//aux toma el valor de &#39;ultimo&#39;</span></div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;<a class="code" href="class_lista.html#a5f68c0094acfe5035d65447202138017">ultimo</a>=<a class="code" href="class_lista.html#a5f68c0094acfe5035d65447202138017">ultimo</a>-&gt;<a class="code" href="classnodo___lista.html#a2842661dbd2732440e4396ff2a78f4e9">pAnterior</a>;<span class="comment">//el puntero &#39;ultimo&#39; ahora apunta al anterior nodo pasando a ser el último de la lista</span></div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;<span class="keywordflow">if</span> (<a class="code" href="class_lista.html#a5f68c0094acfe5035d65447202138017">ultimo</a>==NULL){<span class="comment">//si solo hay un elemento en la lista, (pAnterior apuntaba a null)</span></div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;<a class="code" href="class_lista.html#a4e006bd905c6f731c5833dcbdc25a945">primero</a>=NULL;<span class="comment">//el puntero primero toma valor null ya no hay elementos</span></div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;}<span class="keywordflow">else</span>{<span class="comment">//En caso contrario mas de un elemento</span></div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;    <a class="code" href="class_lista.html#a5f68c0094acfe5035d65447202138017">ultimo</a>-&gt;<a class="code" href="classnodo___lista.html#a5abacbf7751aa5ad9705cec33eb64305">pSiguiente</a>=NULL;<span class="comment">//Como es el último elemento el puntero a la siguiente celda sera null</span></div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;}</div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;aux-&gt;<a class="code" href="classnodo___lista.html#a2842661dbd2732440e4396ff2a78f4e9">pAnterior</a>=NULL;<span class="comment">//rompemos el enlace con el resto de la lista</span></div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;<span class="keyword">delete</span>(aux);<span class="comment">//liberar(aux)</span></div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;<a class="code" href="class_lista.html#a4a0740d60025a3da35dab76d6c6d19a1">longitud</a>=<a class="code" href="class_lista.html#a4a0740d60025a3da35dab76d6c6d19a1">longitud</a>-1;<span class="comment">//incrementamos en uno la longitud</span></div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;</div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;</div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;}<span class="comment">//fsi</span></div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;</div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;}<span class="comment">//fproc</span></div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;</div>
+<div class="line"><a name="l00296"></a><span class="lineno"><a class="line" href="class_lista.html#ac36788be03ce7f95e08cbfcc9b37549a">  296</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_lista.html#ac36788be03ce7f95e08cbfcc9b37549a">Lista::imprimir</a>(){</div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;<a class="code" href="classnodo___lista.html">nodo_Lista</a>*p=<span class="keyword">new</span> <a class="code" href="classnodo___lista.html">nodo_Lista</a>();<span class="comment">//puntero a nodo_lista para recorrer la lista</span></div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;</div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;<span class="keywordflow">if</span> (<a class="code" href="class_lista.html#aa68b68753969da67766632304c954150">es_lista_vacia</a>()){<span class="comment">//si es_lista_vacia(l) </span></div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;cout&lt;&lt;<span class="stringliteral">&quot; Montón vacío, !!!!!&quot;</span>;<span class="comment">//entonces error(Lista vacia)</span></div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;}<span class="keywordflow">else</span>{<span class="comment">//si no</span></div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;p=<a class="code" href="class_lista.html#a4e006bd905c6f731c5833dcbdc25a945">primero</a>;<span class="comment">//p toma el valor del puntero &#39;primero&#39;</span></div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;<span class="keywordflow">while</span> (p!=NULL){<span class="comment">//mientras (p diferente nil) hacer </span></div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;cout&lt;&lt;p-&gt;<a class="code" href="classnodo___lista.html#acc8ee49e440c757c13d8df8187509c74">valor</a>&lt;&lt;<span class="stringliteral">&quot;, &quot;</span>;<span class="comment">//Mostramos el número almacenado en &#39;valor&#39; para ese nodo, y una coma.</span></div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;p=p-&gt;<a class="code" href="classnodo___lista.html#a5abacbf7751aa5ad9705cec33eb64305">pSiguiente</a>;<span class="comment">// p pasa a apuntar a la siguiente celda avanzamos</span></div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;}<span class="comment">//fmientras</span></div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;</div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;cout&lt;&lt;<span class="stringliteral">&quot;   (E=&quot;</span>&lt;&lt;<a class="code" href="class_lista.html#a50ed254922841d4f1a81fc46d08ae2f4">Longitud</a>()&lt;&lt;<span class="stringliteral">&quot;)&quot;</span>;<span class="comment">//mostramos la cantidad de elementos que hay en la lista</span></div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;<span class="keyword">delete</span>(p);<span class="comment">//ya llegamos al final y vale null</span></div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;}</div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;}<span class="comment">//ffun</span></div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;</div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;</div>
+<div class="line"><a name="l00322"></a><span class="lineno"><a class="line" href="class_lista.html#a7d4ae401380f60df080adcd2ab19c288">  322</a></span>&#160;<span class="keywordtype">short</span> <a class="code" href="class_lista.html#a7d4ae401380f60df080adcd2ab19c288">Lista::cogerElemento</a>(<span class="keywordtype">short</span> posicion){</div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;</div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;    <a class="code" href="classnodo___lista.html">nodo_Lista</a>*p = <span class="keyword">new</span> <a class="code" href="classnodo___lista.html">nodo_Lista</a>();<span class="comment">//var p: puntero a nodo_lista;</span></div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;    <span class="keywordtype">short</span> pos;<span class="comment">//para almacenar la posición según avanzamos</span></div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;    <span class="keywordflow">if</span> (posicion!=0||!(posicion&gt;<a class="code" href="class_lista.html#a4a0740d60025a3da35dab76d6c6d19a1">longitud</a>)){<span class="comment">//comprobamos que este dentro rango (1 a longitud) posición válida</span></div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;        p = <a class="code" href="class_lista.html#a4e006bd905c6f731c5833dcbdc25a945">primero</a>;<span class="comment">//el puntero toma el valor del primero</span></div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;        pos = 1;<span class="comment">//la posición empieza en uno.</span></div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;        </div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;        <span class="keywordflow">while</span> (pos&lt;posicion){<span class="comment">//mientras no llegemos a la posición deseada</span></div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;            pos = pos + 1;<span class="comment">//avanzamos una posición</span></div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;            p = p-&gt;<a class="code" href="classnodo___lista.html#a5abacbf7751aa5ad9705cec33eb64305">pSiguiente</a>;<span class="comment">//avanzamos al siguiente nodo, pasa a apuntar al siguiente</span></div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;        }<span class="comment">//fmientras</span></div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;        </div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;    }</div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;    <span class="keywordflow">return</span> p-&gt;<a class="code" href="classnodo___lista.html#acc8ee49e440c757c13d8df8187509c74">valor</a>;<span class="comment">//devolvemos valor si la lista está o no vacía.</span></div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;</div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;}<span class="comment">//fproc</span></div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;</div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;</div>
+<div class="line"><a name="l00348"></a><span class="lineno"><a class="line" href="class_lista.html#ab20f6df52c782561a429cf07532f0e53">  348</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_lista.html#ab20f6df52c782561a429cf07532f0e53">Lista::imprimirResto</a>(){</div>
+<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;<a class="code" href="classnodo___lista.html">nodo_Lista</a>*p=<span class="keyword">new</span> <a class="code" href="classnodo___lista.html">nodo_Lista</a>();<span class="comment">//puntero a nodo-lista; </span></div>
+<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;</div>
+<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;<span class="keywordflow">if</span> (<a class="code" href="class_lista.html#aa68b68753969da67766632304c954150">es_lista_vacia</a>()){<span class="comment">//si es_lista_vacia(l) </span></div>
+<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;cout&lt;&lt;<span class="stringliteral">&quot; no hay datos error lista vacia&quot;</span>;<span class="comment">//entonces error(Lista vacia)</span></div>
+<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;}<span class="keywordflow">else</span>{<span class="comment">//si no</span></div>
+<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;p=<a class="code" href="class_lista.html#a4e006bd905c6f731c5833dcbdc25a945">primero</a>-&gt;<a class="code" href="classnodo___lista.html#a5abacbf7751aa5ad9705cec33eb64305">pSiguiente</a>;<span class="comment">//empezamos a imprimir desde el segundo nodo.</span></div>
+<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;<span class="keywordflow">while</span> (p!=NULL){<span class="comment">//mientras (p diferente nil) hacer</span></div>
+<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;cout&lt;&lt;p-&gt;<a class="code" href="classnodo___lista.html#acc8ee49e440c757c13d8df8187509c74">valor</a>&lt;&lt;<span class="stringliteral">&quot;, &quot;</span>;<span class="comment">//mostramo valor del atributo &#39;valor&#39; del nodo.</span></div>
+<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;p=p-&gt;<a class="code" href="classnodo___lista.html#a5abacbf7751aa5ad9705cec33eb64305">pSiguiente</a>;<span class="comment">//avanzamos, pasando a tomar el valor de la siguiente celda.</span></div>
+<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;}<span class="comment">//fmientras</span></div>
+<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;</div>
+<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;cout&lt;&lt;<span class="stringliteral">&quot;   (E=&quot;</span>&lt;&lt;<a class="code" href="class_lista.html#a50ed254922841d4f1a81fc46d08ae2f4">Longitud</a>()&lt;&lt;<span class="stringliteral">&quot;)&quot;</span>;<span class="comment">// mostramos el número de lelementos que tiene la lista.</span></div>
+<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;<span class="keyword">delete</span>(p);<span class="comment">//ahora vale null y lo eliminamos.</span></div>
+<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;}</div>
+<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;}<span class="comment">//ffun</span></div>
+<div class="ttc" id="class_juego_html_a5214c907b756f2d8894d2368e1419de9"><div class="ttname"><a href="class_juego.html#a5214c907b756f2d8894d2368e1419de9">Juego::obtenerNumero</a></div><div class="ttdeci">static short obtenerNumero()</div><div class="ttdoc">Método para obtener un número entero aleatorio entre 1 y 9. </div><div class="ttdef"><b>Definition:</b> <a href="juego_8cpp_source.html#l00034">juego.cpp:34</a></div></div>
+<div class="ttc" id="classnodo___lista_html_a2842661dbd2732440e4396ff2a78f4e9"><div class="ttname"><a href="classnodo___lista.html#a2842661dbd2732440e4396ff2a78f4e9">nodo_Lista::pAnterior</a></div><div class="ttdeci">nodo_Lista * pAnterior</div><div class="ttdoc">Puntero de la clase nodo_lista que apunta a la anterior celda de la lista, otro objeto nodo_lista...</div><div class="ttdef"><b>Definition:</b> <a href="nodo__lista_8h_source.html#l00036">nodo_lista.h:36</a></div></div>
+<div class="ttc" id="classnodo___lista_html_acc8ee49e440c757c13d8df8187509c74"><div class="ttname"><a href="classnodo___lista.html#acc8ee49e440c757c13d8df8187509c74">nodo_Lista::valor</a></div><div class="ttdeci">short valor</div><div class="ttdoc">Un número natural, de los que componen los montones con los que jugaremos. </div><div class="ttdef"><b>Definition:</b> <a href="nodo__lista_8h_source.html#l00034">nodo_lista.h:34</a></div></div>
+<div class="ttc" id="classnodo___lista_html"><div class="ttname"><a href="classnodo___lista.html">nodo_Lista</a></div><div class="ttdoc">Representa la celda de una lista, del tipo Lista[naturales], una lista en la que cada celda contiene ...</div><div class="ttdef"><b>Definition:</b> <a href="nodo__lista_8h_source.html#l00020">nodo_lista.h:20</a></div></div>
+<div class="ttc" id="juego_8h_html"><div class="ttname"><a href="juego_8h.html">juego.h</a></div><div class="ttdoc">Cabecera, juego (métodos estáticos, para el funcionamiento del juego) </div></div>
+<div class="ttc" id="class_lista_html_a13956d96fa086a2aba1579217c7cf945"><div class="ttname"><a href="class_lista.html#a13956d96fa086a2aba1579217c7cf945">Lista::inicial</a></div><div class="ttdeci">int inicial()</div><div class="ttdoc">Muestra el primer elemento de la lista. </div><div class="ttdef"><b>Definition:</b> <a href="lista_8cpp_source.html#l00156">lista.cpp:156</a></div></div>
+<div class="ttc" id="class_lista_html_a5f68c0094acfe5035d65447202138017"><div class="ttname"><a href="class_lista.html#a5f68c0094acfe5035d65447202138017">Lista::ultimo</a></div><div class="ttdeci">nodo_Lista * ultimo</div><div class="ttdoc">Puntero al último nodo de la lista de la clase nodo_Lista. </div><div class="ttdef"><b>Definition:</b> <a href="lista_8h_source.html#l00045">lista.h:45</a></div></div>
+<div class="ttc" id="class_lista_html_a4e006bd905c6f731c5833dcbdc25a945"><div class="ttname"><a href="class_lista.html#a4e006bd905c6f731c5833dcbdc25a945">Lista::primero</a></div><div class="ttdeci">nodo_Lista * primero</div><div class="ttdoc">Puntero al primer nodo de la lista de la clase nodo_Lista. </div><div class="ttdef"><b>Definition:</b> <a href="lista_8h_source.html#l00044">lista.h:44</a></div></div>
+<div class="ttc" id="class_lista_html_a4d7394b2728a00ad8404965b2e15d096"><div class="ttname"><a href="class_lista.html#a4d7394b2728a00ad8404965b2e15d096">Lista::~Lista</a></div><div class="ttdeci">~Lista()</div><div class="ttdoc">Destructor de la clase lista. </div><div class="ttdef"><b>Definition:</b> <a href="lista_8cpp_source.html#l00039">lista.cpp:39</a></div></div>
+<div class="ttc" id="class_lista_html_ab35c033b4b066f396176e4a19311c2fc"><div class="ttname"><a href="class_lista.html#ab35c033b4b066f396176e4a19311c2fc">Lista::final</a></div><div class="ttdeci">short final()</div><div class="ttdoc">Muestra el último elemento de la lista. </div><div class="ttdef"><b>Definition:</b> <a href="lista_8cpp_source.html#l00191">lista.cpp:191</a></div></div>
+<div class="ttc" id="class_lista_html_a79fc4d1cc0ede4aa458923cb8079dec2"><div class="ttname"><a href="class_lista.html#a79fc4d1cc0ede4aa458923cb8079dec2">Lista::anadir_der</a></div><div class="ttdeci">void anadir_der(short elemento)</div><div class="ttdoc">Añade por la derecha un objeto de la clase nodo_Lista. </div><div class="ttdef"><b>Definition:</b> <a href="lista_8cpp_source.html#l00111">lista.cpp:111</a></div></div>
+<div class="ttc" id="class_lista_html_a1f668b36909182ef1360b48503529a31"><div class="ttname"><a href="class_lista.html#a1f668b36909182ef1360b48503529a31">Lista::Lista</a></div><div class="ttdeci">Lista()</div><div class="ttdoc">Constructor para crear una lista vacía. </div><div class="ttdef"><b>Definition:</b> <a href="lista_8cpp_source.html#l00025">lista.cpp:25</a></div></div>
+<div class="ttc" id="class_lista_html_a9a9df242d39735bb20a68cb06eb06682"><div class="ttname"><a href="class_lista.html#a9a9df242d39735bb20a68cb06eb06682">Lista::llenarLista</a></div><div class="ttdeci">void llenarLista(short n)</div><div class="ttdoc">Llena la lista, con un número aleatorio de objetos nodo_Lista, dentro de un rango determinado...</div><div class="ttdef"><b>Definition:</b> <a href="lista_8cpp_source.html#l00067">lista.cpp:67</a></div></div>
+<div class="ttc" id="class_lista_html_a7d4ae401380f60df080adcd2ab19c288"><div class="ttname"><a href="class_lista.html#a7d4ae401380f60df080adcd2ab19c288">Lista::cogerElemento</a></div><div class="ttdeci">short cogerElemento(short posicion)</div><div class="ttdoc">Muestra un elemento que esta en una posición concreta de la lista. </div><div class="ttdef"><b>Definition:</b> <a href="lista_8cpp_source.html#l00322">lista.cpp:322</a></div></div>
+<div class="ttc" id="class_lista_html_a280a914f006a27a57fdaf955d7f48bf8"><div class="ttname"><a href="class_lista.html#a280a914f006a27a57fdaf955d7f48bf8">Lista::eult</a></div><div class="ttdeci">void eult()</div><div class="ttdoc">Elimina el último nodo de la lista, última celda de la lista. </div><div class="ttdef"><b>Definition:</b> <a href="lista_8cpp_source.html#l00267">lista.cpp:267</a></div></div>
+<div class="ttc" id="class_lista_html_a50ed254922841d4f1a81fc46d08ae2f4"><div class="ttname"><a href="class_lista.html#a50ed254922841d4f1a81fc46d08ae2f4">Lista::Longitud</a></div><div class="ttdeci">short Longitud()</div><div class="ttdoc">Función para acceder a la longitud de la lista, cantidad de nodos que hay en la lista. </div><div class="ttdef"><b>Definition:</b> <a href="lista_8cpp_source.html#l00224">lista.cpp:224</a></div></div>
+<div class="ttc" id="class_lista_html_a13a49683e3d62145bd4cc89bb261946e"><div class="ttname"><a href="class_lista.html#a13a49683e3d62145bd4cc89bb261946e">Lista::anadir_izq</a></div><div class="ttdeci">void anadir_izq(short elemento)</div><div class="ttdoc">Añade por la izquierda un objeto de la clase nodo_Lista. </div><div class="ttdef"><b>Definition:</b> <a href="lista_8cpp_source.html#l00083">lista.cpp:83</a></div></div>
+<div class="ttc" id="class_lista_html_ab20f6df52c782561a429cf07532f0e53"><div class="ttname"><a href="class_lista.html#ab20f6df52c782561a429cf07532f0e53">Lista::imprimirResto</a></div><div class="ttdeci">void imprimirResto()</div><div class="ttdoc">Imprime en orden todos los elementos de la lista menos el primero. Usado para imprimir el resto de la...</div><div class="ttdef"><b>Definition:</b> <a href="lista_8cpp_source.html#l00348">lista.cpp:348</a></div></div>
+<div class="ttc" id="classnodo___lista_html_a5abacbf7751aa5ad9705cec33eb64305"><div class="ttname"><a href="classnodo___lista.html#a5abacbf7751aa5ad9705cec33eb64305">nodo_Lista::pSiguiente</a></div><div class="ttdeci">nodo_Lista * pSiguiente</div><div class="ttdoc">Puntero de la clase nodo_lista que apunta a la siguiente celda de la lista, otro objeto nodo_lista...</div><div class="ttdef"><b>Definition:</b> <a href="nodo__lista_8h_source.html#l00035">nodo_lista.h:35</a></div></div>
+<div class="ttc" id="lista_8h_html"><div class="ttname"><a href="lista_8h.html">lista.h</a></div><div class="ttdoc">Cabecera. Clase Lista (Clase que representa la estructura lineal para almacenar los números de los mo...</div></div>
+<div class="ttc" id="class_juego_html_ada32c7b045649021ba074b65b56830bc"><div class="ttname"><a href="class_juego.html#ada32c7b045649021ba074b65b56830bc">Juego::obtenerNumeroHasta</a></div><div class="ttdeci">static short obtenerNumeroHasta(short n)</div><div class="ttdoc">Método para obtener un número entero aleatorio entre 1 y un número máximo dado. </div><div class="ttdef"><b>Definition:</b> <a href="juego_8cpp_source.html#l00056">juego.cpp:56</a></div></div>
+<div class="ttc" id="class_lista_html_a2e5fda0cc0fd10ea2b7ce32570671b1f"><div class="ttname"><a href="class_lista.html#a2e5fda0cc0fd10ea2b7ce32570671b1f">Lista::resto</a></div><div class="ttdeci">void resto()</div><div class="ttdoc">Elimina el primer nodo de la lista, primera celda, dejando el resto de la lista. </div><div class="ttdef"><b>Definition:</b> <a href="lista_8cpp_source.html#l00240">lista.cpp:240</a></div></div>
+<div class="ttc" id="class_lista_html_a4a0740d60025a3da35dab76d6c6d19a1"><div class="ttname"><a href="class_lista.html#a4a0740d60025a3da35dab76d6c6d19a1">Lista::longitud</a></div><div class="ttdeci">short longitud</div><div class="ttdoc">Almacena un número natural con el número de nodos de la lista, cantidad de números en un montón...</div><div class="ttdef"><b>Definition:</b> <a href="lista_8h_source.html#l00043">lista.h:43</a></div></div>
+<div class="ttc" id="nodo__lista_8h_html"><div class="ttname"><a href="nodo__lista_8h.html">nodo_lista.h</a></div><div class="ttdoc">Cabecera de la clase nodo_Lista. Nodo de una lista, alamacena un elemento de la lista. </div></div>
+<div class="ttc" id="class_lista_html_ac36788be03ce7f95e08cbfcc9b37549a"><div class="ttname"><a href="class_lista.html#ac36788be03ce7f95e08cbfcc9b37549a">Lista::imprimir</a></div><div class="ttdeci">void imprimir()</div><div class="ttdoc">Imprime en orden todos los elementos de la lista. </div><div class="ttdef"><b>Definition:</b> <a href="lista_8cpp_source.html#l00296">lista.cpp:296</a></div></div>
+<div class="ttc" id="class_lista_html_aa68b68753969da67766632304c954150"><div class="ttname"><a href="class_lista.html#aa68b68753969da67766632304c954150">Lista::es_lista_vacia</a></div><div class="ttdeci">bool es_lista_vacia()</div><div class="ttdoc">Comprueba si la lista, está vacía. Si hay objetos nodo_Lista, en la lista. </div><div class="ttdef"><b>Definition:</b> <a href="lista_8cpp_source.html#l00143">lista.cpp:143</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<hr class="footer"/><address class="footer"><small>
+PRÁCTICA 2 LISTAS Jorge Abad Méndez de Sotomayor, Miguel Gómez Olmedo;
+</small></address>

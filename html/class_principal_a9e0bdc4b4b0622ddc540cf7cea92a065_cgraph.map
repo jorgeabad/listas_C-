@@ -1,0 +1,26 @@
+<map id="Principal::menuPrincipal" name="Principal::menuPrincipal">
+<area shape="rect" id="node2" href="$class_lista.html#a79fc4d1cc0ede4aa458923cb8079dec2" title="Añade por la derecha un objeto de la clase nodo_Lista. " alt="" coords="473,636,591,663"/>
+<area shape="rect" id="node4" href="$classlista_montones.html#ad9a66ce9248edae2ab45903deaee0651" title="Función que busca un montón en la lista de montones y devuelve el último elemento de su lista..." alt="" coords="228,90,379,131"/>
+<area shape="rect" id="node7" href="$classlista_montones.html#a737020d482ed24c5432d5b160e5686b2" title="Comprueba si todos los montones almacenados en la lista están vacios, listas vacias. " alt="" coords="216,207,391,249"/>
+<area shape="rect" id="node10" href="$class_principal.html#a20e4d3177a663df683a803731a0976a4" title="Método que muestra y permite la selección de un número que representa la posción de un montón en la l..." alt="" coords="249,333,357,360"/>
+<area shape="rect" id="node15" href="$classlista_montones.html#a57c203fb9dd95e19808a68b15dbf4b60" title="Muestra por pantalla la información contenida en la lista de montones. " alt="" coords="225,393,382,420"/>
+<area shape="rect" id="node17" href="$class_lista.html#ab20f6df52c782561a429cf07532f0e53" title="Imprime en orden todos los elementos de la lista menos el primero. Usado para imprimir el resto de la..." alt="" coords="463,535,601,561"/>
+<area shape="rect" id="node18" href="$class_lista.html#a13956d96fa086a2aba1579217c7cf945" title="Muestra el primer elemento de la lista. " alt="" coords="258,779,349,805"/>
+<area shape="rect" id="node19" href="$classlista_montones.html#af466711a7227e57c2a5c5a5eae3f0753" title="Función que busca un montón en la lista de montones y devuelve la longitud de su lista, número de elementos en el montón. " alt="" coords="454,31,610,73"/>
+<area shape="rect" id="node20" href="$classlista_montones.html#abcb2d2e1b2f088c74a2927af1b6d4c80" title="Función que busca un montón y añade por la derecha un número natural a la lista de ese montón ..." alt="" coords="228,561,379,602"/>
+<area shape="rect" id="node21" href="$class_juego.html#a5214c907b756f2d8894d2368e1419de9" title="Método para obtener un número entero aleatorio entre 1 y 9. " alt="" coords="227,677,379,704"/>
+<area shape="rect" id="node22" href="$class_juego.html#a67a87ff5c12960b3f6455de583c7d588" title="Función para realizar una operación, pasando dos enteros y el símblo del operador. " alt="" coords="221,728,386,755"/>
+<area shape="rect" id="node23" href="$class_lista.html#a2e5fda0cc0fd10ea2b7ce32570671b1f" title="Elimina el primer nodo de la lista, primera celda, dejando el resto de la lista. " alt="" coords="260,829,347,856"/>
+<area shape="rect" id="node24" href="$classlista_montones.html#aa054c664099d48410a115e1862cf6e65" title="Elimina el último elemento de la lista que corresponde a un número de mónton determinado. " alt="" coords="232,495,375,537"/>
+<area shape="rect" id="node3" href="$class_lista.html#aa68b68753969da67766632304c954150" title="Comprueba si la lista, está vacía. Si hay objetos nodo_Lista, en la lista. " alt="" coords="690,560,829,587"/>
+<area shape="rect" id="node5" href="$classlista_montones.html#a7f25358eb73939738c04d8e74e7def70" title="Función que comprueba que una posición pasada es válida, si está entre 1 y la longitud de la lista..." alt="" coords="673,31,845,73"/>
+<area shape="rect" id="node6" href="$class_lista.html#ab35c033b4b066f396176e4a19311c2fc" title="Muestra el último elemento de la lista. " alt="" coords="491,97,573,124"/>
+<area shape="rect" id="node8" href="$classlista_montones.html#a3a11b4c7e0df702bede87d1e8d50c1aa" title="Comprueba si un montón de una determinada posición está vacío. " alt="" coords="445,149,619,190"/>
+<area shape="rect" id="node9" href="$classlista_montones.html#ac68a465266a1b5a0e1b2af1f19287934" title="Función para acceder a la longitud de la lista, cantidad de nodos que hay en la lista. " alt="" coords="452,215,612,241"/>
+<area shape="rect" id="node11" href="$class_lista.html#a7d4ae401380f60df080adcd2ab19c288" title="Muestra un elemento que esta en una posición concreta de la lista. " alt="" coords="459,316,605,343"/>
+<area shape="rect" id="node12" href="$class_lista.html#ac36788be03ce7f95e08cbfcc9b37549a" title="Imprime en orden todos los elementos de la lista. " alt="" coords="480,417,584,444"/>
+<area shape="rect" id="node13" href="$class_lista.html#a50ed254922841d4f1a81fc46d08ae2f4" title="Función para acceder a la longitud de la lista, cantidad de nodos que hay en la lista. " alt="" coords="706,341,813,368"/>
+<area shape="rect" id="node14" href="$class_juego.html#ada32c7b045649021ba074b65b56830bc" title="Método para obtener un número entero aleatorio entre 1 y un número máximo dado. " alt="" coords="439,367,625,393"/>
+<area shape="rect" id="node16" href="$classlista_montones.html#ae705de328a6cf6c432e7498f76058045" title="Comprueba si la listaMontones, está vacía. " alt="" coords="454,469,610,510"/>
+<area shape="rect" id="node25" href="$class_lista.html#a280a914f006a27a57fdaf955d7f48bf8" title="Elimina el último nodo de la lista, última celda de la lista. " alt="" coords="493,585,571,612"/>
+</map>

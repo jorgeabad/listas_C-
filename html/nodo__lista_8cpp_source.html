@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>PRÁCTICA 2 LISTAS: Página principal</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="estilos.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top">
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">PRÁCTICA 2 LISTAS
+   &#160;<span id="projectnumber">NUMBERIS 2</span>
+   </div>
+   <div id="projectbrief">LABORATORIO DE ESTRUCTURA DE DATOS</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- Jorge -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;principal</span></a></li>
+      <li><a href="annotated.html"><span>Clases</span></a></li>
+      <li class="current"><a href="files.html"><span>Archivos</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;de&#160;archivos</span></a></li>
+      <li><a href="globals.html"><span>Miembros&#160;de&#160;los&#160;ficheros</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">nodo_lista.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="nodo__lista_8cpp.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;conio.h&gt;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;stdlib.h&gt;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;string.h&gt;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;stdio.h&gt;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="nodo__lista_8h.html">nodo_lista.h</a>&quot;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="classnodo___lista.html#aac004f4c2e95850aafb5d0d0e73d9a43">   23</a></span>&#160;<a class="code" href="classnodo___lista.html#aac004f4c2e95850aafb5d0d0e73d9a43">nodo_Lista::nodo_Lista</a>(){</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;            <a class="code" href="classnodo___lista.html#acc8ee49e440c757c13d8df8187509c74">valor</a>=0;<span class="comment">//toma valor cero</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;            <a class="code" href="classnodo___lista.html#a5abacbf7751aa5ad9705cec33eb64305">pSiguiente</a>=NULL;<span class="comment">//puntero a la siguiente celda</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;            <a class="code" href="classnodo___lista.html#a2842661dbd2732440e4396ff2a78f4e9">pAnterior</a>=NULL;<span class="comment">//puntero a la celda anterior</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;                  </div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;                     }</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="classnodo___lista.html#a5faafdd5bf16a5df64ad2c8aad1e75c1">   37</a></span>&#160;<a class="code" href="classnodo___lista.html#a5faafdd5bf16a5df64ad2c8aad1e75c1">nodo_Lista::~nodo_Lista</a>(){</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    cout&lt;&lt;<span class="stringliteral">&quot;      Destructor nodo_lista: \n&quot;</span>;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keyword">delete</span>(<a class="code" href="classnodo___lista.html#a5abacbf7751aa5ad9705cec33eb64305">pSiguiente</a>);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keyword">delete</span>(<a class="code" href="classnodo___lista.html#a2842661dbd2732440e4396ff2a78f4e9">pAnterior</a>);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;}</div>
+<div class="ttc" id="classnodo___lista_html_a5faafdd5bf16a5df64ad2c8aad1e75c1"><div class="ttname"><a href="classnodo___lista.html#a5faafdd5bf16a5df64ad2c8aad1e75c1">nodo_Lista::~nodo_Lista</a></div><div class="ttdeci">~nodo_Lista()</div><div class="ttdoc">Destructor de la clase nodo_lista. </div><div class="ttdef"><b>Definition:</b> <a href="nodo__lista_8cpp_source.html#l00037">nodo_lista.cpp:37</a></div></div>
+<div class="ttc" id="classnodo___lista_html_a2842661dbd2732440e4396ff2a78f4e9"><div class="ttname"><a href="classnodo___lista.html#a2842661dbd2732440e4396ff2a78f4e9">nodo_Lista::pAnterior</a></div><div class="ttdeci">nodo_Lista * pAnterior</div><div class="ttdoc">Puntero de la clase nodo_lista que apunta a la anterior celda de la lista, otro objeto nodo_lista...</div><div class="ttdef"><b>Definition:</b> <a href="nodo__lista_8h_source.html#l00036">nodo_lista.h:36</a></div></div>
+<div class="ttc" id="classnodo___lista_html_acc8ee49e440c757c13d8df8187509c74"><div class="ttname"><a href="classnodo___lista.html#acc8ee49e440c757c13d8df8187509c74">nodo_Lista::valor</a></div><div class="ttdeci">short valor</div><div class="ttdoc">Un número natural, de los que componen los montones con los que jugaremos. </div><div class="ttdef"><b>Definition:</b> <a href="nodo__lista_8h_source.html#l00034">nodo_lista.h:34</a></div></div>
+<div class="ttc" id="classnodo___lista_html_a5abacbf7751aa5ad9705cec33eb64305"><div class="ttname"><a href="classnodo___lista.html#a5abacbf7751aa5ad9705cec33eb64305">nodo_Lista::pSiguiente</a></div><div class="ttdeci">nodo_Lista * pSiguiente</div><div class="ttdoc">Puntero de la clase nodo_lista que apunta a la siguiente celda de la lista, otro objeto nodo_lista...</div><div class="ttdef"><b>Definition:</b> <a href="nodo__lista_8h_source.html#l00035">nodo_lista.h:35</a></div></div>
+<div class="ttc" id="nodo__lista_8h_html"><div class="ttname"><a href="nodo__lista_8h.html">nodo_lista.h</a></div><div class="ttdoc">Cabecera de la clase nodo_Lista. Nodo de una lista, alamacena un elemento de la lista. </div></div>
+<div class="ttc" id="classnodo___lista_html_aac004f4c2e95850aafb5d0d0e73d9a43"><div class="ttname"><a href="classnodo___lista.html#aac004f4c2e95850aafb5d0d0e73d9a43">nodo_Lista::nodo_Lista</a></div><div class="ttdeci">nodo_Lista()</div><div class="ttdoc">Constructor para crear una celda unitaria con un número que toma valor 0, y sin nodos adyacentes...</div><div class="ttdef"><b>Definition:</b> <a href="nodo__lista_8cpp_source.html#l00023">nodo_lista.cpp:23</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<hr class="footer"/><address class="footer"><small>
+PRÁCTICA 2 LISTAS Jorge Abad Méndez de Sotomayor, Miguel Gómez Olmedo;
+</small></address>

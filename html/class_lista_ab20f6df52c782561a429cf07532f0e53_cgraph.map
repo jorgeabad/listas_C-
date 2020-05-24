@@ -1,0 +1,4 @@
+<map id="Lista::imprimirResto" name="Lista::imprimirResto">
+<area shape="rect" id="node2" href="$class_lista.html#aa68b68753969da67766632304c954150" title="Comprueba si la lista, está vacía. Si hay objetos nodo_Lista, en la lista. " alt="" coords="192,5,331,32"/>
+<area shape="rect" id="node3" href="$class_lista.html#a50ed254922841d4f1a81fc46d08ae2f4" title="Función para acceder a la longitud de la lista, cantidad de nodos que hay en la lista. " alt="" coords="208,56,315,83"/>
+</map>

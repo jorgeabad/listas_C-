@@ -1,0 +1,8 @@
+<map id="nodo_listaMontones.h" name="nodo_listaMontones.h">
+<area shape="rect" id="node2" href="$lista_montones_8h.html" title="Cabecera. listaMontones (Clase que representa la estructura lineal para almacenar las listas de númer..." alt="" coords="111,80,225,107"/>
+<area shape="rect" id="node3" href="$lista_montones_8cpp.html" title="Implementa, listaMontones (Clase que representa la estructura lineal para almacenar las listas de núm..." alt="" coords="5,155,133,181"/>
+<area shape="rect" id="node7" href="$nodo__lista_montones_8cpp.html" title="Implementa, nodo_listaMontones (Clase que representa una celda de una listaMontones, cada celda contiene un montón que es una lista de números) " alt="" coords="249,80,412,107"/>
+<area shape="rect" id="node4" href="$main_8cpp.html" title="cpp. Contiene la funcion que ejecuta el programa. " alt="" coords="133,229,208,256"/>
+<area shape="rect" id="node5" href="$principal_8h.html" title="Cabecera para la clase Principal. " alt="" coords="209,155,290,181"/>
+<area shape="rect" id="node6" href="$principal_8cpp.html" title="Implementa la clase Principal. " alt="" coords="233,229,327,256"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="listaMontones::sacar_de_monton" name="listaMontones::sacar_de_monton">
+<area shape="rect" id="node2" href="$class_lista.html#a280a914f006a27a57fdaf955d7f48bf8" title="Elimina el último nodo de la lista, última celda de la lista. " alt="" coords="196,13,275,39"/>
+<area shape="rect" id="node3" href="$class_lista.html#aa68b68753969da67766632304c954150" title="Comprueba si la lista, está vacía. Si hay objetos nodo_Lista, en la lista. " alt="" coords="323,13,461,39"/>
+</map>

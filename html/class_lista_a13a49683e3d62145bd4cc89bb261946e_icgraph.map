@@ -1,0 +1,7 @@
+<map id="Lista::anadir_izq" name="Lista::anadir_izq">
+<area shape="rect" id="node2" href="$class_principal.html#a0852c08277bbe28348a386198c8c99b3" title="Método para llenar la cinta numérica con cinco numeros naturales al azar. " alt="" coords="336,5,531,32"/>
+<area shape="rect" id="node4" href="$class_lista.html#a9a9df242d39735bb20a68cb06eb06682" title="Llena la lista, con un número aleatorio de objetos nodo_Lista, dentro de un rango determinado..." alt="" coords="171,60,288,87"/>
+<area shape="rect" id="node3" href="$main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="Funcion que representa el punto de inicio de ejecución del programa. " alt="" coords="821,35,872,61"/>
+<area shape="rect" id="node5" href="$classlista_montones.html#ac17850afd023400ecc9c377cc834978e" title="Añade por la izquierda, iterativamente, un determinado número de montones de un tamaño determinado..." alt="" coords="363,57,503,98"/>
+<area shape="rect" id="node6" href="$class_principal.html#ac612ba94084cc1b87859b98decb69499" title="Método para llenar la lista de montones, listaM, con los diferentes montones del juego. " alt="" coords="579,60,773,87"/>
+</map>

@@ -1,0 +1,6 @@
+<map id="listaMontones::comprueba_todos_vacios" name="listaMontones::comprueba_todos_vacios">
+<area shape="rect" id="node2" href="$classlista_montones.html#a3a11b4c7e0df702bede87d1e8d50c1aa" title="Comprueba si un montón de una determinada posición está vacío. " alt="" coords="228,35,403,76"/>
+<area shape="rect" id="node5" href="$classlista_montones.html#ac68a465266a1b5a0e1b2af1f19287934" title="Función para acceder a la longitud de la lista, cantidad de nodos que hay en la lista. " alt="" coords="235,101,395,127"/>
+<area shape="rect" id="node3" href="$classlista_montones.html#a7f25358eb73939738c04d8e74e7def70" title="Función que comprueba que una posición pasada es válida, si está entre 1 y la longitud de la lista..." alt="" coords="451,5,623,47"/>
+<area shape="rect" id="node4" href="$class_lista.html#aa68b68753969da67766632304c954150" title="Comprueba si la lista, está vacía. Si hay objetos nodo_Lista, en la lista. " alt="" coords="467,71,606,98"/>
+</map>

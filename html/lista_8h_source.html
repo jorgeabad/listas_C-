@@ -1,0 +1,104 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>PRÁCTICA 2 LISTAS: Página principal</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="estilos.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top">
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">PRÁCTICA 2 LISTAS
+   &#160;<span id="projectnumber">NUMBERIS 2</span>
+   </div>
+   <div id="projectbrief">LABORATORIO DE ESTRUCTURA DE DATOS</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- Jorge -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;principal</span></a></li>
+      <li><a href="annotated.html"><span>Clases</span></a></li>
+      <li class="current"><a href="files.html"><span>Archivos</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;de&#160;archivos</span></a></li>
+      <li><a href="globals.html"><span>Miembros&#160;de&#160;los&#160;ficheros</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">lista.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="lista_8h.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#ifndef LISTA_H_</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#define LISTA_H_</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;conio.h&gt;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;stdlib.h&gt;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;stdio.h&gt;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="nodo__lista_8h.html">nodo_lista.h</a>&quot;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">using namespace </span><a class="code" href="namespacestd.html">std</a>;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="class_lista.html">   31</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_lista.html">Lista</a></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;{</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    </div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;     <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;          </div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="class_lista.html#a4a0740d60025a3da35dab76d6c6d19a1">   43</a></span>&#160;           <span class="keywordtype">short</span> <a class="code" href="class_lista.html#a4a0740d60025a3da35dab76d6c6d19a1">longitud</a>;<span class="comment">//número de nodos  </span></div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="class_lista.html#a4e006bd905c6f731c5833dcbdc25a945">   44</a></span>&#160;           <a class="code" href="classnodo___lista.html">nodo_Lista</a>* <a class="code" href="class_lista.html#a4e006bd905c6f731c5833dcbdc25a945">primero</a>;<span class="comment">//nodo al primer nodo de la lista</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="class_lista.html#a5f68c0094acfe5035d65447202138017">   45</a></span>&#160;           <a class="code" href="classnodo___lista.html">nodo_Lista</a>* <a class="code" href="class_lista.html#a5f68c0094acfe5035d65447202138017">ultimo</a>;<span class="comment">//nodo al último de la lista</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;           </div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;     <span class="comment">//Métodos públicos</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;     <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;            <span class="comment">//CONSTRUCTORAS</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;            <a class="code" href="class_lista.html">Lista</a>(); <span class="comment">//Constructor de la lista crear una lista vacia.</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;            ~<a class="code" href="class_lista.html">Lista</a>();<span class="comment">//Destructor, elimina celdas y punteros.</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;            <span class="keywordtype">void</span> anadir_izq(<span class="keywordtype">short</span> elemento); <span class="comment">//añadir un elemento por la izquierda</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;            <span class="keywordtype">void</span> anadir_der(<span class="keywordtype">short</span> elemento); <span class="comment">//añadir un elemento por la derecha.</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;            <span class="keywordtype">void</span> llenarLista(<span class="keywordtype">short</span> n);<span class="comment">//llena una lista con &#39;n&#39; celdas añadiendolas por la izquierda.</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;           </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;            <span class="comment">//OBSERVADORAS</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;            <span class="keywordtype">int</span> inicial();<span class="comment">//Devuelve el número natural almacenado en el primer nodo de la lista.</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;            <span class="keywordtype">short</span> <span class="keyword">final</span>();<span class="comment">//Devuelve el número natural almacenado en el último nodo de la lista.</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;            <span class="keywordtype">short</span> Longitud();<span class="comment">//Devuelve la longitud de la lista</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;            <span class="keywordtype">bool</span> es_lista_vacia();<span class="comment">//Comprueba si la lista está vacía.</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;            <span class="keywordtype">void</span> imprimir();<span class="comment">//Imprime por pantalla los números náturales que hay en cada nodo de la lista.</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;            <span class="keywordtype">void</span> imprimirResto();<span class="comment">//Imprime por pantalla los números náturales que hay en cada nodo de la lista menos el primer nodo.</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;            <span class="keywordtype">short</span> cogerElemento(<span class="keywordtype">short</span> posicion);<span class="comment">//Devuelve el valor de un lemento que se encuentra en una posición de la lista</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;            </div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;            <span class="comment">//MODIFICADORAS</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;            <span class="keywordtype">void</span> resto();<span class="comment">//Elimina el primer nodo de la lista.</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;            <span class="keywordtype">void</span> eult();<span class="comment">//Elimina el último nodo de la lista.</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;           </div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;};</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="classnodo___lista_html"><div class="ttname"><a href="classnodo___lista.html">nodo_Lista</a></div><div class="ttdoc">Representa la celda de una lista, del tipo Lista[naturales], una lista en la que cada celda contiene ...</div><div class="ttdef"><b>Definition:</b> <a href="nodo__lista_8h_source.html#l00020">nodo_lista.h:20</a></div></div>
+<div class="ttc" id="namespacestd_html"><div class="ttname"><a href="namespacestd.html">std</a></div></div>
+<div class="ttc" id="class_lista_html_a5f68c0094acfe5035d65447202138017"><div class="ttname"><a href="class_lista.html#a5f68c0094acfe5035d65447202138017">Lista::ultimo</a></div><div class="ttdeci">nodo_Lista * ultimo</div><div class="ttdoc">Puntero al último nodo de la lista de la clase nodo_Lista. </div><div class="ttdef"><b>Definition:</b> <a href="lista_8h_source.html#l00045">lista.h:45</a></div></div>
+<div class="ttc" id="class_lista_html_a4e006bd905c6f731c5833dcbdc25a945"><div class="ttname"><a href="class_lista.html#a4e006bd905c6f731c5833dcbdc25a945">Lista::primero</a></div><div class="ttdeci">nodo_Lista * primero</div><div class="ttdoc">Puntero al primer nodo de la lista de la clase nodo_Lista. </div><div class="ttdef"><b>Definition:</b> <a href="lista_8h_source.html#l00044">lista.h:44</a></div></div>
+<div class="ttc" id="class_lista_html"><div class="ttname"><a href="class_lista.html">Lista</a></div><div class="ttdoc">Sirve para la representación de montones y de la cinta numérica. Lista[naturales] mediante celdas dob...</div><div class="ttdef"><b>Definition:</b> <a href="lista_8h_source.html#l00031">lista.h:31</a></div></div>
+<div class="ttc" id="class_lista_html_a4a0740d60025a3da35dab76d6c6d19a1"><div class="ttname"><a href="class_lista.html#a4a0740d60025a3da35dab76d6c6d19a1">Lista::longitud</a></div><div class="ttdeci">short longitud</div><div class="ttdoc">Almacena un número natural con el número de nodos de la lista, cantidad de números en un montón...</div><div class="ttdef"><b>Definition:</b> <a href="lista_8h_source.html#l00043">lista.h:43</a></div></div>
+<div class="ttc" id="nodo__lista_8h_html"><div class="ttname"><a href="nodo__lista_8h.html">nodo_lista.h</a></div><div class="ttdoc">Cabecera de la clase nodo_Lista. Nodo de una lista, alamacena un elemento de la lista. </div></div>
+</div><!-- fragment --></div><!-- contents -->
+<hr class="footer"/><address class="footer"><small>
+PRÁCTICA 2 LISTAS Jorge Abad Méndez de Sotomayor, Miguel Gómez Olmedo;
+</small></address>

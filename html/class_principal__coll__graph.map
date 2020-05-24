@@ -1,0 +1,6 @@
+<map id="Principal" name="Principal">
+<area shape="rect" id="node2" href="$classlista_montones.html" title="Estructura para almacenar los montones del juego. Almacena objetos de la clase Lista: listaMontones[L..." alt="" coords="115,660,307,928"/>
+<area shape="rect" id="node3" href="$classnodo__lista_montones.html" title="Representa la celda de una lista, listaMontones[Lista], una lista en la que cada celda contiene una l..." alt="" coords="121,505,288,597"/>
+<area shape="rect" id="node4" href="$class_lista.html" title="Sirve para la representación de montones y de la cinta numérica. Lista[naturales] mediante celdas dob..." alt="" coords="35,175,164,443"/>
+<area shape="rect" id="node5" href="$classnodo___lista.html" title="Representa la celda de una lista, del tipo Lista[naturales], una lista en la que cada celda contiene ..." alt="" coords="43,5,156,97"/>
+</map>

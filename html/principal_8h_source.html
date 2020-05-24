@@ -1,0 +1,122 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>PRÁCTICA 2 LISTAS: Página principal</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="estilos.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top">
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">PRÁCTICA 2 LISTAS
+   &#160;<span id="projectnumber">NUMBERIS 2</span>
+   </div>
+   <div id="projectbrief">LABORATORIO DE ESTRUCTURA DE DATOS</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- Jorge -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;principal</span></a></li>
+      <li><a href="annotated.html"><span>Clases</span></a></li>
+      <li class="current"><a href="files.html"><span>Archivos</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;de&#160;archivos</span></a></li>
+      <li><a href="globals.html"><span>Miembros&#160;de&#160;los&#160;ficheros</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">principal.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="principal_8h.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#ifndef PRINCIPAL_H_</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#define PRINCIPAL_H_</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;cstdlib&gt;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;sstream&gt;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="juego_8h.html">juego.h</a>&quot;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="lista_8h.html">lista.h</a>&quot;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="lista_montones_8h.html">listaMontones.h</a>&quot;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;locale.h&gt;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;conio.h&gt;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">using namespace </span><a class="code" href="namespacestd.html">std</a>;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="class_principal.html">   35</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_principal.html">Principal</a>{</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
+<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="class_principal.html#a1fe75fd32406dd40af7421eb779676fd">   68</a></span>&#160;     <span class="keywordtype">short</span> <a class="code" href="class_principal.html#a1fe75fd32406dd40af7421eb779676fd">valorReferencia</a>; <span class="comment">//No se permitirá mas de 10 elementos en un montón</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="class_principal.html#ad939249bb5be0c622519fac9add48c04">   69</a></span>&#160;     <span class="keywordtype">short</span> <a class="code" href="class_principal.html#ad939249bb5be0c622519fac9add48c04">cantidadMontones</a>;</div>
+<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="class_principal.html#adc3fbe540d3851305ccb4e08e87dcc9e">   70</a></span>&#160;     <span class="keywordtype">short</span> <a class="code" href="class_principal.html#adc3fbe540d3851305ccb4e08e87dcc9e">elementosPorMonton</a>;</div>
+<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="class_principal.html#a4bc1fcdcd7230a8b634060ff4590d4b7">   71</a></span>&#160;     <span class="keywordtype">char</span> <a class="code" href="class_principal.html#a4bc1fcdcd7230a8b634060ff4590d4b7">op</a>; <span class="comment">//Almacena el símbolo de la operación</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="class_principal.html#a9532670fb5debf74e795f4f4723e9b5d">   72</a></span>&#160;     <span class="keywordtype">string</span> <a class="code" href="class_principal.html#a9532670fb5debf74e795f4f4723e9b5d">avisoSistema</a>; <span class="comment">//Almacena cualquier aviso de error o advertencia, para el usuario al interactuar con el programa.</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="class_principal.html#a42f85335768d0e173e3632a4f567891e">   73</a></span>&#160;     <span class="keywordtype">string</span> <a class="code" href="class_principal.html#a42f85335768d0e173e3632a4f567891e">finJuego</a>; <span class="comment">//Avisa del fin del programa.</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno"><a class="line" href="class_principal.html#a298a8b4d7ebd3ab720328c4d0b311bf3">   74</a></span>&#160;     <span class="keywordtype">char</span> <a class="code" href="class_principal.html#a298a8b4d7ebd3ab720328c4d0b311bf3">opcion</a>;<span class="comment">//variable que almacena la opción seleccionada por el usuario.Cero no hay opción.</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="class_principal.html#aa229cfa131b10f063ba3473f302431ee">   75</a></span>&#160;     <span class="keywordtype">short</span> <a class="code" href="class_principal.html#aa229cfa131b10f063ba3473f302431ee">numeroCinta</a>;<span class="comment">// almacena el primer numero de la cinta, el que hay que introducir en los montones.Cero no hay número sacado de la cinta.</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="class_principal.html#a1b3ba7e0a9bc31654e5bd3a8030c92f1">   76</a></span>&#160;     <span class="keywordtype">short</span> <a class="code" href="class_principal.html#a1b3ba7e0a9bc31654e5bd3a8030c92f1">cima</a>;<span class="comment">//Almacena el número que es cima del monton seleccionado.</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="class_principal.html#a3f3ee6fc07a75c775e8b5a33d1f8d354">   77</a></span>&#160;     <span class="keywordtype">short</span> <a class="code" href="class_principal.html#a3f3ee6fc07a75c775e8b5a33d1f8d354">resultado</a>;<span class="comment">//Almacena el resultado de la operación inicialmente 0.</span></div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    </div>
+<div class="line"><a name="l00079"></a><span class="lineno"><a class="line" href="class_principal.html#a61f5096a891d969a5ec2a54cc2a72ba8">   79</a></span>&#160;     <span class="keywordtype">short</span> <a class="code" href="class_principal.html#a61f5096a891d969a5ec2a54cc2a72ba8">montonSeleccionado</a>;<span class="comment">//representa el monton seleccionado por el usuario</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  </div>
+<div class="line"><a name="l00081"></a><span class="lineno"><a class="line" href="class_principal.html#a155432a8862bd2a78f22146aecac2f0b">   81</a></span>&#160;     <a class="code" href="classlista_montones.html">listaMontones</a> <a class="code" href="class_principal.html#a155432a8862bd2a78f22146aecac2f0b">listaM</a>;<span class="comment">//Almacena objetos de la clase Lista, los montones del juego</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno"><a class="line" href="class_principal.html#a0118eacb8c119552049e084c3c95dbc1">   82</a></span>&#160;     <a class="code" href="class_lista.html">Lista</a> <a class="code" href="class_principal.html#a0118eacb8c119552049e084c3c95dbc1">cinta</a>;<span class="comment">//Almacena los números de la cinta numérica</span></div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;     <a class="code" href="class_principal.html">Principal</a>();<span class="comment">//Constructor inicializa las variables para el inicio del juego</span></div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;     <span class="keywordtype">string</span> getFinJuego();<span class="comment">//devuelve el valor del atributo &#39;finjuego&#39;</span></div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;     <span class="keywordtype">void</span> seleccionarNumeroDeMontones();<span class="comment">//Permite elegir al usuario el número de montones que desea para el juego </span></div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;     <span class="keywordtype">void</span> seleccionarElementosPorMonton();<span class="comment">//Permite seleccionar el número máximo de elementos al que pueden llegar los montones.</span></div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;     <span class="keywordtype">void</span> crearCintaNumerica();<span class="comment">//Crea un objeto de la clase lista que representa la cinta numérica.</span></div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;     <span class="keywordtype">void</span> crearListaMontones();<span class="comment">//Crea un objeto de la clase listaMontones que representa la lista de montones, cada montón es una lista.</span></div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;     <span class="keywordtype">short</span> dado();<span class="comment">//Muestra y permite la elección por pantalla, de números que representan las posiciones de la lista de montones.</span></div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;     <span class="keywordtype">void</span> menuPrincipal();<span class="comment">//Muestra por pantalla la información de la cinta y montones, y se encarga de la E/S de datos al usuario.</span></div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;     </div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;};</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="class_principal_html_adc3fbe540d3851305ccb4e08e87dcc9e"><div class="ttname"><a href="class_principal.html#adc3fbe540d3851305ccb4e08e87dcc9e">Principal::elementosPorMonton</a></div><div class="ttdeci">short elementosPorMonton</div><div class="ttdoc">Número máximo de elementos al que pueden llegar los montones en el juego. </div><div class="ttdef"><b>Definition:</b> <a href="principal_8h_source.html#l00070">principal.h:70</a></div></div>
+<div class="ttc" id="class_principal_html_a9532670fb5debf74e795f4f4723e9b5d"><div class="ttname"><a href="class_principal.html#a9532670fb5debf74e795f4f4723e9b5d">Principal::avisoSistema</a></div><div class="ttdeci">string avisoSistema</div><div class="ttdoc">Almacena cualquier aviso de error o mensaje, para el usuario al interactuar con el programa...</div><div class="ttdef"><b>Definition:</b> <a href="principal_8h_source.html#l00072">principal.h:72</a></div></div>
+<div class="ttc" id="class_principal_html_a155432a8862bd2a78f22146aecac2f0b"><div class="ttname"><a href="class_principal.html#a155432a8862bd2a78f22146aecac2f0b">Principal::listaM</a></div><div class="ttdeci">listaMontones listaM</div><div class="ttdoc">Almacena una serie de objetos de la clase Lista, se corresponde con los montones del juego...</div><div class="ttdef"><b>Definition:</b> <a href="principal_8h_source.html#l00081">principal.h:81</a></div></div>
+<div class="ttc" id="lista_montones_8h_html"><div class="ttname"><a href="lista_montones_8h.html">listaMontones.h</a></div><div class="ttdoc">Cabecera. listaMontones (Clase que representa la estructura lineal para almacenar las listas de númer...</div></div>
+<div class="ttc" id="juego_8h_html"><div class="ttname"><a href="juego_8h.html">juego.h</a></div><div class="ttdoc">Cabecera, juego (métodos estáticos, para el funcionamiento del juego) </div></div>
+<div class="ttc" id="namespacestd_html"><div class="ttname"><a href="namespacestd.html">std</a></div></div>
+<div class="ttc" id="class_principal_html_aa229cfa131b10f063ba3473f302431ee"><div class="ttname"><a href="class_principal.html#aa229cfa131b10f063ba3473f302431ee">Principal::numeroCinta</a></div><div class="ttdeci">short numeroCinta</div><div class="ttdoc">Almacena el primer numero de la cinta, el que hay que introducir en los montones.Cero no hay número s...</div><div class="ttdef"><b>Definition:</b> <a href="principal_8h_source.html#l00075">principal.h:75</a></div></div>
+<div class="ttc" id="class_principal_html_a298a8b4d7ebd3ab720328c4d0b311bf3"><div class="ttname"><a href="class_principal.html#a298a8b4d7ebd3ab720328c4d0b311bf3">Principal::opcion</a></div><div class="ttdeci">char opcion</div><div class="ttdoc">Variable que almacena la opción seleccionada por el usuario. Cero no hay opción. </div><div class="ttdef"><b>Definition:</b> <a href="principal_8h_source.html#l00074">principal.h:74</a></div></div>
+<div class="ttc" id="classlista_montones_html"><div class="ttname"><a href="classlista_montones.html">listaMontones</a></div><div class="ttdoc">Estructura para almacenar los montones del juego. Almacena objetos de la clase Lista: listaMontones[L...</div><div class="ttdef"><b>Definition:</b> <a href="lista_montones_8h_source.html#l00030">listaMontones.h:30</a></div></div>
+<div class="ttc" id="class_principal_html_a42f85335768d0e173e3632a4f567891e"><div class="ttname"><a href="class_principal.html#a42f85335768d0e173e3632a4f567891e">Principal::finJuego</a></div><div class="ttdeci">string finJuego</div><div class="ttdoc">Alamacena la información de porque se acaba el juego, fin del programa. </div><div class="ttdef"><b>Definition:</b> <a href="principal_8h_source.html#l00073">principal.h:73</a></div></div>
+<div class="ttc" id="class_principal_html_a61f5096a891d969a5ec2a54cc2a72ba8"><div class="ttname"><a href="class_principal.html#a61f5096a891d969a5ec2a54cc2a72ba8">Principal::montonSeleccionado</a></div><div class="ttdeci">short montonSeleccionado</div><div class="ttdoc">Almacena número natrural que representa el monton seleccionado por el usuario, posición en la listaMo...</div><div class="ttdef"><b>Definition:</b> <a href="principal_8h_source.html#l00079">principal.h:79</a></div></div>
+<div class="ttc" id="class_principal_html_ad939249bb5be0c622519fac9add48c04"><div class="ttname"><a href="class_principal.html#ad939249bb5be0c622519fac9add48c04">Principal::cantidadMontones</a></div><div class="ttdeci">short cantidadMontones</div><div class="ttdoc">Almacena la cantidad de montones, del juego. Cantidad de nodo_listaMontones para la listaMontones...</div><div class="ttdef"><b>Definition:</b> <a href="principal_8h_source.html#l00069">principal.h:69</a></div></div>
+<div class="ttc" id="class_principal_html_a0118eacb8c119552049e084c3c95dbc1"><div class="ttname"><a href="class_principal.html#a0118eacb8c119552049e084c3c95dbc1">Principal::cinta</a></div><div class="ttdeci">Lista cinta</div><div class="ttdoc">Almacena los números de la cinta numérica. </div><div class="ttdef"><b>Definition:</b> <a href="principal_8h_source.html#l00082">principal.h:82</a></div></div>
+<div class="ttc" id="class_principal_html"><div class="ttname"><a href="class_principal.html">Principal</a></div><div class="ttdoc">Clase empleada para interactuar con el usuario y para crear objetos de las clases lista y listaMonton...</div><div class="ttdef"><b>Definition:</b> <a href="principal_8h_source.html#l00035">principal.h:35</a></div></div>
+<div class="ttc" id="class_principal_html_a3f3ee6fc07a75c775e8b5a33d1f8d354"><div class="ttname"><a href="class_principal.html#a3f3ee6fc07a75c775e8b5a33d1f8d354">Principal::resultado</a></div><div class="ttdeci">short resultado</div><div class="ttdoc">Almacena el resultado de la operación de la cima con el numeroCinta, inicialmente 0...</div><div class="ttdef"><b>Definition:</b> <a href="principal_8h_source.html#l00077">principal.h:77</a></div></div>
+<div class="ttc" id="class_principal_html_a1fe75fd32406dd40af7421eb779676fd"><div class="ttname"><a href="class_principal.html#a1fe75fd32406dd40af7421eb779676fd">Principal::valorReferencia</a></div><div class="ttdeci">short valorReferencia</div><div class="ttdoc">Número natural=10 que tomamos como valor para decidir si añadimos o quitamos un número de un montón...</div><div class="ttdef"><b>Definition:</b> <a href="principal_8h_source.html#l00068">principal.h:68</a></div></div>
+<div class="ttc" id="class_principal_html_a1b3ba7e0a9bc31654e5bd3a8030c92f1"><div class="ttname"><a href="class_principal.html#a1b3ba7e0a9bc31654e5bd3a8030c92f1">Principal::cima</a></div><div class="ttdeci">short cima</div><div class="ttdoc">Almacena el número que es cima del monton seleccionado. </div><div class="ttdef"><b>Definition:</b> <a href="principal_8h_source.html#l00076">principal.h:76</a></div></div>
+<div class="ttc" id="lista_8h_html"><div class="ttname"><a href="lista_8h.html">lista.h</a></div><div class="ttdoc">Cabecera. Clase Lista (Clase que representa la estructura lineal para almacenar los números de los mo...</div></div>
+<div class="ttc" id="class_lista_html"><div class="ttname"><a href="class_lista.html">Lista</a></div><div class="ttdoc">Sirve para la representación de montones y de la cinta numérica. Lista[naturales] mediante celdas dob...</div><div class="ttdef"><b>Definition:</b> <a href="lista_8h_source.html#l00031">lista.h:31</a></div></div>
+<div class="ttc" id="class_principal_html_a4bc1fcdcd7230a8b634060ff4590d4b7"><div class="ttname"><a href="class_principal.html#a4bc1fcdcd7230a8b634060ff4590d4b7">Principal::op</a></div><div class="ttdeci">char op</div><div class="ttdoc">Almacena el símbolo de la operación. </div><div class="ttdef"><b>Definition:</b> <a href="principal_8h_source.html#l00071">principal.h:71</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<hr class="footer"/><address class="footer"><small>
+PRÁCTICA 2 LISTAS Jorge Abad Méndez de Sotomayor, Miguel Gómez Olmedo;
+</small></address>

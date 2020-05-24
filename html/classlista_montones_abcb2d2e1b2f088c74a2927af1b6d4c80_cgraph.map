@@ -1,0 +1,4 @@
+<map id="listaMontones::menter_en_monton" name="listaMontones::menter_en_monton">
+<area shape="rect" id="node2" href="$class_lista.html#a79fc4d1cc0ede4aa458923cb8079dec2" title="Añade por la derecha un objeto de la clase nodo_Lista. " alt="" coords="204,13,323,39"/>
+<area shape="rect" id="node3" href="$class_lista.html#aa68b68753969da67766632304c954150" title="Comprueba si la lista, está vacía. Si hay objetos nodo_Lista, en la lista. " alt="" coords="371,13,509,39"/>
+</map>

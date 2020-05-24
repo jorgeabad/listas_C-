@@ -1,0 +1,4 @@
+<map id="listaMontones::comprueba_Monton_vacio" name="listaMontones::comprueba_Monton_vacio">
+<area shape="rect" id="node2" href="$classlista_montones.html#a7f25358eb73939738c04d8e74e7def70" title="Función que comprueba que una posición pasada es válida, si está entre 1 y la longitud de la lista..." alt="" coords="228,5,400,47"/>
+<area shape="rect" id="node3" href="$class_lista.html#aa68b68753969da67766632304c954150" title="Comprueba si la lista, está vacía. Si hay objetos nodo_Lista, en la lista. " alt="" coords="245,71,383,98"/>
+</map>

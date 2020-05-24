@@ -1,0 +1,268 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>PRÁCTICA 2 LISTAS: Página principal</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="estilos.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top">
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">PRÁCTICA 2 LISTAS
+   &#160;<span id="projectnumber">NUMBERIS 2</span>
+   </div>
+   <div id="projectbrief">LABORATORIO DE ESTRUCTURA DE DATOS</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- Jorge -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;principal</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Clases</span></a></li>
+      <li><a href="files.html"><span>Archivos</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>Lista&#160;de&#160;clases</span></a></li>
+      <li><a href="classes.html"><span>Índice&#160;de&#160;clases</span></a></li>
+      <li><a href="functions.html"><span>Miembros&#160;de&#160;las&#160;clases</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Métodos públicos</a> &#124;
+<a href="#pri-attribs">Atributos privados</a> &#124;
+<a href="#friends">Amigas</a> &#124;
+<a href="classnodo___lista-members.html">Lista de todos los miembros</a>  </div>
+  <div class="headertitle">
+<div class="title">Referencia de la Clase nodo_Lista</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Representa la celda de una lista, del tipo <a class="el" href="class_lista.html" title="Sirve para la representación de montones y de la cinta numérica. Lista[naturales] mediante celdas dob...">Lista</a>[naturales], una lista en la que cada celda contiene una número natural.  
+ <a href="classnodo___lista.html#details">Más...</a></p>
+
+<p><code>#include &lt;<a class="el" href="nodo__lista_8h_source.html">nodo_lista.h</a>&gt;</code></p>
+<div class="dynheader">
+Diagrama de colaboración para nodo_Lista:</div>
+<div class="dyncontent">
+<div class="center"><img src="classnodo___lista__coll__graph.png" border="0" usemap="#nodo___lista_coll__map" alt="Collaboration graph"/></div>
+<map name="nodo___lista_coll__map" id="nodo___lista_coll__map">
+</map>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Métodos públicos</h2></td></tr>
+<tr class="memitem:aac004f4c2e95850aafb5d0d0e73d9a43"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnodo___lista.html#aac004f4c2e95850aafb5d0d0e73d9a43">nodo_Lista</a> ()</td></tr>
+<tr class="memdesc:aac004f4c2e95850aafb5d0d0e73d9a43"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor para crear una celda unitaria con un número que toma valor 0, y sin nodos adyacentes.  <a href="#aac004f4c2e95850aafb5d0d0e73d9a43">Más...</a><br /></td></tr>
+<tr class="separator:aac004f4c2e95850aafb5d0d0e73d9a43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5faafdd5bf16a5df64ad2c8aad1e75c1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnodo___lista.html#a5faafdd5bf16a5df64ad2c8aad1e75c1">~nodo_Lista</a> ()</td></tr>
+<tr class="memdesc:a5faafdd5bf16a5df64ad2c8aad1e75c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor de la clase nodo_lista.  <a href="#a5faafdd5bf16a5df64ad2c8aad1e75c1">Más...</a><br /></td></tr>
+<tr class="separator:a5faafdd5bf16a5df64ad2c8aad1e75c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Atributos privados</h2></td></tr>
+<tr class="memitem:acc8ee49e440c757c13d8df8187509c74"><td class="memItemLeft" align="right" valign="top">short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnodo___lista.html#acc8ee49e440c757c13d8df8187509c74">valor</a></td></tr>
+<tr class="memdesc:acc8ee49e440c757c13d8df8187509c74"><td class="mdescLeft">&#160;</td><td class="mdescRight">Un número natural, de los que componen los montones con los que jugaremos.  <a href="#acc8ee49e440c757c13d8df8187509c74">Más...</a><br /></td></tr>
+<tr class="separator:acc8ee49e440c757c13d8df8187509c74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5abacbf7751aa5ad9705cec33eb64305"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classnodo___lista.html">nodo_Lista</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnodo___lista.html#a5abacbf7751aa5ad9705cec33eb64305">pSiguiente</a></td></tr>
+<tr class="memdesc:a5abacbf7751aa5ad9705cec33eb64305"><td class="mdescLeft">&#160;</td><td class="mdescRight">Puntero de la clase nodo_lista que apunta a la siguiente celda de la lista, otro objeto nodo_lista.  <a href="#a5abacbf7751aa5ad9705cec33eb64305">Más...</a><br /></td></tr>
+<tr class="separator:a5abacbf7751aa5ad9705cec33eb64305"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2842661dbd2732440e4396ff2a78f4e9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classnodo___lista.html">nodo_Lista</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnodo___lista.html#a2842661dbd2732440e4396ff2a78f4e9">pAnterior</a></td></tr>
+<tr class="memdesc:a2842661dbd2732440e4396ff2a78f4e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Puntero de la clase nodo_lista que apunta a la anterior celda de la lista, otro objeto nodo_lista.  <a href="#a2842661dbd2732440e4396ff2a78f4e9">Más...</a><br /></td></tr>
+<tr class="separator:a2842661dbd2732440e4396ff2a78f4e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
+Amigas</h2></td></tr>
+<tr class="memitem:ae4fecdd4873df780beac2cef64580e88"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnodo___lista.html#ae4fecdd4873df780beac2cef64580e88">Lista</a></td></tr>
+<tr class="separator:ae4fecdd4873df780beac2cef64580e88"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Descripción detallada</h2>
+<div class="textblock"><p>Representa la celda de una lista, del tipo <a class="el" href="class_lista.html" title="Sirve para la representación de montones y de la cinta numérica. Lista[naturales] mediante celdas dob...">Lista</a>[naturales], una lista en la que cada celda contiene una número natural. </p>
+<p>Es una celda de una lista, cada celda contiene un puntero de la clase nodo_lista que apunta a la siguiente celda y un atributo, 'valor', que almacena un número natural. </p><dl class="section see"><dt>Ver también</dt><dd><a class="el" href="class_lista.html" title="Sirve para la representación de montones y de la cinta numérica. Lista[naturales] mediante celdas dob...">Lista</a> </dd></dl>
+
+<p>Definición en la línea <a class="el" href="nodo__lista_8h_source.html#l00020">20</a> del archivo <a class="el" href="nodo__lista_8h_source.html">nodo_lista.h</a>.</p>
+</div><h2 class="groupheader">Documentación del constructor y destructor</h2>
+<a class="anchor" id="aac004f4c2e95850aafb5d0d0e73d9a43"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">nodo_Lista::nodo_Lista </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Constructor para crear una celda unitaria con un número que toma valor 0, y sin nodos adyacentes. </p>
+<p>Solo hay un nodo en el que almacenamos un cero, no valido para el juego, sus punteros no apuntan a ninguna celda. </p>
+
+<p>Definición en la línea <a class="el" href="nodo__lista_8cpp_source.html#l00023">23</a> del archivo <a class="el" href="nodo__lista_8cpp_source.html">nodo_lista.cpp</a>.</p>
+
+<p>Hace referencia a <a class="el" href="nodo__lista_8h_source.html#l00036">pAnterior</a>, <a class="el" href="nodo__lista_8h_source.html#l00035">pSiguiente</a> y <a class="el" href="nodo__lista_8h_source.html#l00034">valor</a>.</p>
+<div class="fragment"><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;                      {</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;            <a class="code" href="classnodo___lista.html#acc8ee49e440c757c13d8df8187509c74">valor</a>=0;<span class="comment">//toma valor cero</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;            <a class="code" href="classnodo___lista.html#a5abacbf7751aa5ad9705cec33eb64305">pSiguiente</a>=NULL;<span class="comment">//puntero a la siguiente celda</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;            <a class="code" href="classnodo___lista.html#a2842661dbd2732440e4396ff2a78f4e9">pAnterior</a>=NULL;<span class="comment">//puntero a la celda anterior</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;                  </div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;                     }</div>
+<div class="ttc" id="classnodo___lista_html_a2842661dbd2732440e4396ff2a78f4e9"><div class="ttname"><a href="classnodo___lista.html#a2842661dbd2732440e4396ff2a78f4e9">nodo_Lista::pAnterior</a></div><div class="ttdeci">nodo_Lista * pAnterior</div><div class="ttdoc">Puntero de la clase nodo_lista que apunta a la anterior celda de la lista, otro objeto nodo_lista...</div><div class="ttdef"><b>Definition:</b> <a href="nodo__lista_8h_source.html#l00036">nodo_lista.h:36</a></div></div>
+<div class="ttc" id="classnodo___lista_html_acc8ee49e440c757c13d8df8187509c74"><div class="ttname"><a href="classnodo___lista.html#acc8ee49e440c757c13d8df8187509c74">nodo_Lista::valor</a></div><div class="ttdeci">short valor</div><div class="ttdoc">Un número natural, de los que componen los montones con los que jugaremos. </div><div class="ttdef"><b>Definition:</b> <a href="nodo__lista_8h_source.html#l00034">nodo_lista.h:34</a></div></div>
+<div class="ttc" id="classnodo___lista_html_a5abacbf7751aa5ad9705cec33eb64305"><div class="ttname"><a href="classnodo___lista.html#a5abacbf7751aa5ad9705cec33eb64305">nodo_Lista::pSiguiente</a></div><div class="ttdeci">nodo_Lista * pSiguiente</div><div class="ttdoc">Puntero de la clase nodo_lista que apunta a la siguiente celda de la lista, otro objeto nodo_lista...</div><div class="ttdef"><b>Definition:</b> <a href="nodo__lista_8h_source.html#l00035">nodo_lista.h:35</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a5faafdd5bf16a5df64ad2c8aad1e75c1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">nodo_Lista::~nodo_Lista </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Destructor de la clase nodo_lista. </p>
+<p>Eliminamos sus punteros asociados, a la siguiente y ala anterior celda </p>
+
+<p>Definición en la línea <a class="el" href="nodo__lista_8cpp_source.html#l00037">37</a> del archivo <a class="el" href="nodo__lista_8cpp_source.html">nodo_lista.cpp</a>.</p>
+
+<p>Hace referencia a <a class="el" href="nodo__lista_8h_source.html#l00036">pAnterior</a> y <a class="el" href="nodo__lista_8h_source.html#l00035">pSiguiente</a>.</p>
+<div class="fragment"><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;                       {</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    cout&lt;&lt;<span class="stringliteral">&quot;      Destructor nodo_lista: \n&quot;</span>;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keyword">delete</span>(<a class="code" href="classnodo___lista.html#a5abacbf7751aa5ad9705cec33eb64305">pSiguiente</a>);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keyword">delete</span>(<a class="code" href="classnodo___lista.html#a2842661dbd2732440e4396ff2a78f4e9">pAnterior</a>);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;}</div>
+<div class="ttc" id="classnodo___lista_html_a2842661dbd2732440e4396ff2a78f4e9"><div class="ttname"><a href="classnodo___lista.html#a2842661dbd2732440e4396ff2a78f4e9">nodo_Lista::pAnterior</a></div><div class="ttdeci">nodo_Lista * pAnterior</div><div class="ttdoc">Puntero de la clase nodo_lista que apunta a la anterior celda de la lista, otro objeto nodo_lista...</div><div class="ttdef"><b>Definition:</b> <a href="nodo__lista_8h_source.html#l00036">nodo_lista.h:36</a></div></div>
+<div class="ttc" id="classnodo___lista_html_a5abacbf7751aa5ad9705cec33eb64305"><div class="ttname"><a href="classnodo___lista.html#a5abacbf7751aa5ad9705cec33eb64305">nodo_Lista::pSiguiente</a></div><div class="ttdeci">nodo_Lista * pSiguiente</div><div class="ttdoc">Puntero de la clase nodo_lista que apunta a la siguiente celda de la lista, otro objeto nodo_lista...</div><div class="ttdef"><b>Definition:</b> <a href="nodo__lista_8h_source.html#l00035">nodo_lista.h:35</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Documentación de las funciones relacionadas y clases amigas</h2>
+<a class="anchor" id="ae4fecdd4873df780beac2cef64580e88"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">friend class <a class="el" href="class_lista.html">Lista</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definición en la línea <a class="el" href="nodo__lista_8h_source.html#l00030">30</a> del archivo <a class="el" href="nodo__lista_8h_source.html">nodo_lista.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentación de los datos miembro</h2>
+<a class="anchor" id="a2842661dbd2732440e4396ff2a78f4e9"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">nodo_Lista::pAnterior</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Puntero de la clase nodo_lista que apunta a la anterior celda de la lista, otro objeto nodo_lista. </p>
+
+<p>Definición en la línea <a class="el" href="nodo__lista_8h_source.html#l00036">36</a> del archivo <a class="el" href="nodo__lista_8h_source.html">nodo_lista.h</a>.</p>
+
+<p>Referenciado por <a class="el" href="lista_8cpp_source.html#l00111">Lista::anadir_der()</a>, <a class="el" href="lista_8cpp_source.html#l00083">Lista::anadir_izq()</a>, <a class="el" href="lista_8cpp_source.html#l00267">Lista::eult()</a>, <a class="el" href="nodo__lista_8cpp_source.html#l00023">nodo_Lista()</a>, <a class="el" href="lista_8cpp_source.html#l00240">Lista::resto()</a> y <a class="el" href="nodo__lista_8cpp_source.html#l00037">~nodo_Lista()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a5abacbf7751aa5ad9705cec33eb64305"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">nodo_Lista::pSiguiente</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Puntero de la clase nodo_lista que apunta a la siguiente celda de la lista, otro objeto nodo_lista. </p>
+
+<p>Definición en la línea <a class="el" href="nodo__lista_8h_source.html#l00035">35</a> del archivo <a class="el" href="nodo__lista_8h_source.html">nodo_lista.h</a>.</p>
+
+<p>Referenciado por <a class="el" href="lista_8cpp_source.html#l00111">Lista::anadir_der()</a>, <a class="el" href="lista_8cpp_source.html#l00083">Lista::anadir_izq()</a>, <a class="el" href="lista_8cpp_source.html#l00322">Lista::cogerElemento()</a>, <a class="el" href="lista_8cpp_source.html#l00267">Lista::eult()</a>, <a class="el" href="lista_8cpp_source.html#l00296">Lista::imprimir()</a>, <a class="el" href="lista_8cpp_source.html#l00348">Lista::imprimirResto()</a>, <a class="el" href="nodo__lista_8cpp_source.html#l00023">nodo_Lista()</a>, <a class="el" href="lista_8cpp_source.html#l00240">Lista::resto()</a> y <a class="el" href="nodo__lista_8cpp_source.html#l00037">~nodo_Lista()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="acc8ee49e440c757c13d8df8187509c74"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">nodo_Lista::valor</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Un número natural, de los que componen los montones con los que jugaremos. </p>
+
+<p>Definición en la línea <a class="el" href="nodo__lista_8h_source.html#l00034">34</a> del archivo <a class="el" href="nodo__lista_8h_source.html">nodo_lista.h</a>.</p>
+
+<p>Referenciado por <a class="el" href="lista_8cpp_source.html#l00111">Lista::anadir_der()</a>, <a class="el" href="lista_8cpp_source.html#l00083">Lista::anadir_izq()</a>, <a class="el" href="lista_8cpp_source.html#l00322">Lista::cogerElemento()</a>, <a class="el" href="lista_8cpp_source.html#l00191">Lista::final()</a>, <a class="el" href="lista_8cpp_source.html#l00296">Lista::imprimir()</a>, <a class="el" href="lista_8cpp_source.html#l00348">Lista::imprimirResto()</a>, <a class="el" href="lista_8cpp_source.html#l00156">Lista::inicial()</a> y <a class="el" href="nodo__lista_8cpp_source.html#l00023">nodo_Lista()</a>.</p>
+
+</div>
+</div>
+<hr/>La documentación para esta clase fue generada a partir de los siguientes ficheros:<ul>
+<li><a class="el" href="nodo__lista_8h_source.html">nodo_lista.h</a></li>
+<li><a class="el" href="nodo__lista_8cpp_source.html">nodo_lista.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<hr class="footer"/><address class="footer"><small>
+PRÁCTICA 2 LISTAS Jorge Abad Méndez de Sotomayor, Miguel Gómez Olmedo;
+</small></address>

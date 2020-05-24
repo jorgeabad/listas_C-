@@ -1,0 +1,7 @@
+<map id="listaMontones::crear_lista" name="listaMontones::crear_lista">
+<area shape="rect" id="node2" href="$class_lista.html#a9a9df242d39735bb20a68cb06eb06682" title="Llena la lista, con un número aleatorio de objetos nodo_Lista, dentro de un rango determinado..." alt="" coords="193,56,311,83"/>
+<area shape="rect" id="node3" href="$class_lista.html#a13a49683e3d62145bd4cc89bb261946e" title="Añade por la izquierda un objeto de la clase nodo_Lista. " alt="" coords="393,5,511,32"/>
+<area shape="rect" id="node5" href="$class_juego.html#a5214c907b756f2d8894d2368e1419de9" title="Método para obtener un número entero aleatorio entre 1 y 9. " alt="" coords="376,56,528,83"/>
+<area shape="rect" id="node6" href="$class_juego.html#ada32c7b045649021ba074b65b56830bc" title="Método para obtener un número entero aleatorio entre 1 y un número máximo dado. " alt="" coords="359,107,545,133"/>
+<area shape="rect" id="node4" href="$class_lista.html#aa68b68753969da67766632304c954150" title="Comprueba si la lista, está vacía. Si hay objetos nodo_Lista, en la lista. " alt="" coords="593,5,732,32"/>
+</map>

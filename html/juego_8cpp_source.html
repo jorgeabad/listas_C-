@@ -1,0 +1,165 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>PRÁCTICA 2 LISTAS: Página principal</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="estilos.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top">
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">PRÁCTICA 2 LISTAS
+   &#160;<span id="projectnumber">NUMBERIS 2</span>
+   </div>
+   <div id="projectbrief">LABORATORIO DE ESTRUCTURA DE DATOS</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- Jorge -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;principal</span></a></li>
+      <li><a href="annotated.html"><span>Clases</span></a></li>
+      <li class="current"><a href="files.html"><span>Archivos</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;de&#160;archivos</span></a></li>
+      <li><a href="globals.html"><span>Miembros&#160;de&#160;los&#160;ficheros</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">juego.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="juego_8cpp.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;stdlib.h&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;time.h&gt;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include&lt;iostream&gt;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;windows.h&gt;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include&quot;<a class="code" href="juego_8h.html">juego.h</a>&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">using namespace </span><a class="code" href="namespacestd.html">std</a>;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="class_juego.html#aad9763872707f4255564120de4a916b8">   20</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_juego.html#aad9763872707f4255564120de4a916b8">Juego::iniciarSemilla</a>(){</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;     srand((<span class="keywordtype">unsigned</span>)time(0)); </div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="comment">//srand(time(NULL));</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;}</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="class_juego.html#a5214c907b756f2d8894d2368e1419de9">   34</a></span>&#160;<span class="keywordtype">short</span> <a class="code" href="class_juego.html#a5214c907b756f2d8894d2368e1419de9">Juego::obtenerNumero</a>()</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;{</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordtype">short</span> num;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="comment">//rand();</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    num = 1 + rand() % (9);<span class="comment">// rand() obtiene un número aleatorio en función de la semilla</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="comment">//Mediante la operador módulo obtenemos el resto de la operación (numero aleatorio)/9</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="comment">//Obligamos a que este dentro del intervalo entre 1 y 9 al sumarle 1 </span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;      </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="comment">//Sleep(500);</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordflow">return</span> num;<span class="comment">//Devolvemos el número.</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;}</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="class_juego.html#ada32c7b045649021ba074b65b56830bc">   56</a></span>&#160;<span class="keywordtype">short</span> <a class="code" href="class_juego.html#ada32c7b045649021ba074b65b56830bc">Juego::obtenerNumeroHasta</a>(<span class="keywordtype">short</span> max)</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;{</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordtype">short</span> num;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="comment">//rand();</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    num = 1 + rand() % (max);<span class="comment">// rand() obtiene un número aleatorio en función de la semilla</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="comment">//Mediante la operador módulo obtenemos el resto de la operación (numero aleatorio)/max</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="comment">//Obligamos a que este dentro del intervalo entre 1 y max al sumarle 1 </span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;      </div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordflow">return</span> num;<span class="comment">//Devolvemos el número.</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;}</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
+<div class="line"><a name="l00080"></a><span class="lineno"><a class="line" href="class_juego.html#a8ed89359b1e77fd2ae59db6b55c11430">   80</a></span>&#160;<span class="keywordtype">char</span> <a class="code" href="class_juego.html#a8ed89359b1e77fd2ae59db6b55c11430">Juego::obtenerOperacion</a>()</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;{</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keywordtype">char</span> operador;<span class="comment">//almacena el símbolo de la operación</span></div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    operador=<span class="charliteral">&#39;p&#39;</span>;<span class="comment">//Inicializamos con p</span></div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    </div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="keywordtype">int</span> num; <span class="comment">//Almacena un número aleatorio del 1 al 4, en función de este operador toma valor*/</span></div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    </div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        num = 1 + rand() % (4); <span class="comment">//obtenemos el número aleatorio</span></div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        </div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        <span class="keywordflow">switch</span> (num){<span class="comment">// para cada número asignamos una operación.</span></div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;            <span class="keywordflow">case</span> 1:</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;                operador=<span class="charliteral">&#39;*&#39;</span>;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;                <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;                <span class="keywordflow">case</span> 2:</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;                operador=<span class="charliteral">&#39;/&#39;</span>;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;                <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;                <span class="keywordflow">case</span> 3:</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;                operador=<span class="charliteral">&#39;+&#39;</span>;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;                <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;                <span class="keywordflow">case</span> 4:</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;                operador=<span class="charliteral">&#39;-&#39;</span>;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;                <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        }</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        </div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="keywordflow">return</span> operador; <span class="comment">//Devolvemos el caracter que simboliza la operación. </span></div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    }</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;</div>
+<div class="line"><a name="l00121"></a><span class="lineno"><a class="line" href="class_juego.html#a67a87ff5c12960b3f6455de583c7d588">  121</a></span>&#160;<span class="keywordtype">short</span> <a class="code" href="class_juego.html#a67a87ff5c12960b3f6455de583c7d588">Juego::obtenerResultado</a>(<span class="keywordtype">char</span> operacion, <span class="keywordtype">short</span> numeroCinta, <span class="keywordtype">short</span> cimaMonton){</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    <span class="keywordtype">short</span> resultado=0;</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;     <span class="keywordflow">switch</span>(operacion){ <span class="comment">//En función del char pasado</span></div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;               </div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;                <span class="keywordflow">case</span>(<span class="charliteral">&#39;*&#39;</span>):{</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;                             <span class="comment">//Realizamos la operación multiplicación</span></div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;                             resultado=cimaMonton*numeroCinta;</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;                             <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;                             }</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;                <span class="keywordflow">case</span>(<span class="charliteral">&#39;/&#39;</span>):{</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;                             <span class="comment">//Realizamos la operación división</span></div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;                             resultado=cimaMonton/numeroCinta;</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;                             <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;                             }</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;                <span class="keywordflow">case</span>(<span class="charliteral">&#39;-&#39;</span>):{</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;                             <span class="comment">//Realizamos la operación resta</span></div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;                             resultado=cimaMonton-numeroCinta;</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;                             <span class="keywordflow">if</span> (resultado&lt;0){<span class="comment">//Si es menor que cero</span></div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;                                <span class="comment">//Convertimos a valor absoluto.</span></div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;                                resultado=-resultado;</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;                             }</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;                             <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;                             }</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;                <span class="keywordflow">case</span>(<span class="charliteral">&#39;+&#39;</span>):{</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;                             <span class="comment">//Realizamos la operación suma</span></div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;                             resultado=cimaMonton+numeroCinta;</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;                             <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;                             }</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;           }</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    <span class="keywordflow">return</span> resultado;<span class="comment">//devolvemos el resultado.</span></div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;}</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;</div>
+<div class="ttc" id="class_juego_html_a5214c907b756f2d8894d2368e1419de9"><div class="ttname"><a href="class_juego.html#a5214c907b756f2d8894d2368e1419de9">Juego::obtenerNumero</a></div><div class="ttdeci">static short obtenerNumero()</div><div class="ttdoc">Método para obtener un número entero aleatorio entre 1 y 9. </div><div class="ttdef"><b>Definition:</b> <a href="juego_8cpp_source.html#l00034">juego.cpp:34</a></div></div>
+<div class="ttc" id="juego_8h_html"><div class="ttname"><a href="juego_8h.html">juego.h</a></div><div class="ttdoc">Cabecera, juego (métodos estáticos, para el funcionamiento del juego) </div></div>
+<div class="ttc" id="namespacestd_html"><div class="ttname"><a href="namespacestd.html">std</a></div></div>
+<div class="ttc" id="class_juego_html_aad9763872707f4255564120de4a916b8"><div class="ttname"><a href="class_juego.html#aad9763872707f4255564120de4a916b8">Juego::iniciarSemilla</a></div><div class="ttdeci">static void iniciarSemilla()</div><div class="ttdoc">Método para iniciar, la generación del número aleatorio, mediante la hora del sistema. </div><div class="ttdef"><b>Definition:</b> <a href="juego_8cpp_source.html#l00020">juego.cpp:20</a></div></div>
+<div class="ttc" id="class_juego_html_a67a87ff5c12960b3f6455de583c7d588"><div class="ttname"><a href="class_juego.html#a67a87ff5c12960b3f6455de583c7d588">Juego::obtenerResultado</a></div><div class="ttdeci">static short obtenerResultado(char operacion, short numeroCinta, short cimaMonton)</div><div class="ttdoc">Función para realizar una operación, pasando dos enteros y el símblo del operador. </div><div class="ttdef"><b>Definition:</b> <a href="juego_8cpp_source.html#l00121">juego.cpp:121</a></div></div>
+<div class="ttc" id="class_juego_html_ada32c7b045649021ba074b65b56830bc"><div class="ttname"><a href="class_juego.html#ada32c7b045649021ba074b65b56830bc">Juego::obtenerNumeroHasta</a></div><div class="ttdeci">static short obtenerNumeroHasta(short n)</div><div class="ttdoc">Método para obtener un número entero aleatorio entre 1 y un número máximo dado. </div><div class="ttdef"><b>Definition:</b> <a href="juego_8cpp_source.html#l00056">juego.cpp:56</a></div></div>
+<div class="ttc" id="class_juego_html_a8ed89359b1e77fd2ae59db6b55c11430"><div class="ttname"><a href="class_juego.html#a8ed89359b1e77fd2ae59db6b55c11430">Juego::obtenerOperacion</a></div><div class="ttdeci">static char obtenerOperacion()</div><div class="ttdoc">Método para obtener un char, que simboliza la operación. </div><div class="ttdef"><b>Definition:</b> <a href="juego_8cpp_source.html#l00080">juego.cpp:80</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<hr class="footer"/><address class="footer"><small>
+PRÁCTICA 2 LISTAS Jorge Abad Méndez de Sotomayor, Miguel Gómez Olmedo;
+</small></address>

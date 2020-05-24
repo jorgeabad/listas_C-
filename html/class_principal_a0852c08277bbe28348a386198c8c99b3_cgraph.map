@@ -1,0 +1,5 @@
+<map id="Principal::crearCintaNumerica" name="Principal::crearCintaNumerica">
+<area shape="rect" id="node2" href="$class_lista.html#a13a49683e3d62145bd4cc89bb261946e" title="Añade por la izquierda un objeto de la clase nodo_Lista. " alt="" coords="265,5,383,32"/>
+<area shape="rect" id="node4" href="$class_juego.html#a5214c907b756f2d8894d2368e1419de9" title="Método para obtener un número entero aleatorio entre 1 y 9. " alt="" coords="248,56,400,83"/>
+<area shape="rect" id="node3" href="$class_lista.html#aa68b68753969da67766632304c954150" title="Comprueba si la lista, está vacía. Si hay objetos nodo_Lista, en la lista. " alt="" coords="448,5,587,32"/>
+</map>

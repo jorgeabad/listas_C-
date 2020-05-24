@@ -1,0 +1,8 @@
+<map id="main.cpp" name="main.cpp">
+<area shape="rect" id="node5" href="$juego_8h.html" title="Cabecera, juego (métodos estáticos, para el funcionamiento del juego) " alt="" coords="157,155,221,181"/>
+<area shape="rect" id="node9" href="$lista_8h.html" title="Cabecera. Clase Lista (Clase que representa la estructura lineal para almacenar los números de los mo..." alt="" coords="646,304,703,331"/>
+<area shape="rect" id="node14" href="$lista_montones_8h.html" title="Cabecera. listaMontones (Clase que representa la estructura lineal para almacenar las listas de númer..." alt="" coords="576,155,691,181"/>
+<area shape="rect" id="node16" href="$principal_8h.html" title="Cabecera para la clase Principal. " alt="" coords="477,80,558,107"/>
+<area shape="rect" id="node13" href="$nodo__lista_8h.html" title="Cabecera de la clase nodo_Lista. Nodo de una lista, alamacena un elemento de la lista. " alt="" coords="629,379,721,405"/>
+<area shape="rect" id="node15" href="$nodo__lista_montones_8h.html" title="Cabecera, nodo_listaMontones (Clase que representa una celda de una listaMontones, cada celda contiene un montón que es una lista de números) " alt="" coords="600,229,749,256"/>
+</map>
